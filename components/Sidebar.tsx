@@ -23,6 +23,7 @@ export default function Sidebar() {
 
   return (
     <Menu
+      theme="dark"
       mode="inline"
       selectedKeys={[router.pathname]}
       style={{ height: '100%', borderRight: 0 }}
