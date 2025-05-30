@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import 'antd/dist/reset.css';
 import type { AppProps } from 'next/app';
 import { Layout } from 'antd';
-import Sidebar from '@/components/Sidebar';
+import Sidebar from '@/src/components/Sidebar';
 
 const { Sider, Content } = Layout;
 

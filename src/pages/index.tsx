@@ -1,4 +1,4 @@
-import HiraganaLesson from '@/components/HiraganaLesson';
+import HiraganaLesson from '@/src/components/HiraganaLesson';
 export default function HomePage() {
   return <HiraganaLesson />;
 }
