@@ -1,22 +1,31 @@
 import { Card, Space, Typography } from 'antd';
-import { useState, useMemo } from 'react';
+import { useState,  } from 'react';
 import ScoreCounter from './ScoreCounter';
 import QuestionTitle from './QuestionTitle';
 import AnswerButton from './AnswerButton';
 import Feedback from './Feedback';
 import NextButton from './NextButton';
-import { questions as allQuestions } from '../data/questions';
-import { shuffle } from '../utils/shuffle';
+import { useQuiz } from './QuizContext'
+import RestartButton from './RestartButton';
+import { useRouter } from 'next/router';
 
 export default function Quiz() {
-  const shuffled = useMemo(() => shuffle(allQuestions), []);
-  const total = shuffled.length;
+  const { questions, setSelectedCategories } = useQuiz();
+
+  const router = useRouter();
+
+  const total = questions?.length;
+
+  if (!total) {
+    return <Typography.Text>Please select at least one category on the home page.</Typography.Text>;
+  }
+
   const [index, setIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [wasAnswered, setWasAnswered] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
 
-  const question = shuffled[index];
+  const question = questions[index];
   const isCorrect = selected === question.correctAnswer;
   const isLast = index === total - 1;
 
@@ -31,6 +40,11 @@ export default function Quiz() {
     setWasAnswered(false);
     setSelected(null);
     setIndex((prev) => prev + 1);
+  };
+
+  const handleRestart = () => {
+    setSelectedCategories([]);
+    router.push('/');
   };
 
   return (
@@ -51,8 +65,12 @@ export default function Quiz() {
         {wasAnswered && <Feedback isCorrect={isCorrect} correctAnswer={question.correctAnswer} />}
         {wasAnswered && !isLast && <NextButton isLast={isLast} onNext={handleNext} />}
         {wasAnswered && isLast && (
-          <Typography.Text strong>End of Quiz! Final Score: {score} / {total}</Typography.Text>
+          <>
+            <Typography.Text strong>End of Quiz! Final Score: {score} / {total}</Typography.Text>
+            <RestartButton onClick={handleRestart}/>
+          </>
         )}
+        
       </Space>
     </Card>
   );

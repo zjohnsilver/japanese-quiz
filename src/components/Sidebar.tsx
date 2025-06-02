@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import {
   ReadOutlined,
   QuestionCircleOutlined,
+  HomeOutlined
 } from '@ant-design/icons';
 
 export default function Sidebar() {
@@ -11,14 +12,19 @@ export default function Sidebar() {
   const menuItems = [
     {
       key: "/", 
-      icon: <ReadOutlined />,
-      label: 'Lesson'
-    },
+      icon: <HomeOutlined />,
+      label: 'Home'
+    },    
     {
       key: "/quiz", 
       icon: <QuestionCircleOutlined />,
       label: 'Quiz'
-    }    
+    },    
+    {
+      key: "/lessons", 
+      icon: <ReadOutlined />,
+      label: 'Lesson'
+    }
   ];
 
   return (
