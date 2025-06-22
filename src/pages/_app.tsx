@@ -9,7 +9,7 @@ const { Sider, Content } = Layout;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <QuizProvider>
+    <QuizProvider selectedCategories={[]}>
       <Layout style={{ minHeight: '100vh' }}>
         <Sider width={200} breakpoint="lg">
           <div style={{ height: 32, margin: 16, color: 'white', fontWeight: 'bold' }}>
