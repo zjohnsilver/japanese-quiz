@@ -1,4 +1,14 @@
-import Quiz from '@/src/components/Quiz';
-export default function QuizPage() {
-  return <Quiz />;
+import { GetServerSideProps } from 'next';
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  return {
+    redirect: {
+      destination: '/',
+      permanent: true,
+    },
+  };
+};
+
+export default function QuizRedirect() {
+  return null;
 }

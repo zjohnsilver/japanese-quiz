@@ -14,12 +14,7 @@ export default function Sidebar() {
       key: "/", 
       icon: <HomeOutlined />,
       label: 'Home'
-    },    
-    {
-      key: "/quiz", 
-      icon: <QuestionCircleOutlined />,
-      label: 'Quiz'
-    },    
+    },
     {
       key: "/lessons", 
       icon: <ReadOutlined />,
