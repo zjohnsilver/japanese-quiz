@@ -16,6 +16,8 @@ const categoryColors: Record<string, string> = {
   katakana: 'magenta',
   vocabulary: 'orange',
   colors: 'cyan',
+  particleQuestions: 'green',
+  foodVocabulary: 'red'
 };
 
 export default function Quiz({ selectedCategories }: { selectedCategories: QuizCategoryEnum[]; }) {
@@ -60,7 +62,7 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
       >
         <Space align="start" wrap>
           <Typography.Text strong style={{ fontSize: 16 }}>
-            Selected Categories:
+            Categories:
           </Typography.Text>
           {selectedCategories.map((category) => (
             <Tag key={category} color={categoryColors[category] || 'default'}>
