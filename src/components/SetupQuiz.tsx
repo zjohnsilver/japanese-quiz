@@ -1,34 +1,28 @@
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import { Checkbox, Space, Button, Typography } from 'antd';
-
-import { useQuiz } from '@/src/components/QuizContext';
+import { useState } from 'react';
+import { Checkbox, Button, Space, Typography } from 'antd';
 import { quizCategoryLabels } from '@/src/data/questions';
+import { QuizCategoryEnum } from '@/src/data/enums'
 
-export default function SetupQuiz() {
-const router = useRouter();
-  const { selectedCategories, setSelectedCategories } = useQuiz();
-  const [canStart, setCanStart] = useState(false);
+interface Props {
+  onStart: (categories: QuizCategoryEnum[]) => void;
+}
 
-  const categoryKeyLabel = Object.entries(quizCategoryLabels);
+export default function SetupQuiz({ onStart }: Props) {
+  const [localSelected, setLocalSelected] = useState<QuizCategoryEnum[]>([]);
 
-  useEffect(() => {
-    setCanStart(selectedCategories.length > 0);
-  }, [selectedCategories]);
-
-  const onCheckboxChange = (category: string, checked: boolean) => {
-    if (checked) {
-      setSelectedCategories([...selectedCategories, category]);
-    } else {
-      setSelectedCategories(selectedCategories.filter((c) => c !== category));
-    }
+  const onCheckboxChange = (category: QuizCategoryEnum, checked: boolean) => {
+    setLocalSelected(prev =>
+      checked
+      ? [...prev, category]
+      : prev.filter(c => c !== category)
+    );
   };
 
-  const onStartQuiz = () => {
-    if (selectedCategories.length > 0) {
-      router.push('/quiz');
-    }
+  const handleStartClick = () => {
+    onStart(localSelected);
   };
+
+  const categoryKeyLabel = Object.entries(quizCategoryLabels) as [QuizCategoryEnum, string][];;
 
   return (
     <div style={{ padding: 24 }}>
@@ -38,7 +32,7 @@ const router = useRouter();
         {categoryKeyLabel.map(([key, label]) => (
           <Checkbox
             key={key}
-            checked={selectedCategories.includes(key)}
+            checked={localSelected.includes(key)}
             onChange={(e) => onCheckboxChange(key, e.target.checked)}
           >
             {label}
@@ -48,8 +42,8 @@ const router = useRouter();
 
       <Button
         type="primary"
-        disabled={!canStart}
-        onClick={onStartQuiz}
+        disabled={localSelected.length === 0}
+        onClick={handleStartClick}
         style={{ marginTop: 16 }}
       >
         Start Quiz

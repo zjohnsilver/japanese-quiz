@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, useContext } from 'react';
+import { createContext, useState, ReactNode, useContext, useMemo } from 'react';
 import type { Question } from '@/src/data/questions';
 
 interface QuizContextValue {
@@ -8,20 +8,39 @@ interface QuizContextValue {
 }
 const QuizContext = createContext<QuizContextValue | null>(null);
 
-export function QuizProvider({ children }: { children: ReactNode }) {
-  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
-  const allQuestions = selectedCategories.flatMap(category =>
-    require(`@/src/data/questions`).questionsByCategory[category] || []
+export function QuizProvider({
+  children,
+  selectedCategories,
+}: {
+  children: ReactNode;
+  selectedCategories: string[];
+}) {
+
+  const allQuestions = useMemo(() => {
+    if (!selectedCategories || selectedCategories.length === 0) return [];
+    return selectedCategories.flatMap(category =>
+      require('@/src/data/questions').questionsByCategory[category] || []
+    );
+  }, [selectedCategories]);
+
+  const questions = useMemo(
+    () => allQuestions.sort(() => Math.random() - 0.5),
+    [selectedCategories]
   );
- 
-  const questions = allQuestions.sort(() => Math.random() - 0.5);
 
   return (
-    <QuizContext.Provider value={{ selectedCategories, setSelectedCategories, questions }}>
+    <QuizContext.Provider
+      value={{
+        selectedCategories,
+        setSelectedCategories: () => {}, // no-op if you're controlling from outside
+        questions,
+      }}
+    >
       {children}
     </QuizContext.Provider>
   );
 }
+
 
 export function useQuiz() {
   const ctx = useContext(QuizContext);

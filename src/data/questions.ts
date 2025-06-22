@@ -1,3 +1,5 @@
+import { QuizCategoryEnum } from './enums'
+
 export type Question = {
   question: string;
   options: string[];
@@ -5,22 +7,15 @@ export type Question = {
   colorOptions?: boolean;
 };
 
-export enum QuizCategory {
-  Hiragana = 'hiragana',
-  Katakana = 'katakana',
-  Colors = 'colors',
-  Vocabulary = 'vocabulary',
-  ParticleQuestions = 'particleQuestions',
-  FoodVocabulary = 'foodVocabulary',
-}
 
-export const quizCategoryLabels: Record<QuizCategory, string> = {
-  [QuizCategory.Hiragana]: 'Hiragana',
-  [QuizCategory.Katakana]: 'Katakana',
-  [QuizCategory.Colors]: 'Colors',
-  [QuizCategory.Vocabulary]: 'General Vocabulary',
-  [QuizCategory.ParticleQuestions]: 'Particles in Sentences',
-  [QuizCategory.FoodVocabulary]: 'Food Vocabulary',
+
+export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
+  [QuizCategoryEnum.Hiragana]: 'Hiragana',
+  [QuizCategoryEnum.Katakana]: 'Katakana',
+  [QuizCategoryEnum.Colors]: 'Colors',
+  [QuizCategoryEnum.Vocabulary]: 'General Vocabulary',
+  [QuizCategoryEnum.ParticleQuestions]: 'Particles in Sentences',
+  [QuizCategoryEnum.FoodVocabulary]: 'Food Vocabulary',
 };
 
 export const questionsByCategory: Record<string, Question[]> = {
