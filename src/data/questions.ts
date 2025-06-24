@@ -1,12 +1,5 @@
 import { QuizCategoryEnum } from './enums'
-
-export type Question = {
-  question: string;
-  options: string[];
-  correctAnswer: string;
-  colorOptions?: boolean;
-};
-
+import { Question } from '@/src/types/questions'
 
 
 export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
@@ -14,11 +7,11 @@ export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
   [QuizCategoryEnum.Katakana]: 'Katakana',
   [QuizCategoryEnum.Colors]: 'Colors',
   [QuizCategoryEnum.Vocabulary]: 'General Vocabulary',
-  [QuizCategoryEnum.ParticleQuestions]: 'Particles in Sentences',
-  [QuizCategoryEnum.FoodVocabulary]: 'Food Vocabulary',
+  [QuizCategoryEnum.ParticleQuestions]: 'Particles',
+  [QuizCategoryEnum.FoodVocabulary]: 'Food',
 };
 
-export const questionsByCategory: Record<string, Question[]> = {
+export const questionsByCategory: Record<QuizCategoryEnum, Question[]> = {
   hiragana: [
     { question: 'What is the hiragana for "ka"?', options: ['か', 'き', 'こ', 'く'], correctAnswer: 'か' },
     { question: 'What is the hiragana for "shi"?', options: ['し', 'ち', 'さ', 'す'], correctAnswer: 'し' },
