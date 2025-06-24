@@ -1,4 +1,4 @@
-import { QuizCategoryEnum } from './enums'
+import { QuizCategoryEnum } from '../enums/questions'
 import { Question } from '@/src/types/questions'
 
 

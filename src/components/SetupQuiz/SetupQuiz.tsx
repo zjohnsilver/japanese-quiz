@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Checkbox, Button, Space, Typography } from 'antd';
 import { quizCategoryLabels } from '@/src/data/questions';
-import { QuizCategoryEnum } from '@/src/data/enums'
+import { QuizCategoryEnum } from '@/src/enums/questions'
 import styles from './styles.module.css';
 
 interface Props {

@@ -1,5 +1,8 @@
-import { createContext, useState, ReactNode, useContext, useMemo } from 'react';
-import type { Question } from '@/src/data/questions';
+import { createContext, ReactNode, useContext, useMemo } from 'react';
+import type { Question } from '@/src/types/questions';
+import { shuffle } from '@/src/utils/shuffle';
+import { questionsByCategory } from '@/src/data/questions';
+import { QuizCategoryEnum } from '@/src/enums/questions'
 
 interface QuizContextValue {
   selectedCategories: string[];
@@ -13,27 +16,26 @@ export function QuizProvider({
   selectedCategories,
 }: {
   children: ReactNode;
-  selectedCategories: string[];
+  selectedCategories: QuizCategoryEnum[];
 }) {
 
   const allQuestions = useMemo(() => {
     if (!selectedCategories || selectedCategories.length === 0) return [];
     return selectedCategories.flatMap(category =>
-      require('@/src/data/questions').questionsByCategory[category] || []
+      shuffle<Question>(questionsByCategory[category] || []).slice(0, 5)
     );
   }, [selectedCategories]);
 
-  const questions = useMemo(
-    () => allQuestions.sort(() => Math.random() - 0.5),
-    [selectedCategories]
-  );
+  const questions = useMemo(() => {
+    return shuffle(allQuestions)
+  }, [selectedCategories])
 
   return (
     <QuizContext.Provider
       value={{
         selectedCategories,
         setSelectedCategories: () => {}, // no-op if you're controlling from outside
-        questions,
+        questions
       }}
     >
       {children}

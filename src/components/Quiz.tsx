@@ -9,7 +9,7 @@ import { useQuiz } from './QuizContext'
 import RestartButton from './RestartButton';
 import { useRouter } from 'next/router';
 import { quizCategoryLabels } from '@/src/data/questions'
-import { QuizCategoryEnum } from '@/src/data/enums'
+import { QuizCategoryEnum } from '@/src/enums/questions'
 
 const categoryColors: Record<string, string> = {
   hiragana: 'purple',
