@@ -5,4 +5,5 @@ export enum QuizCategoryEnum {
   Vocabulary = 'vocabulary',
   ParticleQuestions = 'particleQuestions',
   FoodVocabulary = 'foodVocabulary',
+  Family = 'family'
 }

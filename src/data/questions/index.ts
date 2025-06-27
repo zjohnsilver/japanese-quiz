@@ -4,6 +4,7 @@ import colors from './colors';
 import vocabulary from './vocabulary';
 import particleQuestions from './particleQuestions';
 import foodVocabulary from './food';
+import family from './family';
 
 import { Question } from '@/src/types/questions'
 import { QuizCategoryEnum } from '@/src/enums/questions'
@@ -15,6 +16,7 @@ export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
   [QuizCategoryEnum.Vocabulary]: 'General Vocabulary',
   [QuizCategoryEnum.ParticleQuestions]: 'Particles',
   [QuizCategoryEnum.FoodVocabulary]: 'Food',
+  [QuizCategoryEnum.Family]: 'Family'
 };
 
 export const questionsByCategory: Record<string, Question[]> = {
@@ -24,4 +26,5 @@ export const questionsByCategory: Record<string, Question[]> = {
   vocabulary,
   particleQuestions,
   foodVocabulary,
+  family
 };

@@ -1,6 +1,6 @@
 import { Question } from '@/src/types/questions'
 
-export const colors: Question[] = [
+const colors: Question[] = [
   {
     "question": "What color is \"aka\"?",
     "options": [

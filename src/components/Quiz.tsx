@@ -17,7 +17,8 @@ const categoryColors: Record<string, string> = {
   vocabulary: 'orange',
   colors: 'cyan',
   particleQuestions: 'green',
-  foodVocabulary: 'red'
+  foodVocabulary: 'red',
+  family: 'pink'
 };
 
 export default function Quiz({ selectedCategories }: { selectedCategories: QuizCategoryEnum[]; }) {
