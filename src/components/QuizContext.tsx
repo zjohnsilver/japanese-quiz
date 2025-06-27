@@ -21,8 +21,12 @@ export function QuizProvider({
 
   const allQuestions = useMemo(() => {
     if (!selectedCategories || selectedCategories.length === 0) return [];
-    return selectedCategories.flatMap(category =>
-      shuffle<Question>(questionsByCategory[category] || []).slice(0, 5)
+    return selectedCategories.flatMap(category => {
+      const categoryQuestions = questionsByCategory[category] || [];
+      const shuffledQuestions = shuffle<Question>(categoryQuestions)
+      return shuffledQuestions.slice(0, 5)
+    }
+      
     );
   }, [selectedCategories]);
 
