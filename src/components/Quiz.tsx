@@ -32,6 +32,7 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
   const [selected, setSelected] = useState<string | null>(null);
 
   const question = questions[index];
+  if (!question) return null;
   const isCorrect = selected === question.correctAnswer;
   const isLast = index === total - 1;
 

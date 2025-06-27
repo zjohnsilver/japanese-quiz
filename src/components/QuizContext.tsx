@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useMemo } from 'react';
+import { createContext, ReactNode, useContext, useMemo, useState } from 'react';
 import type { Question } from '@/src/types/questions';
 import { shuffle } from '@/src/utils/shuffle';
 import { questionsByCategory } from '@/src/data/questions';
@@ -6,7 +6,7 @@ import { QuizCategoryEnum } from '@/src/enums/questions'
 
 interface QuizContextValue {
   selectedCategories: string[];
-  setSelectedCategories: (cats: string[]) => void;
+  setSelectedCategories: (cats: QuizCategoryEnum[]) => void;
   questions: Question[];
 }
 const QuizContext = createContext<QuizContextValue | null>(null);
@@ -14,37 +14,31 @@ const QuizContext = createContext<QuizContextValue | null>(null);
 export function QuizProvider({
   children,
   selectedCategories,
+  setSelectedCategories,
 }: {
   children: ReactNode;
   selectedCategories: QuizCategoryEnum[];
+  setSelectedCategories: (cats: QuizCategoryEnum[]) => void;
 }) {
-
   const allQuestions = useMemo(() => {
     if (!selectedCategories || selectedCategories.length === 0) return [];
     return selectedCategories.flatMap(category => {
       const categoryQuestions = questionsByCategory[category] || [];
-      const shuffledQuestions = shuffle<Question>(categoryQuestions)
-      const shuffledQuestionsAndOptions = shuffledQuestions.map(shuffledQuestion => {
-        return {
-          ...shuffledQuestion,
-          options: shuffle(shuffledQuestion.options)
-        }
-      })
-      return shuffledQuestionsAndOptions.slice(0, 5)
-    }
-      
-    );
+      const shuffledQuestions = shuffle<Question>(categoryQuestions);
+      return shuffledQuestions.map(q => ({
+        ...q,
+        options: shuffle(q.options)
+      })).slice(0, 5);
+    });
   }, [selectedCategories]);
 
-  const questions = useMemo(() => {
-    return shuffle(allQuestions)
-  }, [selectedCategories])
+  const questions = useMemo(() => shuffle(allQuestions), [allQuestions]);
 
-  return (
+return (
     <QuizContext.Provider
       value={{
         selectedCategories,
-        setSelectedCategories: () => {}, // no-op if you're controlling from outside
+        setSelectedCategories,
         questions
       }}
     >

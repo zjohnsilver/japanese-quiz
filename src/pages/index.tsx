@@ -5,21 +5,13 @@ import Quiz from '@/src/components/Quiz'
 import { QuizCategoryEnum } from '@/src/enums/questions'
 
 export default function HomePage() {
-  const [quizStarted, setQuizStarted] = useState(false);
   const [selectedCategories, setSelectedCategories] = useState<QuizCategoryEnum[]>([]);
 
-  const handleStartQuiz = (categories: QuizCategoryEnum[]) => {
-    setSelectedCategories(categories);
-    setQuizStarted(true);
-  };
-
-  return (
-    <QuizProvider selectedCategories={selectedCategories}>
-      {quizStarted ? (
-        <Quiz selectedCategories={selectedCategories}/>
-      ) : (
-        <SetupQuiz onStart={handleStartQuiz} />
-      )}
+  return selectedCategories.length > 0 ? (
+    <QuizProvider selectedCategories={selectedCategories} setSelectedCategories={setSelectedCategories}>
+      <Quiz selectedCategories={selectedCategories} />
     </QuizProvider>
+  ) : (
+    <SetupQuiz onStart={setSelectedCategories} />
   );
 }
