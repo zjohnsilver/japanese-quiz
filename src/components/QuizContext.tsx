@@ -24,7 +24,13 @@ export function QuizProvider({
     return selectedCategories.flatMap(category => {
       const categoryQuestions = questionsByCategory[category] || [];
       const shuffledQuestions = shuffle<Question>(categoryQuestions)
-      return shuffledQuestions.slice(0, 5)
+      const shuffledQuestionsAndOptions = shuffledQuestions.map(shuffledQuestion => {
+        return {
+          ...shuffledQuestion,
+          options: shuffle(shuffledQuestion.options)
+        }
+      })
+      return shuffledQuestionsAndOptions.slice(0, 5)
     }
       
     );
