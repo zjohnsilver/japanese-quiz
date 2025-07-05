@@ -5,7 +5,8 @@ import { Layout } from 'antd';
 import Sidebar from '@/src/components/Sidebar';
 import { QuizProvider }  from '@/src/components/QuizContext'
 import { useState } from 'react';
-import { QuizCategoryEnum } from '../enums/questions';
+import { QuizCategoryEnum, ModeEnum } from '../enums/questions';
+
 
 const { Sider, Content } = Layout;
 
@@ -16,6 +17,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <QuizProvider
       selectedCategories={selectedCategories}
       setSelectedCategories={setSelectedCategories}
+      questionsCount={0}
+      countMode={ModeEnum.TOTAL}
     >
       <Layout style={{ minHeight: '100vh' }}>
         <Sider width={200} breakpoint="lg">
