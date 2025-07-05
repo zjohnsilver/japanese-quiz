@@ -2,24 +2,24 @@ import { Question } from '@/src/types/questions'
 
 const family: Question[] = [
   {
-    "question": "Which kanji corresponds to \"otousan\"?",
+    "question": "Which kanji represents \"otousan\"?",
     "options": [
       "お父さん",
       "父",
       "奥さん",
       "兄弟"
     ],
-    "correctAnswer": "お父さん"
+    "correctAnswer": "父"
   },
   {
-    "question": "Which kanji corresponds to \"oniisan\"?",
+    "question": "Which kanji represents \"oniisan\"?",
     "options": [
-      "お兄さん",
       "父",
+      "お兄さん",
       "奥さん",
-      "母"
+      "兄"
     ],
-    "correctAnswer": "お兄さん"
+    "correctAnswer": "兄"
   },
   {
     "question": "What does the kanji \"姉\" mean?",
@@ -32,7 +32,7 @@ const family: Question[] = [
     "correctAnswer": "older sister"
   },
   {
-    "question": "What is the Japanese word for \"younger brother\"?",
+    "question": "What is the Japanese word (in rōmaji) for \"younger brother\"?",
     "options": [
       "otouto",
       "tsuma",
@@ -42,7 +42,7 @@ const family: Question[] = [
     "correctAnswer": "otouto"
   },
   {
-    "question": "What does the kanji \"お姉さん\" mean?",
+    "question": "What does the Japanese word 'お姉さん' mean?",
     "options": [
       "older sister",
       "father",
@@ -51,8 +51,10 @@ const family: Question[] = [
     ],
     "correctAnswer": "older sister"
   },
+
+
   {
-    "question": "Which kanji corresponds to \"goshujin\"?",
+    "question": "Which Japanese word (with kanji) corresponds to 'goshujin'?",
     "options": [
       "ご主人",
       "父",
@@ -74,12 +76,12 @@ const family: Question[] = [
   {
     "question": "How do you write \"otousan\" in Hiragana?",
     "options": [
-      "お父さん",
-      "弟さん",
-      "姉",
-      "友達"
+      "おとうさん",
+      "おにいさん",
+      "あね",
+      "ともだち"
     ],
-    "correctAnswer": "お父さん"
+    "correctAnswer": "おとうさん"
   },
   {
     "question": "What is the Japanese word for \"older sister\"?",
@@ -121,18 +123,15 @@ const family: Question[] = [
     ],
     "correctAnswer": "younger sister"
   },
+
+
   {
-    "question": "Which kanji corresponds to \"gokyoudai\"?",
-    "options": [
-      "ご兄弟",
-      "妹さん",
-      "ご家族",
-      "お兄さん"
-    ],
-    "correctAnswer": "ご兄弟"
+    "question": "Which kanji corresponds to 'kyoudai'?",
+    "options": ["兄弟", "姉妹", "父", "母"],
+    "correctAnswer": "兄弟"
   },
   {
-    "question": "Which kanji corresponds to \"oneesan\"?",
+    "question": "Which word (with kanji) corresponds to \"oneesan\"?",
     "options": [
       "お姉さん",
       "ご家族",
@@ -142,24 +141,19 @@ const family: Question[] = [
     "correctAnswer": "お姉さん"
   },
   {
-    "question": "How do you write \"gokazoku\" in Hiragana?",
-    "options": [
-      "ご家族",
-      "妹さん",
-      "子供",
-      "弟"
-    ],
-    "correctAnswer": "ご家族"
+    "question": "Which kanji corresponds to 'ane'?",
+    "options": ["姉", "妹", "母", "友"],
+    "correctAnswer": "姉"
   },
   {
-    "question": "How do you write \"goshujin\" in Hiragana?",
-    "options": [
-      "ご主人",
-      "姉妹",
-      "弟さん",
-      "お姉さん"
-    ],
-    "correctAnswer": "ご主人"
+    "question": "How do you write 'gokazoku' in Hiragana?",
+    "options": ["ごかぞく", "いもうとさん", "こども", "おとうと"],
+    "correctAnswer": "ごかぞく"
+  },
+  {
+    "question": "How do you write 'goshujin' in Hiragana?",
+    "options": ["ごしゅじん", "しまい", "おとうとさん", "おねえさん"],
+    "correctAnswer": "ごしゅじん"
   },
   {
     "question": "What is the meaning of \"okusan\"?",
@@ -172,33 +166,18 @@ const family: Question[] = [
     "correctAnswer": "wife"
   },
   {
-    "question": "Which kanji corresponds to \"imouto\"?",
-    "options": [
-      "妹",
-      "お母さん",
-      "母",
-      "姉妹"
-    ],
+    "question": "Which kanji corresponds to 'imouto'?",
+    "options": ["妹", "姉", "母", "友"],
     "correctAnswer": "妹"
   },
   {
-    "question": "Which kanji corresponds to \"tomodachi\"?",
-    "options": [
-      "友達",
-      "ご兄弟",
-      "お父さん",
-      "奥さん"
-    ],
+    "question": "Which kanji corresponds to 'tomodachi'?",
+    "options": ["友達", "姉妹", "母", "父"],
     "correctAnswer": "友達"
   },
   {
-    "question": "Which kanji corresponds to \"shimai\"?",
-    "options": [
-      "姉妹",
-      "弟",
-      "父",
-      "妹さん"
-    ],
+    "question": "Which kanji corresponds to 'shimai'?",
+    "options": ["姉妹", "兄弟", "母", "父"],
     "correctAnswer": "姉妹"
   },
   {
@@ -211,13 +190,15 @@ const family: Question[] = [
     ],
     "correctAnswer": "oneesan"
   },
+
+
   {
     "question": "What is the meaning of \"otoutosan\"?",
     "options": [
       "younger brother",
       "siblings",
       "husband",
-      "husband"
+      "younger sister"
     ],
     "correctAnswer": "younger brother"
   },
@@ -232,7 +213,7 @@ const family: Question[] = [
     "correctAnswer": "older brother"
   },
   {
-    "question": "What does the kanji \"弟さん\" mean?",
+    "question": "What does the word \"弟さん\" mean?",
     "options": [
       "younger brother",
       "father",
@@ -242,12 +223,12 @@ const family: Question[] = [
     "correctAnswer": "younger brother"
   },
   {
-    "question": "Which kanji corresponds to \"otoutosan\"?",
+    "question": "What is the Japanese word for 'otoutosan'?",
     "options": [
-      "弟さん",
       "お母さん",
       "主人",
-      "ご主人"
+      "ご主人",
+      "弟さん",      
     ],
     "correctAnswer": "弟さん"
   },
@@ -272,7 +253,7 @@ const family: Question[] = [
     "correctAnswer": "家族"
   },
   {
-    "question": "What does the kanji \"お兄さん\" mean?",
+    "question": "What does the word \"お兄さん\" mean?",
     "options": [
       "older brother",
       "older sister",
@@ -281,6 +262,8 @@ const family: Question[] = [
     ],
     "correctAnswer": "older brother"
   },
+  // -- I stopped here //
+  
   {
     "question": "How do you write \"gokyoudai\" in Hiragana?",
     "options": [
@@ -564,17 +547,17 @@ const family: Question[] = [
   {
     "question": "What is the Japanese word for \"younger sister\"?",
     "options": [
-      "imouto",
-      "imootosan",
+      "chichi",
       "gokyoudai",
-      "shimai"
+      "shimai",
+      "imouto",      
     ],
     "correctAnswer": "imouto"
   },
   {
     "question": "What does the kanji \"お母さん\" mean?",
     "options": [
-      "mother",
+      "father",
       "mother",
       "older brother",
       "child"
