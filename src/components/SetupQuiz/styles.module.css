@@ -10,6 +10,7 @@
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 16px;
   margin-top: 24px;
+  width: 100%;
 }
 
 .categoryButton {
@@ -23,6 +24,7 @@
   transition: all 0.2s ease;
 }
 
+
 .categoryButton:hover {
   border-color: #1890ff;
 }
@@ -31,4 +33,32 @@
   background-color: #e6f7ff;
   border-color: #1890ff;
   color: #1890ff;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 48px;
+  margin-top: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.setupColumn {
+  flex: 1;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.categoryColumn {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.categoryColumn > .ant-btn {
+  align-self: center;
 }

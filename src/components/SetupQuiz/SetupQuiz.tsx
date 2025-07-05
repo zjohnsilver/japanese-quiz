@@ -1,18 +1,23 @@
 import { useState } from 'react';
-import { Button, Typography, Segmented } from 'antd';
+import { Button, Typography } from 'antd';
 import { quizCategoryLabels } from '@/src/data/questions';
 import { QuizCategoryEnum } from '@/src/enums/questions'
 import styles from './styles.module.css';
-import QuestionCountSelector from '@/src/components/QuestionCountSelector';
+import QuestionSetupOptions from '@/src/components/QuestionSetupOptions';
+import { ModeEnum } from '@/src/enums/questions';
 
-interface Props {
-  onStart: (categories: QuizCategoryEnum[]) => void;
-  questionsCount: number,
-  setQuestionsCount: (questionsCount: number) => void;
-}
-
-export default function SetupQuiz({ onStart, questionsCount, setQuestionsCount }: Props) {
+export default function SetupQuiz(
+  { onStart, questionsCount, setQuestionsCount, countMode, setCountMode }: 
+  {
+    onStart: (categories: QuizCategoryEnum[]) => void;
+    questionsCount: number,
+    setQuestionsCount: (questionsCount: number) => void;
+    countMode: ModeEnum
+    setCountMode: (countModel: ModeEnum) => void;
+  }
+) {
   const [localSelected, setLocalSelected] = useState<QuizCategoryEnum[]>([]);
+  const categoryKeyLabel = Object.entries(quizCategoryLabels) as [QuizCategoryEnum, string][];;
 
   const toggleCategory = (category: QuizCategoryEnum) => {
     setLocalSelected(prev =>
@@ -26,37 +31,45 @@ export default function SetupQuiz({ onStart, questionsCount, setQuestionsCount }
     onStart(localSelected);
   };
 
-  const categoryKeyLabel = Object.entries(quizCategoryLabels) as [QuizCategoryEnum, string][];;
-
   return (
     <div className={styles.setupContainer}>
-      <Typography.Title level={2}>Ready to practice? Pick your quiz categories!</Typography.Title>
-      
-      <QuestionCountSelector
-        selectedCount={questionsCount}
-        onChange={setQuestionsCount}
-      /> 
+      <Typography.Title level={2}>
+        Ready to practice? Pick your quiz categories!
+      </Typography.Title>
 
-      <div className={styles.gridCategories}>
-        {categoryKeyLabel.map(([key, label]) => (
-          <button
-            key={key}
-            className={`${styles.categoryButton} ${localSelected.includes(key) ? styles.selected : ''}`}
-            onClick={() => toggleCategory(key)}
+      <div className={styles.contentWrapper}>
+        <div className={styles.setupColumn}>
+          <QuestionSetupOptions
+            selectedCount={questionsCount}
+            onCountChange={setQuestionsCount}
+            countMode={countMode}
+            onModeChange={setCountMode}
+          />
+        </div>
+
+        <div className={styles.categoryColumn}>
+          <div className={styles.gridCategories}>
+            {categoryKeyLabel.map(([key, label]) => (
+              <button
+                key={key}
+                className={`${styles.categoryButton} ${localSelected.includes(key) ? styles.selected : ''}`}
+                onClick={() => toggleCategory(key)}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
+          <Button
+            type="primary"
+            disabled={localSelected.length === 0 || questionsCount === 0}
+            onClick={handleStartClick}
+            style={{ marginTop: 16 }}
           >
-            {label}
-          </button>
-        ))}
+            Start Quiz
+          </Button>
+        </div>
       </div>
-
-      <Button
-        type="primary"
-        disabled={(localSelected.length === 0) || (questionsCount === 0)}
-        onClick={handleStartClick}
-        style={{ marginTop: 16 }}
-      >
-        Start Quiz
-      </Button>
     </div>
   );
 }
