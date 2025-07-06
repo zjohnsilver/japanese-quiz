@@ -28,7 +28,12 @@ const resources = [
     icon: <YoutubeOutlined style={{ color: '#f5222d' }} />,
     color: '#fff1f0',
     items: [
-      
+      {
+        name: 'Japanese Ammo with Misa',
+        url: 'https://www.youtube.com/@JapaneseAmmowithMisa',
+        description: 'In-depth and friendly Japanese lessons focused on grammar, vocabulary, and natural usage, often explained through anime, daily conversation, and cultural context.',
+        tags: ['Grammar', 'Vocabulary', 'Natural Japanese', 'Anime', 'Culture', 'Beginner Friendly', 'JLPT']
+      }
     ],
   },
 ];
