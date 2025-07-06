@@ -2,7 +2,7 @@ import { Menu } from 'antd';
 import { useRouter } from 'next/router';
 import {
   ReadOutlined,
-  QuestionCircleOutlined,
+  BulbOutlined,
   HomeOutlined
 } from '@ant-design/icons';
 
@@ -19,7 +19,12 @@ export default function Sidebar() {
       key: "/lessons", 
       icon: <ReadOutlined />,
       label: 'Lesson'
-    }
+    },
+    {
+      key: "/suggestions", 
+      icon: <BulbOutlined />,
+      label: 'Suggestions'
+    }    
   ];
 
   return (
