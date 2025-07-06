@@ -1,6 +1,7 @@
 export enum QuizCategoryEnum {
   Hiragana = 'hiragana',
   HiraganaDakuten = 'hiraganaDakuten',
+  HiraganaYouon = 'hiraganaYouon',
   Katakana = 'katakana',
   Colors = 'colors',
   Vocabulary = 'vocabulary',
