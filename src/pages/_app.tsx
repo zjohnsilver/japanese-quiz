@@ -6,6 +6,7 @@ import Sidebar from '@/src/components/Sidebar';
 import { QuizProvider }  from '@/src/components/QuizContext'
 import { useState } from 'react';
 import { QuizCategoryEnum, ModeEnum } from '../enums/questions';
+import { GithubOutlined } from '@ant-design/icons';
 
 
 const { Sider, Content } = Layout;
@@ -35,12 +36,19 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           <div style={{ height: 32, margin: 16, color: 'white', fontWeight: 'bold' }}>
             Nihongo App
           </div>
-          <Sidebar /> {/* precisa respeitar altura 100% e não extrapolar */}
+          <Sidebar/>
         </Sider>
         <Layout>
           <Content className='content-layout'>
             <Component {...pageProps} />
           </Content>
+
+          <Layout.Footer className="content-layout" style={{ textAlign: 'center', fontSize: 13, color: '#999' }}>
+            © John Silver {new Date().getFullYear()} — All rights reserved·{' '}
+            <a href="https://github.com/zjohnsilver" target="_blank" rel="noopener noreferrer">
+              <GithubOutlined /> GitHub
+            </a>
+          </Layout.Footer>          
         </Layout>
       </Layout>
     </QuizProvider>
