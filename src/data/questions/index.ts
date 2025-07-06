@@ -1,10 +1,11 @@
 import hiragana from './hiraganaBasic';
 import hiraganaDakuten from './hiraganaDakuten';
 import hiraganaYouon from './hiraganaYouon';
-import katakana from './katakana';
+import katakana from './katakanaBasic';
+import katakanaDakuten from './katakanaDakuten';
+import katakanaYouon from './katakanaYouon';
+import katakanaForeignSounds from './katakanaForeignSounds';
 import colors from './colors';
-import vocabulary from './vocabulary';
-import particleQuestions from './particleQuestions';
 import foodVocabulary from './food';
 import family from './family';
 
@@ -15,10 +16,11 @@ export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
   [QuizCategoryEnum.Hiragana]: 'Hiragana: Basic',
   [QuizCategoryEnum.HiraganaDakuten]: 'Hiragana: Dakuten',
   [QuizCategoryEnum.HiraganaYouon]: 'Hiragana: Youon',
-  [QuizCategoryEnum.Katakana]: 'Katakana',
+  [QuizCategoryEnum.Katakana]: 'Katakana: Basic',
+  [QuizCategoryEnum.KatakanaDakuten]: 'Katakana: Dakuten',
+  [QuizCategoryEnum.KatakanaYouon]: 'Katakana: Youon',
+  [QuizCategoryEnum.KatakanaForeignSounds]: 'Katakana: Foreign Sounds',
   [QuizCategoryEnum.Colors]: 'Colors',
-  [QuizCategoryEnum.Vocabulary]: 'General Vocabulary',
-  [QuizCategoryEnum.ParticleQuestions]: 'Particles',
   [QuizCategoryEnum.FoodVocabulary]: 'Food',
   [QuizCategoryEnum.Family]: 'Family'
 };
@@ -28,9 +30,10 @@ export const questionsByCategory: Record<string, Question[]> = {
   hiraganaDakuten,
   hiraganaYouon,
   katakana,
+  katakanaDakuten,
+  katakanaYouon,
+  katakanaForeignSounds,
   colors,
-  vocabulary,
-  particleQuestions,
   foodVocabulary,
   family
 };
