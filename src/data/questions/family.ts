@@ -22,7 +22,7 @@ const family: Question[] = [
     "correctAnswer": "兄"
   },
   {
-    "question": "What does the kanji \"姉\" mean?",
+    "question": "What does \"姉\" mean?",
     "options": [
       "older sister",
       "siblings",
@@ -32,7 +32,7 @@ const family: Question[] = [
     "correctAnswer": "older sister"
   },
   {
-    "question": "What is the Japanese word (in rōmaji) for \"younger brother\"?",
+    "question": "What is the Japanese word for \"younger brother\"?",
     "options": [
       "otouto",
       "tsuma",
@@ -42,7 +42,7 @@ const family: Question[] = [
     "correctAnswer": "otouto"
   },
   {
-    "question": "What does the Japanese word 'お姉さん' mean?",
+    "question": "What does 'お姉さん' mean?",
     "options": [
       "older sister",
       "father",
@@ -54,7 +54,7 @@ const family: Question[] = [
 
 
   {
-    "question": "Which Japanese word (with kanji) corresponds to 'goshujin'?",
+    "question": "Which Japanese word corresponds to 'goshujin'?",
     "options": [
       "ご主人",
       "父",
@@ -64,7 +64,7 @@ const family: Question[] = [
     "correctAnswer": "ご主人"
   },
   {
-    "question": "What does the kanji \"父\" mean?",
+    "question": "What does \"父\" mean?",
     "options": [
       "father",
       "older brother",
@@ -104,7 +104,7 @@ const family: Question[] = [
     "correctAnswer": "child"
   },
   {
-    "question": "What does the kanji \"弟\" mean?",
+    "question": "What does \"弟\" mean?",
     "options": [
       "younger brother",
       "older sister",
@@ -262,20 +262,18 @@ const family: Question[] = [
     ],
     "correctAnswer": "older brother"
   },
-  // -- I stopped here //
-  
   {
     "question": "How do you write \"gokyoudai\" in Hiragana?",
     "options": [
-      "ご兄弟",
-      "お母さん",
-      "父",
-      "弟さん"
+      "ごきょうだい",
+      "おかあさん",
+      "ちち",
+      "おとうとさん"
     ],
-    "correctAnswer": "ご兄弟"
+    "correctAnswer": "ごきょうだい"
   },
   {
-    "question": "What does the kanji \"奥さん\" mean?",
+    "question": "What does \"\"奥さん\"\" mean?",
     "options": [
       "wife",
       "husband",
@@ -365,7 +363,7 @@ const family: Question[] = [
     "correctAnswer": "妹さん"
   },
   {
-    "question": "What does the kanji \"妹さん\" mean?",
+    "question": "What does \"\"妹さん\"\" mean?",
     "options": [
       "younger sister",
       "older sister",
@@ -415,7 +413,7 @@ const family: Question[] = [
     "correctAnswer": "kazoku"
   },
   {
-    "question": "What does the kanji \"家族\" mean?",
+    "question": "What does \"\"家族\"\" mean?",
     "options": [
       "family",
       "older sister",
@@ -515,7 +513,7 @@ const family: Question[] = [
     "correctAnswer": "okusan"
   },
   {
-    "question": "What does the kanji \"ご主人\" mean?",
+    "question": "What does \"\"ご主人\"\" mean?",
     "options": [
       "husband",
       "older brother",
@@ -550,12 +548,12 @@ const family: Question[] = [
       "chichi",
       "gokyoudai",
       "shimai",
-      "imouto",      
+      "imouto"
     ],
     "correctAnswer": "imouto"
   },
   {
-    "question": "What does the kanji \"お母さん\" mean?",
+    "question": "What does \"\"お母さん\"\" mean?",
     "options": [
       "father",
       "mother",
@@ -577,15 +575,15 @@ const family: Question[] = [
   {
     "question": "How do you write \"oniisan\" in Hiragana?",
     "options": [
-      "お兄さん",
-      "姉妹",
-      "子供",
-      "主人"
+      "おにいさん",
+      "しまい",
+      "こども",
+      "しゅじん"
     ],
-    "correctAnswer": "お兄さん"
+    "correctAnswer": "おにいさん"
   },
   {
-    "question": "What does the kanji \"姉妹\" mean?",
+    "question": "What does \"\"姉妹\"\" mean?",
     "options": [
       "sisters",
       "wife",
@@ -617,12 +615,12 @@ const family: Question[] = [
   {
     "question": "How do you write \"oneesan\" in Hiragana?",
     "options": [
-      "お姉さん",
-      "母",
-      "兄弟",
-      "ご主人"
+      "おねえさん",
+      "はは",
+      "きょうだい",
+      "ごしゅじん"
     ],
-    "correctAnswer": "お姉さん"
+    "correctAnswer": "おねえさん"
   },
   {
     "question": "What is the meaning of \"tomodachi\"?",
@@ -635,7 +633,7 @@ const family: Question[] = [
     "correctAnswer": "friend"
   },
   {
-    "question": "What does the kanji \"兄弟\" mean?",
+    "question": "What does \"\"兄弟\"\" mean?",
     "options": [
       "siblings",
       "older sister",
@@ -685,7 +683,7 @@ const family: Question[] = [
     "correctAnswer": "kyoudai"
   },
   {
-    "question": "What does the kanji \"主人\" mean?",
+    "question": "What does \"\"主人\"\" mean?",
     "options": [
       "husband",
       "older sister",
@@ -697,12 +695,12 @@ const family: Question[] = [
   {
     "question": "How do you write \"okaasan\" in Hiragana?",
     "options": [
-      "お母さん",
-      "兄弟",
-      "妹",
-      "母"
+      "おかあさん",
+      "きょうだい",
+      "いもうと",
+      "はは"
     ],
-    "correctAnswer": "お母さん"
+    "correctAnswer": "おかあさん"
   },
   {
     "question": "What is the Japanese word for \"husband\"?",
@@ -735,7 +733,7 @@ const family: Question[] = [
     "correctAnswer": "family"
   },
   {
-    "question": "What does the kanji \"友達\" mean?",
+    "question": "What does \"\"友達\"\" mean?",
     "options": [
       "friend",
       "family",
@@ -745,9 +743,8 @@ const family: Question[] = [
     "correctAnswer": "friend"
   },
   {
-    "question": "What does the kanji \"ご兄弟\" mean?",
+    "question": "What does \"\"ご兄弟\"\" mean?",
     "options": [
-      "siblings",
       "siblings",
       "child",
       "father"
@@ -775,7 +772,7 @@ const family: Question[] = [
     "correctAnswer": "子供"
   },
   {
-    "question": "What does the kanji \"お父さん\" mean?",
+    "question": "What does \"\"お父さん\"\" mean?",
     "options": [
       "father",
       "younger sister",
@@ -795,7 +792,7 @@ const family: Question[] = [
     "correctAnswer": "imootosan"
   },
   {
-    "question": "What does the kanji \"妻\" mean?",
+    "question": "What does \"\"妻\"\" mean?",
     "options": [
       "wife",
       "mother",
@@ -805,7 +802,7 @@ const family: Question[] = [
     "correctAnswer": "wife"
   },
   {
-    "question": "What does the kanji \"子供\" mean?",
+    "question": "What does \"\"子供\"\" mean?",
     "options": [
       "child",
       "wife",
@@ -845,12 +842,11 @@ const family: Question[] = [
     "correctAnswer": "younger sister"
   },
   {
-    "question": "What does the kanji \"兄\" mean?",
+    "question": "What does \"\"兄\"\" mean?",
     "options": [
       "older brother",
       "siblings",
-      "family",
-      "older brother"
+      "family"
     ],
     "correctAnswer": "older brother"
   },
@@ -905,7 +901,7 @@ const family: Question[] = [
     "correctAnswer": "お母さん"
   },
   {
-    "question": "What does the kanji \"ご家族\" mean?",
+    "question": "What does \"\"ご家族\"\" mean?",
     "options": [
       "family",
       "friend",
@@ -955,7 +951,7 @@ const family: Question[] = [
     "correctAnswer": "oniisan"
   },
   {
-    "question": "What does the kanji \"妹\" mean?",
+    "question": "What does \"\"妹\"\" mean?",
     "options": [
       "younger sister",
       "older sister",
