@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Button, Typography } from 'antd';
-import { quizCategoryLabels } from '@/src/data/questions';
+import { quizCategoryLabels, questionsByCategory } from '@/src/data/questions';
 import { QuizCategoryEnum } from '@/src/enums/questions'
 import styles from './styles.module.css';
 import QuestionSetupOptions from '@/src/components/QuestionSetupOptions';
 import { ModeEnum } from '@/src/enums/questions';
+import CategoryCard from '@/src/components/CategoryCard';
 
 export default function SetupQuiz(
   { onStart, questionsCount, setQuestionsCount, countMode, setCountMode }: 
@@ -34,7 +35,8 @@ export default function SetupQuiz(
   return (
     <div className={styles.setupContainer}>
       <Typography.Title level={2}>
-        Ready to practice? Pick your quiz categories!
+        🇯🇵 <strong style={{ color: '#d9363e' }}>Ready</strong> to test your Japanese?<br />
+        <strong style={{ color: '#3b82f6' }}>Select your quiz categories!</strong>
       </Typography.Title>
 
       <div className={styles.contentWrapper}>
@@ -50,13 +52,13 @@ export default function SetupQuiz(
         <div className={styles.categoryColumn}>
           <div className={styles.gridCategories}>
             {categoryKeyLabel.map(([key, label]) => (
-              <button
+              <CategoryCard
                 key={key}
-                className={`${styles.categoryButton} ${localSelected.includes(key) ? styles.selected : ''}`}
+                label={label}
+                selected={localSelected.includes(key)}
                 onClick={() => toggleCategory(key)}
-              >
-                {label}
-              </button>
+                questionCount={questionsByCategory[key]?.length ?? 0}
+              />
             ))}
           </div>
 

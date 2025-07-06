@@ -1,6 +1,6 @@
-import { Button, Radio, RadioChangeEvent, Space, Typography } from 'antd';
-import styles from './QuestionSetupOptions.module.css';
-import { ModeEnum, MODE_LABELS } from '../enums/questions';
+import { Button, Radio, RadioChangeEvent, Typography } from 'antd';
+import styles from './styles.module.css';
+import { ModeEnum, MODE_LABELS } from '@/src/enums/questions';
 
 const QUESTION_OPTIONS = [5, 10, 25, 50];
 
