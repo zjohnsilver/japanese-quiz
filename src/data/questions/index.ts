@@ -8,6 +8,7 @@ import katakanaForeignSounds from './katakanaForeignSounds';
 import colors from './colors';
 import foodVocabulary from './food';
 import family from './family';
+import sentence from './sentence';
 
 import { Question } from '@/src/types/questions'
 import { QuizCategoryEnum } from '@/src/enums/questions'
@@ -22,7 +23,8 @@ export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
   [QuizCategoryEnum.KatakanaForeignSounds]: 'Katakana: Foreign Sounds',
   [QuizCategoryEnum.Colors]: 'Colors',
   [QuizCategoryEnum.FoodVocabulary]: 'Food',
-  [QuizCategoryEnum.Family]: 'Family'
+  [QuizCategoryEnum.Family]: 'Family',
+  [QuizCategoryEnum.Sentence]: 'Sentence'
 };
 
 export const questionsByCategory: Record<string, Question[]> = {
@@ -35,5 +37,6 @@ export const questionsByCategory: Record<string, Question[]> = {
   katakanaForeignSounds,
   colors,
   foodVocabulary,
-  family
+  family,
+  sentence
 };

@@ -22,8 +22,17 @@ export default function AnswerButton({ option, isCorrect, isSelected, disabled, 
       size="large"
       disabled={disabled}
       type={type}
-      style={{ marginBottom: 8 }}
       onClick={() => onSelect(option)}
+      style={{
+        marginBottom: 12,
+        whiteSpace: 'normal',
+        wordBreak: 'break-word',
+        textAlign: 'center',
+        lineHeight: '1.6',
+        fontSize: 16,
+        paddingTop: 26,
+        paddingBottom: 26,
+      }}
     >
       {option}
     </Button>
