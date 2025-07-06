@@ -27,3 +27,16 @@ body {
 .ant-typography {
   color: rgba(0, 0, 0, 0.85);
 }
+
+
+.content-layout {
+  margin-left: 75px;
+  padding: 24px;
+}
+
+/* Aplica margem só em telas ≥ 992px (Ant Design breakpoint 'lg') */
+@media (min-width: 992px) {
+  .content-layout {
+    margin-left: 200px;
+  }
+}

@@ -20,15 +20,25 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       questionsCount={0}
       countMode={ModeEnum.TOTAL}
     >
-      <Layout style={{ minHeight: '100vh' }}>
-        <Sider width={200} breakpoint="lg">
+      <Layout style={{}}>
+        <Sider
+          width={200}
+          breakpoint="lg"
+          style={{
+            height: '100vh',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            zIndex: 100,
+          }}
+        >
           <div style={{ height: 32, margin: 16, color: 'white', fontWeight: 'bold' }}>
             Nihongo App
           </div>
-          <Sidebar />
+          <Sidebar /> {/* precisa respeitar altura 100% e não extrapolar */}
         </Sider>
         <Layout>
-          <Content style={{ margin: '24px' }}>
+          <Content className='content-layout'>
             <Component {...pageProps} />
           </Content>
         </Layout>
