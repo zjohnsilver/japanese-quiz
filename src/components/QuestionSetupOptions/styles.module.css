@@ -1,20 +1,22 @@
-.sidebar {
-  background-color: #fafafa;
+.setupRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* ← permite que empilhe em telas pequenas */
+  justify-content: center;
+  align-items: stretch;
+  gap: 48px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 16px;
+  background-color: #fafafa;
   padding: 24px 32px;
-  max-width: 340px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .section {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .section :global(.ant-typography) {
@@ -34,4 +36,41 @@
   gap: 12px 16px; /* row-gap, column-gap */
   margin-top: 8px;
   justify-items: center;
+}
+
+.gridButton {
+  width: 100%;
+}
+
+.section.verticalCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 8px;
+  align-items: flex-start;
+}
+
+.radioDescription {
+  font-size: 13px;
+  color: #888;
+  margin-top: 2px;
+}
+
+
+@media (max-width: 768px) {
+  .setupRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .radioGroup {
+    flex-direction: column;
+    gap: 12px;
+  }  
 }

@@ -1,6 +1,6 @@
 import { Button, Radio, RadioChangeEvent, Typography } from 'antd';
 import styles from './styles.module.css';
-import { ModeEnum, MODE_LABELS } from '@/src/enums/questions';
+import { ModeEnum } from '@/src/enums/questions';
 
 const QUESTION_OPTIONS = [5, 10, 25, 50];
 
@@ -22,9 +22,12 @@ export default function QuestionSetupOptions({
   };
 
   return (
-    <div className={styles.sidebar}>
+    <div className={styles.setupRow}>
       <div className={styles.section}>
-        <Typography.Text strong>Select amount of questions:</Typography.Text>
+        <Typography.Text strong>
+          Select number of questions:
+        </Typography.Text>
+
         <div className={styles.buttonGrid}>
           {QUESTION_OPTIONS.map((count) => (
             <Button
@@ -32,7 +35,7 @@ export default function QuestionSetupOptions({
               type={selectedCount === count ? 'primary' : 'default'}
               shape="round"
               onClick={() => onCountChange(count)}
-              className={styles.fixedWidthButton}
+              className={styles.gridButton}
             >
               {count}
             </Button>
@@ -40,18 +43,21 @@ export default function QuestionSetupOptions({
         </div>
       </div>
 
-      <div className={styles.section} style={{ marginTop: 24 }}>
+      <div className={`${styles.section} ${styles.verticalCenter}`}>
         <Typography.Text strong>Mode:</Typography.Text>
         <Radio.Group
           value={countMode}
           onChange={handleModeChange}
-          style={{ display: 'flex', flexDirection: 'column', marginTop: 8 }}
+          className={styles.radioGroup}
         >
-          {Object.values(ModeEnum).map((mode) => (
-            <Radio key={mode} value={mode}>
-              {MODE_LABELS[mode]}
-            </Radio>
-          ))}
+          <Radio value={ModeEnum.TOTAL}>
+            Total
+            <div className={styles.radioDescription}>Total number of questions</div>
+          </Radio>
+          <Radio value={ModeEnum.PER_CATEGORY}>
+            Per category
+            <div className={styles.radioDescription}>Questions per selected category</div>
+          </Radio>
         </Radio.Group>
       </div>
     </div>

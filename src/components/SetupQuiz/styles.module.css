@@ -39,16 +39,16 @@
   display: flex;
   gap: 48px;
   margin-top: 32px;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
 
 .setupColumn {
-  flex: 1;
-  max-width: 340px;
+  width: 100%;
+  max-width: none;
   display: flex;
-  flex-direction: column;
-  padding-top: 20px;
+  flex-direction: row; /* ← lado a lado */
+  justify-content: center;
+  gap: 48px; /* ou 24px se quiser mais compacto */
 }
 
 .categoryColumn {
