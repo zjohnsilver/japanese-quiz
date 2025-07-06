@@ -1,4 +1,5 @@
-import hiragana from './basicHiragana';
+import hiragana from './hiraganaBasic';
+import hiraganaDakuten from './hiraganaDakuten';
 import katakana from './katakana';
 import colors from './colors';
 import vocabulary from './vocabulary';
@@ -10,7 +11,8 @@ import { Question } from '@/src/types/questions'
 import { QuizCategoryEnum } from '@/src/enums/questions'
 
 export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
-  [QuizCategoryEnum.Hiragana]: 'Basic Hiragana',
+  [QuizCategoryEnum.Hiragana]: 'Hiragana: Basic',
+  [QuizCategoryEnum.HiraganaDakuten]: 'Hiragana: Dakuten',
   [QuizCategoryEnum.Katakana]: 'Katakana',
   [QuizCategoryEnum.Colors]: 'Colors',
   [QuizCategoryEnum.Vocabulary]: 'General Vocabulary',
@@ -21,6 +23,7 @@ export const quizCategoryLabels: Record<QuizCategoryEnum, string> = {
 
 export const questionsByCategory: Record<string, Question[]> = {
   hiragana,
+  hiraganaDakuten,
   katakana,
   colors,
   vocabulary,
