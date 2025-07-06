@@ -1,5 +1,5 @@
 .setupContainer {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 24px;
   text-align: center;
@@ -13,42 +13,11 @@
   width: 100%;
 }
 
-.categoryButton {
-  padding: 16px;
-  border: 2px solid #d9d9d9;
-  border-radius: 12px;
-  background-color: white;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-
-.categoryButton:hover {
-  border-color: #1890ff;
-}
-
-.selected {
-  background-color: #e6f7ff;
-  border-color: #1890ff;
-  color: #1890ff;
-}
-
 .contentWrapper {
   display: flex;
-  gap: 48px;
+  gap: 24px;
   margin-top: 32px;
   flex-direction: column;
-}
-
-.setupColumn {
-  width: 100%;
-  max-width: none;
-  display: flex;
-  flex-direction: row; /* ← lado a lado */
-  justify-content: center;
-  gap: 48px; /* ou 24px se quiser mais compacto */
 }
 
 .categoryColumn {
@@ -67,7 +36,6 @@
     gap: 24px;
   }
 
-  .setupColumn,
   .categoryColumn {
     width: 100%;
     max-width: none;

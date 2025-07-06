@@ -40,7 +40,7 @@ export default function SetupQuiz(
       </Typography.Title>
 
       <div className={styles.contentWrapper}>
-        <div className={styles.setupColumn}>
+        <div>
           <QuestionSetupOptions
             selectedCount={questionsCount}
             onCountChange={setQuestionsCount}
