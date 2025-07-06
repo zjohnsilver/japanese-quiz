@@ -273,7 +273,7 @@ const family: Question[] = [
     "correctAnswer": "ごきょうだい"
   },
   {
-    "question": "What does \"\"奥さん\"\" mean?",
+    "question": "What does \"奥さん\" mean?",
     "options": [
       "wife",
       "husband",
@@ -363,7 +363,7 @@ const family: Question[] = [
     "correctAnswer": "妹さん"
   },
   {
-    "question": "What does \"\"妹さん\"\" mean?",
+    "question": "What does \"妹さん\" mean?",
     "options": [
       "younger sister",
       "older sister",
@@ -413,7 +413,7 @@ const family: Question[] = [
     "correctAnswer": "kazoku"
   },
   {
-    "question": "What does \"\"家族\"\" mean?",
+    "question": "What does \"家族\" mean?",
     "options": [
       "family",
       "older sister",
@@ -513,7 +513,7 @@ const family: Question[] = [
     "correctAnswer": "okusan"
   },
   {
-    "question": "What does \"\"ご主人\"\" mean?",
+    "question": "What does \"ご主人\" mean?",
     "options": [
       "husband",
       "older brother",
@@ -535,7 +535,7 @@ const family: Question[] = [
   {
     "question": "What is the Japanese word for \"mother\"?",
     "options": [
-      "okaasan",
+      "ani",
       "kazoku",
       "otouto",
       "haha"
@@ -553,7 +553,7 @@ const family: Question[] = [
     "correctAnswer": "imouto"
   },
   {
-    "question": "What does \"\"お母さん\"\" mean?",
+    "question": "What does \"お母さん\" mean?",
     "options": [
       "father",
       "mother",
@@ -583,7 +583,7 @@ const family: Question[] = [
     "correctAnswer": "おにいさん"
   },
   {
-    "question": "What does \"\"姉妹\"\" mean?",
+    "question": "What does \"姉妹\" mean?",
     "options": [
       "sisters",
       "wife",
@@ -633,7 +633,7 @@ const family: Question[] = [
     "correctAnswer": "friend"
   },
   {
-    "question": "What does \"\"兄弟\"\" mean?",
+    "question": "What does \"兄弟\" mean?",
     "options": [
       "siblings",
       "older sister",
@@ -683,7 +683,7 @@ const family: Question[] = [
     "correctAnswer": "kyoudai"
   },
   {
-    "question": "What does \"\"主人\"\" mean?",
+    "question": "What does \"主人\" mean?",
     "options": [
       "husband",
       "older sister",
@@ -733,7 +733,7 @@ const family: Question[] = [
     "correctAnswer": "family"
   },
   {
-    "question": "What does \"\"友達\"\" mean?",
+    "question": "What does \"友達\" mean?",
     "options": [
       "friend",
       "family",
@@ -743,7 +743,7 @@ const family: Question[] = [
     "correctAnswer": "friend"
   },
   {
-    "question": "What does \"\"ご兄弟\"\" mean?",
+    "question": "What does \"ご兄弟\" mean?",
     "options": [
       "siblings",
       "child",
@@ -772,7 +772,7 @@ const family: Question[] = [
     "correctAnswer": "子供"
   },
   {
-    "question": "What does \"\"お父さん\"\" mean?",
+    "question": "What does \"お父さん\" mean?",
     "options": [
       "father",
       "younger sister",
@@ -792,7 +792,7 @@ const family: Question[] = [
     "correctAnswer": "imootosan"
   },
   {
-    "question": "What does \"\"妻\"\" mean?",
+    "question": "What does \"妻\" mean?",
     "options": [
       "wife",
       "mother",
@@ -802,7 +802,7 @@ const family: Question[] = [
     "correctAnswer": "wife"
   },
   {
-    "question": "What does \"\"子供\"\" mean?",
+    "question": "What does \"子供\" mean?",
     "options": [
       "child",
       "wife",
@@ -842,7 +842,7 @@ const family: Question[] = [
     "correctAnswer": "younger sister"
   },
   {
-    "question": "What does \"\"兄\"\" mean?",
+    "question": "What does \"兄\" mean?",
     "options": [
       "older brother",
       "siblings",
@@ -901,7 +901,7 @@ const family: Question[] = [
     "correctAnswer": "お母さん"
   },
   {
-    "question": "What does \"\"ご家族\"\" mean?",
+    "question": "What does \"ご家族\" mean?",
     "options": [
       "family",
       "friend",
@@ -951,7 +951,7 @@ const family: Question[] = [
     "correctAnswer": "oniisan"
   },
   {
-    "question": "What does \"\"妹\"\" mean?",
+    "question": "What does \"妹\" mean?",
     "options": [
       "younger sister",
       "older sister",

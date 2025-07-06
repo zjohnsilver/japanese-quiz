@@ -41,7 +41,7 @@ function getPerCategory(selectedCategories: QuizCategoryEnum[], questionsCount: 
 
   if (!selectedCategories || selectedCategories.length === 0) return [];
 
-  return selectedCategories.flatMap((category) => {
+  const selectedQuestions = selectedCategories.flatMap((category) => {
     const availableQuestions = questionsByCategory[category] || [];
 
     if (availableQuestions.length < maxQuestions) {
@@ -56,6 +56,8 @@ function getPerCategory(selectedCategories: QuizCategoryEnum[], questionsCount: 
         options: shuffle([...question.options])
       }));
   });
+
+  return shuffle<Question>(selectedQuestions)
 }
 
 export function QuizProvider({
