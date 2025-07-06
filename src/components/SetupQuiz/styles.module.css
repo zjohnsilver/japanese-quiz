@@ -59,6 +59,23 @@
   gap: 16px;
 }
 
-.categoryColumn > .ant-btn {
-  align-self: center;
+/* 🧠 mobile breakpoint */
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .setupColumn,
+  .categoryColumn {
+    width: 100%;
+    max-width: none;
+    padding-top: 0;
+  }
+
+  .gridCategories {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    justify-content: center;
+  }
 }
