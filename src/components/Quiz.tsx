@@ -1,15 +1,10 @@
 import { Card, Space, Typography, Tag } from 'antd';
 import { useState,  } from 'react';
-import ScoreCounter from './ScoreCounter';
-import QuestionTitle from './QuestionTitle';
-import AnswerButton from './AnswerButton';
-import Feedback from './Feedback';
-import NextButton from './NextButton';
 import { useQuiz } from './QuizContext'
-import RestartButton from './RestartButton';
 import { useRouter } from 'next/router';
 import { quizCategoryLabels } from '@/src/data/questions'
 import { QuizCategoryEnum } from '@/src/enums/questions'
+import QuizCard from '@/src/components/QuizCard';
 
 const categoryColors: Record<string, string> = {
   hiragana: 'purple',
@@ -74,31 +69,19 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
         </Space>
       </Card>
 
-      <Card title="Japanese Quiz" style={{ maxWidth: 400, margin: 'auto' }}>
-        <ScoreCounter score={score} />
-        <QuestionTitle index={index} total={total} text={question.question} />
-        <Space direction="vertical" size="middle" style={{ width: '100%' }}>
-          {question.options.map((opt) => (
-            <AnswerButton
-              key={opt}
-              option={opt}
-              isCorrect={opt === question.correctAnswer}
-              isSelected={opt === selected}
-              disabled={wasAnswered}
-              onSelect={handleAnswer}
-            />
-          ))}
-          {wasAnswered && <Feedback isCorrect={isCorrect} correctAnswer={question.correctAnswer} />}
-          {wasAnswered && !isLast && <NextButton isLast={isLast} onNext={handleNext} />}
-          {wasAnswered && isLast && (
-            <>
-              <Typography.Text strong>End of Quiz! Final Score: {score} / {total}</Typography.Text>
-              <RestartButton onClick={handleRestart}/>
-            </>
-          )}
-          
-        </Space>
-      </Card>
+      <QuizCard
+        score={score}
+        index={index}
+        total={total}
+        question={question}
+        selected={selected}
+        isCorrect={isCorrect}
+        wasAnswered={wasAnswered}
+        isLast={isLast}
+        handleAnswer={handleAnswer}
+        handleNext={handleNext}
+        handleRestart={handleRestart}
+      />
     </div>
   );
 }
