@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 import QuestionSetupOptions from '@/src/components/QuestionSetupOptions';
 import { ModeEnum } from '@/src/enums/questions';
 import CategoryCard from '@/src/components/CategoryCard';
+import { QUESTION_OPTIONS } from '../QuestionSetupOptions/constants';
 
 export default function SetupQuiz(
   { onStart, questionsCount, setQuestionsCount, countMode, setCountMode }: 
@@ -31,6 +32,8 @@ export default function SetupQuiz(
   const handleStartClick = () => {
     onStart(localSelected);
   };
+
+  setQuestionsCount(QUESTION_OPTIONS[0])
 
   return (
     <div className={styles.setupContainer}>

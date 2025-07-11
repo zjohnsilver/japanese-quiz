@@ -750,7 +750,7 @@ const colors: Question[] = [
     "colorOptions": false
   },
   {
-    "question": "What is the color of a traffic light (go)?",
+    "question": "What color represents 'go' on a traffic light?",
     "options": [
       "midori",
       "shiro",

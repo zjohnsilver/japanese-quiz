@@ -57,12 +57,21 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
         style={{ marginBottom: 16, backgroundColor: '#fafafa' }}
         bordered={false}
       >
-        <Space align="start" wrap>
-          <Typography.Text strong style={{ fontSize: 16 }}>
+        <Space align="center" wrap>
+          <Typography.Text strong style={{ fontSize: 20 }}>
             Categories:
           </Typography.Text>
           {selectedCategories.map((category) => (
-            <Tag key={category} color={categoryColors[category] || 'default'}>
+            <Tag 
+              key={category} 
+              color={categoryColors[category] || 'default'} 
+              style={{
+                fontSize: 16,
+                borderRadius: 6,
+                fontWeight: 500,
+                padding: '4px 10px',
+              }}
+            >
               {quizCategoryLabels[category] || category}
             </Tag>
           ))}
@@ -75,7 +84,6 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
         total={total}
         question={question}
         selected={selected}
-        isCorrect={isCorrect}
         wasAnswered={wasAnswered}
         isLast={isLast}
         handleAnswer={handleAnswer}

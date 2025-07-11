@@ -1,8 +1,7 @@
 import { Button, Radio, RadioChangeEvent, Typography } from 'antd';
 import styles from './styles.module.css';
 import { ModeEnum } from '@/src/enums/questions';
-
-const QUESTION_OPTIONS = [5, 10, 25, 50];
+import { QUESTION_OPTIONS } from './constants';
 
 interface Props {
   selectedCount: number;
@@ -50,13 +49,11 @@ export default function QuestionSetupOptions({
           onChange={handleModeChange}
           className={styles.radioGroup}
         >
-          <Radio value={ModeEnum.TOTAL}>
-            Total
-            <div className={styles.radioDescription}>Total number of questions</div>
+          <Radio value={ModeEnum.PER_CATEGORY} className={styles.radioDescription}>
+            Questions per selected category
           </Radio>
-          <Radio value={ModeEnum.PER_CATEGORY}>
-            Per category
-            <div className={styles.radioDescription}>Questions per selected category</div>
+          <Radio value={ModeEnum.TOTAL} className={styles.radioDescription}>
+            Total number of questions
           </Radio>
         </Radio.Group>
       </div>
