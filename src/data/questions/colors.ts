@@ -9,7 +9,7 @@ const colors: Question[] = [
       "Green",
       "Yellow"
     ],
-    "correctAnswer": "Red",
+    "answer": "Red",
     "colorOptions": true
   },
   {
@@ -20,7 +20,7 @@ const colors: Question[] = [
       "Black",
       "White"
     ],
-    "correctAnswer": "Blue",
+    "answer": "Blue",
     "colorOptions": true
   },
   {
@@ -31,7 +31,7 @@ const colors: Question[] = [
       "Green",
       "Blue"
     ],
-    "correctAnswer": "White",
+    "answer": "White",
     "colorOptions": true
   },
   {
@@ -42,7 +42,7 @@ const colors: Question[] = [
       "Blue",
       "Red"
     ],
-    "correctAnswer": "Black",
+    "answer": "Black",
     "colorOptions": true
   },
   {
@@ -53,7 +53,7 @@ const colors: Question[] = [
       "Blue",
       "Yellow"
     ],
-    "correctAnswer": "Green",
+    "answer": "Green",
     "colorOptions": true
   },
   {
@@ -64,7 +64,7 @@ const colors: Question[] = [
       "shiro",
       "kuro"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -75,7 +75,7 @@ const colors: Question[] = [
       "kuro",
       "midori"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -86,7 +86,7 @@ const colors: Question[] = [
       "ao",
       "kuro"
     ],
-    "correctAnswer": "ao",
+    "answer": "ao",
     "colorOptions": false
   },
   {
@@ -97,7 +97,7 @@ const colors: Question[] = [
       "aka",
       "shiro"
     ],
-    "correctAnswer": "midori",
+    "answer": "midori",
     "colorOptions": false
   },
   {
@@ -108,7 +108,7 @@ const colors: Question[] = [
       "aka",
       "ao"
     ],
-    "correctAnswer": "kuro",
+    "answer": "kuro",
     "colorOptions": false
   },
   {
@@ -119,7 +119,7 @@ const colors: Question[] = [
       "しろ",
       "みどり"
     ],
-    "correctAnswer": "あか",
+    "answer": "あか",
     "colorOptions": false
   },
   {
@@ -130,7 +130,7 @@ const colors: Question[] = [
       "あか",
       "あお"
     ],
-    "correctAnswer": "しろ",
+    "answer": "しろ",
     "colorOptions": false
   },
   {
@@ -141,7 +141,7 @@ const colors: Question[] = [
       "クロ",
       "ミドリ"
     ],
-    "correctAnswer": "アオ",
+    "answer": "アオ",
     "colorOptions": false
   },
   {
@@ -152,7 +152,7 @@ const colors: Question[] = [
       "黒",
       "赤"
     ],
-    "correctAnswer": "黒",
+    "answer": "黒",
     "colorOptions": false
   },
   {
@@ -163,7 +163,7 @@ const colors: Question[] = [
       "青",
       "黒"
     ],
-    "correctAnswer": "白",
+    "answer": "白",
     "colorOptions": false
   },
   {
@@ -174,7 +174,7 @@ const colors: Question[] = [
       "midori",
       "kuro"
     ],
-    "correctAnswer": "ao",
+    "answer": "ao",
     "colorOptions": false
   },
   {
@@ -185,7 +185,7 @@ const colors: Question[] = [
       "shiro",
       "ao"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -196,7 +196,7 @@ const colors: Question[] = [
       "aka",
       "shiro"
     ],
-    "correctAnswer": "midori",
+    "answer": "midori",
     "colorOptions": false
   },
   {
@@ -207,7 +207,7 @@ const colors: Question[] = [
       "aka",
       "kuro"
     ],
-    "correctAnswer": "murasaki",
+    "answer": "murasaki",
     "colorOptions": false
   },
   {
@@ -218,7 +218,7 @@ const colors: Question[] = [
       "青",
       "黒"
     ],
-    "correctAnswer": "赤",
+    "answer": "赤",
     "colorOptions": false
   },
   {
@@ -229,7 +229,7 @@ const colors: Question[] = [
       "おれんじ",
       "くろ"
     ],
-    "correctAnswer": "みどり",
+    "answer": "みどり",
     "colorOptions": false
   },
   {
@@ -240,7 +240,7 @@ const colors: Question[] = [
       "あお",
       "みどり"
     ],
-    "correctAnswer": "くろ",
+    "answer": "くろ",
     "colorOptions": false
   },
   {
@@ -251,7 +251,7 @@ const colors: Question[] = [
       "緑",
       "黒"
     ],
-    "correctAnswer": "灰",
+    "answer": "灰",
     "colorOptions": false
   },
   {
@@ -262,7 +262,7 @@ const colors: Question[] = [
       "桃",
       "黒"
     ],
-    "correctAnswer": "青",
+    "answer": "青",
     "colorOptions": false
   },
   {
@@ -273,7 +273,7 @@ const colors: Question[] = [
       "aka",
       "kuro"
     ],
-    "correctAnswer": "murasaki",
+    "answer": "murasaki",
     "colorOptions": false
   },
   {
@@ -284,7 +284,7 @@ const colors: Question[] = [
       "shiro",
       "orenji"
     ],
-    "correctAnswer": "kuro",
+    "answer": "kuro",
     "colorOptions": false
   },
   {
@@ -295,7 +295,7 @@ const colors: Question[] = [
       "ムラサキ",
       "キイロ"
     ],
-    "correctAnswer": "ハイイロ",
+    "answer": "ハイイロ",
     "colorOptions": false
   },
   {
@@ -306,7 +306,7 @@ const colors: Question[] = [
       "midori",
       "pinku"
     ],
-    "correctAnswer": "kiiro",
+    "answer": "kiiro",
     "colorOptions": false
   },
   {
@@ -317,7 +317,7 @@ const colors: Question[] = [
       "黄",
       "紫"
     ],
-    "correctAnswer": "白",
+    "answer": "白",
     "colorOptions": false
   },
   {
@@ -328,7 +328,7 @@ const colors: Question[] = [
       "ハイイロ",
       "キイロ"
     ],
-    "correctAnswer": "ピンク",
+    "answer": "ピンク",
     "colorOptions": false
   },
   {
@@ -339,7 +339,7 @@ const colors: Question[] = [
       "kiiro",
       "chairo"
     ],
-    "correctAnswer": "ao",
+    "answer": "ao",
     "colorOptions": false
   },
   {
@@ -350,7 +350,7 @@ const colors: Question[] = [
       "chairo",
       "murasaki"
     ],
-    "correctAnswer": "haiiro",
+    "answer": "haiiro",
     "colorOptions": false
   },
   {
@@ -361,7 +361,7 @@ const colors: Question[] = [
       "aka",
       "kuro"
     ],
-    "correctAnswer": "chairo",
+    "answer": "chairo",
     "colorOptions": false
   },
   {
@@ -372,7 +372,7 @@ const colors: Question[] = [
       "murasaki",
       "chairo"
     ],
-    "correctAnswer": "pinku",
+    "answer": "pinku",
     "colorOptions": false
   },
   {
@@ -383,7 +383,7 @@ const colors: Question[] = [
       "ハイイロ",
       "チャイロ"
     ],
-    "correctAnswer": "オレンジ",
+    "answer": "オレンジ",
     "colorOptions": false
   },
   {
@@ -394,7 +394,7 @@ const colors: Question[] = [
       "pinku",
       "midori"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -405,7 +405,7 @@ const colors: Question[] = [
       "しろ",
       "くろ"
     ],
-    "correctAnswer": "はいいろ",
+    "answer": "はいいろ",
     "colorOptions": false
   },
   {
@@ -416,7 +416,7 @@ const colors: Question[] = [
       "赤",
       "黒"
     ],
-    "correctAnswer": "橙",
+    "answer": "橙",
     "colorOptions": false
   },
   {
@@ -427,7 +427,7 @@ const colors: Question[] = [
       "白",
       "黒"
     ],
-    "correctAnswer": "赤",
+    "answer": "赤",
     "colorOptions": false
   },
   {
@@ -438,7 +438,7 @@ const colors: Question[] = [
       "murasaki",
       "aka"
     ],
-    "correctAnswer": "aomidori",
+    "answer": "aomidori",
     "colorOptions": false
   },
   {
@@ -449,7 +449,7 @@ const colors: Question[] = [
       "黒",
       "白"
     ],
-    "correctAnswer": "紫",
+    "answer": "紫",
     "colorOptions": false
   },
   {
@@ -460,7 +460,7 @@ const colors: Question[] = [
       "kiiro",
       "kuro"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -471,7 +471,7 @@ const colors: Question[] = [
       "桃",
       "緑"
     ],
-    "correctAnswer": "黄",
+    "answer": "黄",
     "colorOptions": false
   },
   {
@@ -482,7 +482,7 @@ const colors: Question[] = [
       "きいろ",
       "しろ"
     ],
-    "correctAnswer": "おれんじ",
+    "answer": "おれんじ",
     "colorOptions": false
   },
   {
@@ -493,7 +493,7 @@ const colors: Question[] = [
       "haiiro",
       "ao"
     ],
-    "correctAnswer": "midori",
+    "answer": "midori",
     "colorOptions": false
   },
   {
@@ -504,7 +504,7 @@ const colors: Question[] = [
       "キイロ",
       "オレンジ"
     ],
-    "correctAnswer": "チャイロ",
+    "answer": "チャイロ",
     "colorOptions": false
   },
   {
@@ -515,7 +515,7 @@ const colors: Question[] = [
       "紫",
       "黒"
     ],
-    "correctAnswer": "茶",
+    "answer": "茶",
     "colorOptions": false
   },
   {
@@ -526,7 +526,7 @@ const colors: Question[] = [
       "オレンジ",
       "チャイロ"
     ],
-    "correctAnswer": "ムラサキ",
+    "answer": "ムラサキ",
     "colorOptions": false
   },
   {
@@ -537,7 +537,7 @@ const colors: Question[] = [
       "ao",
       "aka"
     ],
-    "correctAnswer": "kiiro",
+    "answer": "kiiro",
     "colorOptions": false
   },
   {
@@ -548,7 +548,7 @@ const colors: Question[] = [
       "あか",
       "はいいろ"
     ],
-    "correctAnswer": "ぴんく",
+    "answer": "ぴんく",
     "colorOptions": false
   },
   {
@@ -559,7 +559,7 @@ const colors: Question[] = [
       "orenji",
       "pinku"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -570,7 +570,7 @@ const colors: Question[] = [
       "紫",
       "黄"
     ],
-    "correctAnswer": "黒",
+    "answer": "黒",
     "colorOptions": false
   },
   {
@@ -581,7 +581,7 @@ const colors: Question[] = [
       "むらさき",
       "くろ"
     ],
-    "correctAnswer": "しろ",
+    "answer": "しろ",
     "colorOptions": false
   },
   {
@@ -592,7 +592,7 @@ const colors: Question[] = [
       "青",
       "橙"
     ],
-    "correctAnswer": "緑",
+    "answer": "緑",
     "colorOptions": false
   },
   {
@@ -603,7 +603,7 @@ const colors: Question[] = [
       "ao",
       "murasaki"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -614,7 +614,7 @@ const colors: Question[] = [
       "みどり",
       "ちゃいろ"
     ],
-    "correctAnswer": "あお",
+    "answer": "あお",
     "colorOptions": false
   },
   {
@@ -625,7 +625,7 @@ const colors: Question[] = [
       "ぴんく",
       "あお"
     ],
-    "correctAnswer": "きいろ",
+    "answer": "きいろ",
     "colorOptions": false
   },
   {
@@ -636,7 +636,7 @@ const colors: Question[] = [
       "chairo",
       "midori"
     ],
-    "correctAnswer": "kuro",
+    "answer": "kuro",
     "colorOptions": false
   },
   {
@@ -647,7 +647,7 @@ const colors: Question[] = [
       "あお",
       "ぴんく"
     ],
-    "correctAnswer": "あか",
+    "answer": "あか",
     "colorOptions": false
   },
   {
@@ -658,7 +658,7 @@ const colors: Question[] = [
       "haiiro",
       "aka"
     ],
-    "correctAnswer": "murasaki",
+    "answer": "murasaki",
     "colorOptions": false
   },
   {
@@ -669,7 +669,7 @@ const colors: Question[] = [
       "黒",
       "茶"
     ],
-    "correctAnswer": "桃",
+    "answer": "桃",
     "colorOptions": false
   },
   {
@@ -680,7 +680,7 @@ const colors: Question[] = [
       "あか",
       "みどり"
     ],
-    "correctAnswer": "むらさき",
+    "answer": "むらさき",
     "colorOptions": false
   },
   {
@@ -691,7 +691,7 @@ const colors: Question[] = [
       "haiiro",
       "kiiro"
     ],
-    "correctAnswer": "orenji",
+    "answer": "orenji",
     "colorOptions": false
   },
   {
@@ -702,7 +702,7 @@ const colors: Question[] = [
       "ao",
       "kuro"
     ],
-    "correctAnswer": "orenji",
+    "answer": "orenji",
     "colorOptions": false
   },
   {
@@ -713,7 +713,7 @@ const colors: Question[] = [
       "midori",
       "haiiro"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -724,7 +724,7 @@ const colors: Question[] = [
       "ピンク",
       "ムラサキ"
     ],
-    "correctAnswer": "キイロ",
+    "answer": "キイロ",
     "colorOptions": false
   },
   {
@@ -735,7 +735,7 @@ const colors: Question[] = [
       "むらさき",
       "あか"
     ],
-    "correctAnswer": "ちゃいろ",
+    "answer": "ちゃいろ",
     "colorOptions": false
   },
   {
@@ -746,7 +746,7 @@ const colors: Question[] = [
       "haiiro",
       "pinku"
     ],
-    "correctAnswer": "kiiro",
+    "answer": "kiiro",
     "colorOptions": false
   },
   {
@@ -757,7 +757,7 @@ const colors: Question[] = [
       "ao",
       "pinku"
     ],
-    "correctAnswer": "midori",
+    "answer": "midori",
     "colorOptions": false
   },
   {
@@ -768,7 +768,7 @@ const colors: Question[] = [
       "orenji",
       "haiiro"
     ],
-    "correctAnswer": "ao",
+    "answer": "ao",
     "colorOptions": false
   },
   {
@@ -779,7 +779,7 @@ const colors: Question[] = [
       "shiro",
       "murasaki"
     ],
-    "correctAnswer": "kiiro",
+    "answer": "kiiro",
     "colorOptions": false
   },
   {
@@ -790,7 +790,7 @@ const colors: Question[] = [
       "オレンジ",
       "ムラサキ"
     ],
-    "correctAnswer": "ハイイロ",
+    "answer": "ハイイロ",
     "colorOptions": false
   },
   {
@@ -801,7 +801,7 @@ const colors: Question[] = [
       "はいいろ",
       "みどり"
     ],
-    "correctAnswer": "きいろ",
+    "answer": "きいろ",
     "colorOptions": false
   },
   {
@@ -812,7 +812,7 @@ const colors: Question[] = [
       "shiro",
       "haiiro"
     ],
-    "correctAnswer": "chairo",
+    "answer": "chairo",
     "colorOptions": false
   },
   {
@@ -823,7 +823,7 @@ const colors: Question[] = [
       "kiiro",
       "haiiro"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -834,7 +834,7 @@ const colors: Question[] = [
       "ムラサキ",
       "ハイイロ"
     ],
-    "correctAnswer": "ピンク",
+    "answer": "ピンク",
     "colorOptions": false
   },
   {
@@ -845,7 +845,7 @@ const colors: Question[] = [
       "ぴんく",
       "はいいろ"
     ],
-    "correctAnswer": "みどり",
+    "answer": "みどり",
     "colorOptions": false
   },
   {
@@ -856,7 +856,7 @@ const colors: Question[] = [
       "ちゃいろ",
       "しろ"
     ],
-    "correctAnswer": "はいいろ",
+    "answer": "はいいろ",
     "colorOptions": false
   },
   {
@@ -867,7 +867,7 @@ const colors: Question[] = [
       "おれんじ",
       "くろ"
     ],
-    "correctAnswer": "むらさき",
+    "answer": "むらさき",
     "colorOptions": false
   },
   {
@@ -878,7 +878,7 @@ const colors: Question[] = [
       "orenji",
       "murasaki"
     ],
-    "correctAnswer": "midori",
+    "answer": "midori",
     "colorOptions": false
   },
   {
@@ -889,7 +889,7 @@ const colors: Question[] = [
       "あお",
       "きいろ"
     ],
-    "correctAnswer": "ちゃいろ",
+    "answer": "ちゃいろ",
     "colorOptions": false
   },
   {
@@ -900,7 +900,7 @@ const colors: Question[] = [
       "haiiro",
       "kiiro"
     ],
-    "correctAnswer": "orenji",
+    "answer": "orenji",
     "colorOptions": false
   },
   {
@@ -911,7 +911,7 @@ const colors: Question[] = [
       "orenji",
       "ao"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -922,7 +922,7 @@ const colors: Question[] = [
       "haiiro",
       "kiiro"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -933,7 +933,7 @@ const colors: Question[] = [
       "きいろ",
       "あお"
     ],
-    "correctAnswer": "ぴんく",
+    "answer": "ぴんく",
     "colorOptions": false
   },
   {
@@ -944,7 +944,7 @@ const colors: Question[] = [
       "murasaki",
       "aka"
     ],
-    "correctAnswer": "pinku",
+    "answer": "pinku",
     "colorOptions": false
   },
   {
@@ -955,7 +955,7 @@ const colors: Question[] = [
       "チャイロ",
       "オレンジ"
     ],
-    "correctAnswer": "キイロ",
+    "answer": "キイロ",
     "colorOptions": false
   },
   {
@@ -966,7 +966,7 @@ const colors: Question[] = [
       "むらさき",
       "みどり"
     ],
-    "correctAnswer": "しろ",
+    "answer": "しろ",
     "colorOptions": false
   },
   {
@@ -977,7 +977,7 @@ const colors: Question[] = [
       "ムラサキ",
       "オレンジ"
     ],
-    "correctAnswer": "チャイロ",
+    "answer": "チャイロ",
     "colorOptions": false
   },
   {
@@ -988,7 +988,7 @@ const colors: Question[] = [
       "きいろ",
       "あお"
     ],
-    "correctAnswer": "あか",
+    "answer": "あか",
     "colorOptions": false
   },
   {
@@ -999,7 +999,7 @@ const colors: Question[] = [
       "pinku",
       "aka"
     ],
-    "correctAnswer": "haiiro",
+    "answer": "haiiro",
     "colorOptions": false
   },
   {
@@ -1010,7 +1010,7 @@ const colors: Question[] = [
       "midori",
       "aka"
     ],
-    "correctAnswer": "kuro",
+    "answer": "kuro",
     "colorOptions": false
   },
   {
@@ -1021,7 +1021,7 @@ const colors: Question[] = [
       "pinku",
       "midori"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -1032,7 +1032,7 @@ const colors: Question[] = [
       "murasaki",
       "haiiro"
     ],
-    "correctAnswer": "kuro",
+    "answer": "kuro",
     "colorOptions": false
   },
   {
@@ -1043,7 +1043,7 @@ const colors: Question[] = [
       "shiro",
       "kiiro"
     ],
-    "correctAnswer": "chairo",
+    "answer": "chairo",
     "colorOptions": false
   },
   {
@@ -1054,7 +1054,7 @@ const colors: Question[] = [
       "shiro",
       "haiiro"
     ],
-    "correctAnswer": "aka",
+    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -1065,7 +1065,7 @@ const colors: Question[] = [
       "orenji",
       "haiiro"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   },
   {
@@ -1076,7 +1076,7 @@ const colors: Question[] = [
       "キイロ",
       "オレンジ"
     ],
-    "correctAnswer": "ムラサキ",
+    "answer": "ムラサキ",
     "colorOptions": false
   },
   {
@@ -1087,7 +1087,7 @@ const colors: Question[] = [
       "murasaki",
       "haiiro"
     ],
-    "correctAnswer": "midori",
+    "answer": "midori",
     "colorOptions": false
   },
   {
@@ -1098,7 +1098,7 @@ const colors: Question[] = [
       "murasaki",
       "kuro"
     ],
-    "correctAnswer": "shiro",
+    "answer": "shiro",
     "colorOptions": false
   }
 ];

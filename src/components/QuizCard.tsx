@@ -14,7 +14,7 @@ type QuizCardProps = {
   question: {
     question: string;
     options: string[];
-    correctAnswer: string;
+    answer: string;
   };
   selected: string | null;  
   wasAnswered: boolean;
@@ -50,7 +50,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
             key={opt}
             option={opt}
             isSelected={opt === selected}          
-            correctAnswer={question.correctAnswer}
+            answer={question.answer}
             wasAnswered={wasAnswered}
             onSelect={handleAnswer}
           />

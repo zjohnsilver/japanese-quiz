@@ -9,7 +9,7 @@ const katakanaDakuten: Question[] = [
       "ヅ",
       "ベ"
     ],
-    "correctAnswer": "ガ"
+    "answer": "ガ"
   },
   {
     "question": "What is the romaji for \"ガ\"?",
@@ -19,7 +19,7 @@ const katakanaDakuten: Question[] = [
       "be",
       "pu"
     ],
-    "correctAnswer": "ga"
+    "answer": "ga"
   },
   {
     "question": "What is the katakana for \"gi\"?",
@@ -29,7 +29,7 @@ const katakanaDakuten: Question[] = [
       "ギ",
       "ゴ"
     ],
-    "correctAnswer": "ギ"
+    "answer": "ギ"
   },
   {
     "question": "What is the romaji for \"ギ\"?",
@@ -39,7 +39,7 @@ const katakanaDakuten: Question[] = [
       "gi",
       "pu"
     ],
-    "correctAnswer": "gi"
+    "answer": "gi"
   },
   {
     "question": "What is the katakana for \"gu\"?",
@@ -49,7 +49,7 @@ const katakanaDakuten: Question[] = [
       "デ",
       "バ"
     ],
-    "correctAnswer": "グ"
+    "answer": "グ"
   },
   {
     "question": "What is the romaji for \"グ\"?",
@@ -59,7 +59,7 @@ const katakanaDakuten: Question[] = [
       "gu",
       "zo"
     ],
-    "correctAnswer": "gu"
+    "answer": "gu"
   },
   {
     "question": "What is the katakana for \"ge\"?",
@@ -69,7 +69,7 @@ const katakanaDakuten: Question[] = [
       "ギ",
       "ゲ"
     ],
-    "correctAnswer": "ゲ"
+    "answer": "ゲ"
   },
   {
     "question": "What is the romaji for \"ゲ\"?",
@@ -79,7 +79,7 @@ const katakanaDakuten: Question[] = [
       "ge",
       "zu"
     ],
-    "correctAnswer": "ge"
+    "answer": "ge"
   },
   {
     "question": "What is the katakana for \"go\"?",
@@ -89,7 +89,7 @@ const katakanaDakuten: Question[] = [
       "ジ",
       "ゴ"
     ],
-    "correctAnswer": "ゴ"
+    "answer": "ゴ"
   },
   {
     "question": "What is the romaji for \"ゴ\"?",
@@ -99,7 +99,7 @@ const katakanaDakuten: Question[] = [
       "go",
       "bu"
     ],
-    "correctAnswer": "go"
+    "answer": "go"
   },
   {
     "question": "What is the katakana for \"za\"?",
@@ -109,7 +109,7 @@ const katakanaDakuten: Question[] = [
       "ズ",
       "ザ"
     ],
-    "correctAnswer": "ザ"
+    "answer": "ザ"
   },
   {
     "question": "What is the romaji for \"ザ\"?",
@@ -119,7 +119,7 @@ const katakanaDakuten: Question[] = [
       "ze",
       "go"
     ],
-    "correctAnswer": "za"
+    "answer": "za"
   },
   {
     "question": "What is the katakana for \"ji\"?",
@@ -129,7 +129,7 @@ const katakanaDakuten: Question[] = [
       "ボ",
       "ジ"
     ],
-    "correctAnswer": "ジ"
+    "answer": "ジ"
   },
   {
     "question": "What is the romaji for \"ジ\"?",
@@ -139,7 +139,7 @@ const katakanaDakuten: Question[] = [
       "pi",
       "zo"
     ],
-    "correctAnswer": "ji"
+    "answer": "ji"
   },
   {
     "question": "What is the katakana for \"zu\"?",
@@ -149,7 +149,7 @@ const katakanaDakuten: Question[] = [
       "デ",
       "ダ"
     ],
-    "correctAnswer": "ズ"
+    "answer": "ズ"
   },
   {
     "question": "What is the romaji for \"ズ\"?",
@@ -159,7 +159,7 @@ const katakanaDakuten: Question[] = [
       "be",
       "zu"
     ],
-    "correctAnswer": "zu"
+    "answer": "zu"
   },
   {
     "question": "What is the katakana for \"ze\"?",
@@ -169,7 +169,7 @@ const katakanaDakuten: Question[] = [
       "ズ",
       "グ"
     ],
-    "correctAnswer": "ゼ"
+    "answer": "ゼ"
   },
   {
     "question": "What is the romaji for \"ゼ\"?",
@@ -179,7 +179,7 @@ const katakanaDakuten: Question[] = [
       "pu",
       "ge"
     ],
-    "correctAnswer": "ze"
+    "answer": "ze"
   },
   {
     "question": "What is the katakana for \"zo\"?",
@@ -189,7 +189,7 @@ const katakanaDakuten: Question[] = [
       "ゾ",
       "グ"
     ],
-    "correctAnswer": "ゾ"
+    "answer": "ゾ"
   },
   {
     "question": "What is the romaji for \"ゾ\"?",
@@ -199,7 +199,7 @@ const katakanaDakuten: Question[] = [
       "zo",
       "do"
     ],
-    "correctAnswer": "zo"
+    "answer": "zo"
   },
   {
     "question": "What is the katakana for \"da\"?",
@@ -209,7 +209,7 @@ const katakanaDakuten: Question[] = [
       "ヂ",
       "ダ"
     ],
-    "correctAnswer": "ダ"
+    "answer": "ダ"
   },
   {
     "question": "What is the romaji for \"ダ\"?",
@@ -219,7 +219,7 @@ const katakanaDakuten: Question[] = [
       "da",
       "pa"
     ],
-    "correctAnswer": "da"
+    "answer": "da"
   },
   {
     "question": "What is the katakana for \"ji\"?",
@@ -229,7 +229,7 @@ const katakanaDakuten: Question[] = [
       "ギ",
       "プ"
     ],
-    "correctAnswer": "ヂ"
+    "answer": "ヂ"
   },
   {
     "question": "What is the romaji for \"ヂ\"?",
@@ -239,7 +239,7 @@ const katakanaDakuten: Question[] = [
       "zu",
       "de"
     ],
-    "correctAnswer": "ji"
+    "answer": "ji"
   },
   {
     "question": "What is the katakana for \"zu\"?",
@@ -249,7 +249,7 @@ const katakanaDakuten: Question[] = [
       "ヅ",
       "ジ"
     ],
-    "correctAnswer": "ヅ"
+    "answer": "ヅ"
   },
   {
     "question": "What is the romaji for \"ヅ\"?",
@@ -259,7 +259,7 @@ const katakanaDakuten: Question[] = [
       "bu",
       "zu"
     ],
-    "correctAnswer": "zu"
+    "answer": "zu"
   },
   {
     "question": "What is the katakana for \"de\"?",
@@ -269,7 +269,7 @@ const katakanaDakuten: Question[] = [
       "ビ",
       "ジ"
     ],
-    "correctAnswer": "デ"
+    "answer": "デ"
   },
   {
     "question": "What is the romaji for \"デ\"?",
@@ -279,7 +279,7 @@ const katakanaDakuten: Question[] = [
       "ji",
       "pu"
     ],
-    "correctAnswer": "de"
+    "answer": "de"
   },
   {
     "question": "What is the katakana for \"do\"?",
@@ -289,7 +289,7 @@ const katakanaDakuten: Question[] = [
       "ダ",
       "デ"
     ],
-    "correctAnswer": "ド"
+    "answer": "ド"
   },
   {
     "question": "What is the romaji for \"ド\"?",
@@ -299,7 +299,7 @@ const katakanaDakuten: Question[] = [
       "ji",
       "za"
     ],
-    "correctAnswer": "do"
+    "answer": "do"
   },
   {
     "question": "What is the katakana for \"ba\"?",
@@ -309,7 +309,7 @@ const katakanaDakuten: Question[] = [
       "ズ",
       "バ"
     ],
-    "correctAnswer": "バ"
+    "answer": "バ"
   },
   {
     "question": "What is the romaji for \"バ\"?",
@@ -319,7 +319,7 @@ const katakanaDakuten: Question[] = [
       "ji",
       "zu"
     ],
-    "correctAnswer": "ba"
+    "answer": "ba"
   },
   {
     "question": "What is the katakana for \"bi\"?",
@@ -329,7 +329,7 @@ const katakanaDakuten: Question[] = [
       "ビ",
       "デ"
     ],
-    "correctAnswer": "ビ"
+    "answer": "ビ"
   },
   {
     "question": "What is the romaji for \"ビ\"?",
@@ -339,7 +339,7 @@ const katakanaDakuten: Question[] = [
       "de",
       "bi"
     ],
-    "correctAnswer": "bi"
+    "answer": "bi"
   },
   {
     "question": "What is the katakana for \"bu\"?",
@@ -349,7 +349,7 @@ const katakanaDakuten: Question[] = [
       "ブ",
       "ガ"
     ],
-    "correctAnswer": "ブ"
+    "answer": "ブ"
   },
   {
     "question": "What is the romaji for \"ブ\"?",
@@ -359,7 +359,7 @@ const katakanaDakuten: Question[] = [
       "de",
       "po"
     ],
-    "correctAnswer": "bu"
+    "answer": "bu"
   },
   {
     "question": "What is the katakana for \"be\"?",
@@ -369,7 +369,7 @@ const katakanaDakuten: Question[] = [
       "ベ",
       "ジ"
     ],
-    "correctAnswer": "ベ"
+    "answer": "ベ"
   },
   {
     "question": "What is the romaji for \"ベ\"?",
@@ -379,7 +379,7 @@ const katakanaDakuten: Question[] = [
       "do",
       "pu"
     ],
-    "correctAnswer": "be"
+    "answer": "be"
   },
   {
     "question": "What is the katakana for \"bo\"?",
@@ -389,7 +389,7 @@ const katakanaDakuten: Question[] = [
       "ポ",
       "パ"
     ],
-    "correctAnswer": "ボ"
+    "answer": "ボ"
   },
   {
     "question": "What is the romaji for \"ボ\"?",
@@ -399,7 +399,7 @@ const katakanaDakuten: Question[] = [
       "pi",
       "bo"
     ],
-    "correctAnswer": "bo"
+    "answer": "bo"
   },
   {
     "question": "What is the katakana for \"pa\"?",
@@ -409,7 +409,7 @@ const katakanaDakuten: Question[] = [
       "パ",
       "ギ"
     ],
-    "correctAnswer": "パ"
+    "answer": "パ"
   },
   {
     "question": "What is the romaji for \"パ\"?",
@@ -419,7 +419,7 @@ const katakanaDakuten: Question[] = [
       "do",
       "pa"
     ],
-    "correctAnswer": "pa"
+    "answer": "pa"
   },
   {
     "question": "What is the katakana for \"pi\"?",
@@ -429,7 +429,7 @@ const katakanaDakuten: Question[] = [
       "ポ",
       "ベ"
     ],
-    "correctAnswer": "ピ"
+    "answer": "ピ"
   },
   {
     "question": "What is the romaji for \"ピ\"?",
@@ -439,7 +439,7 @@ const katakanaDakuten: Question[] = [
       "gi",
       "pi"
     ],
-    "correctAnswer": "pi"
+    "answer": "pi"
   },
   {
     "question": "What is the katakana for \"pu\"?",
@@ -449,7 +449,7 @@ const katakanaDakuten: Question[] = [
       "ペ",
       "プ"
     ],
-    "correctAnswer": "プ"
+    "answer": "プ"
   },
   {
     "question": "What is the romaji for \"プ\"?",
@@ -459,7 +459,7 @@ const katakanaDakuten: Question[] = [
       "ga",
       "ge"
     ],
-    "correctAnswer": "pu"
+    "answer": "pu"
   },
   {
     "question": "What is the katakana for \"pe\"?",
@@ -469,7 +469,7 @@ const katakanaDakuten: Question[] = [
       "ペ",
       "ボ"
     ],
-    "correctAnswer": "ペ"
+    "answer": "ペ"
   },
   {
     "question": "What is the romaji for \"ペ\"?",
@@ -479,7 +479,7 @@ const katakanaDakuten: Question[] = [
       "zu",
       "ba"
     ],
-    "correctAnswer": "pe"
+    "answer": "pe"
   },
   {
     "question": "What is the katakana for \"po\"?",
@@ -489,7 +489,7 @@ const katakanaDakuten: Question[] = [
       "ポ",
       "ゲ"
     ],
-    "correctAnswer": "ポ"
+    "answer": "ポ"
   },
   {
     "question": "What is the romaji for \"ポ\"?",
@@ -499,7 +499,7 @@ const katakanaDakuten: Question[] = [
       "po",
       "gi"
     ],
-    "correctAnswer": "po"
+    "answer": "po"
   }
 ]
 

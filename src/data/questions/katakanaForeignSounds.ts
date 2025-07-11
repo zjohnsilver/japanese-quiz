@@ -9,7 +9,7 @@ const katakanaForeignSounds: Question[] = [
       "ウィ",
       "ウォ"
     ],
-    "correctAnswer": "ウィ"
+    "answer": "ウィ"
   },
   {
     "question": "What is the romaji for \"ウィ\"?",
@@ -19,7 +19,7 @@ const katakanaForeignSounds: Question[] = [
       "tso",
       "je"
     ],
-    "correctAnswer": "wi"
+    "answer": "wi"
   },
   {
     "question": "What is the katakana for \"we\"?",
@@ -29,7 +29,7 @@ const katakanaForeignSounds: Question[] = [
       "ファ",
       "ウェ"
     ],
-    "correctAnswer": "ウェ"
+    "answer": "ウェ"
   },
   {
     "question": "What is the romaji for \"ウェ\"?",
@@ -39,7 +39,7 @@ const katakanaForeignSounds: Question[] = [
       "fi",
       "tso"
     ],
-    "correctAnswer": "we"
+    "answer": "we"
   },
   {
     "question": "What is the katakana for \"wo\"?",
@@ -49,7 +49,7 @@ const katakanaForeignSounds: Question[] = [
       "ウォ",
       "ツァ"
     ],
-    "correctAnswer": "ウォ"
+    "answer": "ウォ"
   },
   {
     "question": "What is the romaji for \"ウォ\"?",
@@ -59,7 +59,7 @@ const katakanaForeignSounds: Question[] = [
       "che",
       "tso"
     ],
-    "correctAnswer": "wo"
+    "answer": "wo"
   },
   {
     "question": "What is the katakana for \"ti\"?",
@@ -69,7 +69,7 @@ const katakanaForeignSounds: Question[] = [
       "ウォ",
       "ティ"
     ],
-    "correctAnswer": "ティ"
+    "answer": "ティ"
   },
   {
     "question": "What is the romaji for \"ティ\"?",
@@ -79,7 +79,7 @@ const katakanaForeignSounds: Question[] = [
       "tsi",
       "wi"
     ],
-    "correctAnswer": "ti"
+    "answer": "ti"
   },
   {
     "question": "What is the katakana for \"di\"?",
@@ -89,7 +89,7 @@ const katakanaForeignSounds: Question[] = [
       "ディ",
       "チェ"
     ],
-    "correctAnswer": "ディ"
+    "answer": "ディ"
   },
   {
     "question": "What is the romaji for \"ディ\"?",
@@ -99,7 +99,7 @@ const katakanaForeignSounds: Question[] = [
       "vu",
       "ti"
     ],
-    "correctAnswer": "di"
+    "answer": "di"
   },
   {
     "question": "What is the katakana for \"che\"?",
@@ -109,7 +109,7 @@ const katakanaForeignSounds: Question[] = [
       "ツォ",
       "ジェ"
     ],
-    "correctAnswer": "チェ"
+    "answer": "チェ"
   },
   {
     "question": "What is the romaji for \"チェ\"?",
@@ -119,7 +119,7 @@ const katakanaForeignSounds: Question[] = [
       "fa",
       "tso"
     ],
-    "correctAnswer": "che"
+    "answer": "che"
   },
   {
     "question": "What is the katakana for \"je\"?",
@@ -129,7 +129,7 @@ const katakanaForeignSounds: Question[] = [
       "シェ",
       "ツィ"
     ],
-    "correctAnswer": "ジェ"
+    "answer": "ジェ"
   },
   {
     "question": "What is the romaji for \"ジェ\"?",
@@ -139,7 +139,7 @@ const katakanaForeignSounds: Question[] = [
       "fa",
       "fo"
     ],
-    "correctAnswer": "je"
+    "answer": "je"
   },
   {
     "question": "What is the katakana for \"she\"?",
@@ -149,7 +149,7 @@ const katakanaForeignSounds: Question[] = [
       "シェ",
       "ティ"
     ],
-    "correctAnswer": "シェ"
+    "answer": "シェ"
   },
   {
     "question": "What is the romaji for \"シェ\"?",
@@ -159,7 +159,7 @@ const katakanaForeignSounds: Question[] = [
       "fe",
       "che"
     ],
-    "correctAnswer": "she"
+    "answer": "she"
   },
   {
     "question": "What is the katakana for \"tsa\"?",
@@ -169,7 +169,7 @@ const katakanaForeignSounds: Question[] = [
       "フォ",
       "ウェ"
     ],
-    "correctAnswer": "ツァ"
+    "answer": "ツァ"
   },
   {
     "question": "What is the romaji for \"ツァ\"?",
@@ -179,7 +179,7 @@ const katakanaForeignSounds: Question[] = [
       "fo",
       "ti"
     ],
-    "correctAnswer": "tsa"
+    "answer": "tsa"
   },
   {
     "question": "What is the katakana for \"tsi\"?",
@@ -189,7 +189,7 @@ const katakanaForeignSounds: Question[] = [
       "ディ",
       "チェ"
     ],
-    "correctAnswer": "ツィ"
+    "answer": "ツィ"
   },
   {
     "question": "What is the romaji for \"ツィ\"?",
@@ -199,7 +199,7 @@ const katakanaForeignSounds: Question[] = [
       "fi",
       "ti"
     ],
-    "correctAnswer": "tsi"
+    "answer": "tsi"
   },
   {
     "question": "What is the katakana for \"tse\"?",
@@ -209,7 +209,7 @@ const katakanaForeignSounds: Question[] = [
       "ヴ",
       "ツァ"
     ],
-    "correctAnswer": "ツェ"
+    "answer": "ツェ"
   },
   {
     "question": "What is the romaji for \"ツェ\"?",
@@ -219,7 +219,7 @@ const katakanaForeignSounds: Question[] = [
       "tso",
       "tse"
     ],
-    "correctAnswer": "tse"
+    "answer": "tse"
   },
   {
     "question": "What is the katakana for \"tso\"?",
@@ -229,7 +229,7 @@ const katakanaForeignSounds: Question[] = [
       "ツォ",
       "ウェ"
     ],
-    "correctAnswer": "ツォ"
+    "answer": "ツォ"
   },
   {
     "question": "What is the romaji for \"ツォ\"?",
@@ -239,7 +239,7 @@ const katakanaForeignSounds: Question[] = [
       "fe",
       "fyu"
     ],
-    "correctAnswer": "tso"
+    "answer": "tso"
   },
   {
     "question": "What is the katakana for \"vu\"?",
@@ -249,7 +249,7 @@ const katakanaForeignSounds: Question[] = [
       "ウォ",
       "ツィ"
     ],
-    "correctAnswer": "ヴ"
+    "answer": "ヴ"
   },
   {
     "question": "What is the romaji for \"ヴ\"?",
@@ -259,7 +259,7 @@ const katakanaForeignSounds: Question[] = [
       "tse",
       "vu"
     ],
-    "correctAnswer": "vu"
+    "answer": "vu"
   },
   {
     "question": "What is the katakana for \"fa\"?",
@@ -269,7 +269,7 @@ const katakanaForeignSounds: Question[] = [
       "ツェ",
       "フォ"
     ],
-    "correctAnswer": "ファ"
+    "answer": "ファ"
   },
   {
     "question": "What is the romaji for \"ファ\"?",
@@ -279,7 +279,7 @@ const katakanaForeignSounds: Question[] = [
       "je",
       "fa"
     ],
-    "correctAnswer": "fa"
+    "answer": "fa"
   },
   {
     "question": "What is the katakana for \"fi\"?",
@@ -289,7 +289,7 @@ const katakanaForeignSounds: Question[] = [
       "ウィ",
       "ティ"
     ],
-    "correctAnswer": "フィ"
+    "answer": "フィ"
   },
   {
     "question": "What is the romaji for \"フィ\"?",
@@ -299,7 +299,7 @@ const katakanaForeignSounds: Question[] = [
       "ti",
       "tsi"
     ],
-    "correctAnswer": "fi"
+    "answer": "fi"
   },
   {
     "question": "What is the katakana for \"fe\"?",
@@ -309,7 +309,7 @@ const katakanaForeignSounds: Question[] = [
       "ヴ",
       "ツォ"
     ],
-    "correctAnswer": "フェ"
+    "answer": "フェ"
   },
   {
     "question": "What is the romaji for \"フェ\"?",
@@ -319,7 +319,7 @@ const katakanaForeignSounds: Question[] = [
       "wi",
       "fe"
     ],
-    "correctAnswer": "fe"
+    "answer": "fe"
   },
   {
     "question": "What is the katakana for \"fo\"?",
@@ -329,7 +329,7 @@ const katakanaForeignSounds: Question[] = [
       "ウォ",
       "フォ"
     ],
-    "correctAnswer": "フォ"
+    "answer": "フォ"
   },
   {
     "question": "What is the romaji for \"フォ\"?",
@@ -339,7 +339,7 @@ const katakanaForeignSounds: Question[] = [
       "che",
       "fo"
     ],
-    "correctAnswer": "fo"
+    "answer": "fo"
   },
   {
     "question": "What is the katakana for \"fyu\"?",
@@ -349,7 +349,7 @@ const katakanaForeignSounds: Question[] = [
       "ファ",
       "ティ"
     ],
-    "correctAnswer": "フュ"
+    "answer": "フュ"
   },
   {
     "question": "What is the romaji for \"フュ\"?",
@@ -359,7 +359,7 @@ const katakanaForeignSounds: Question[] = [
       "tsi",
       "we"
     ],
-    "correctAnswer": "fyu"
+    "answer": "fyu"
   }
 ]
 

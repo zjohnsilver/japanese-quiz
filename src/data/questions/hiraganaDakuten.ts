@@ -9,7 +9,7 @@ const hiraganaDakuten: Question[] = [
       "ど",
       "が"
     ],
-    "correctAnswer": "が"
+    "answer": "が"
   },
   {
     "question": "What is the hiragana for \"gi\"?",
@@ -19,7 +19,7 @@ const hiraganaDakuten: Question[] = [
       "じ",
       "ぎ"
     ],
-    "correctAnswer": "ぎ"
+    "answer": "ぎ"
   },
   {
     "question": "What is the hiragana for \"gu\"?",
@@ -29,7 +29,7 @@ const hiraganaDakuten: Question[] = [
       "が",
       "ぐ"
     ],
-    "correctAnswer": "ぐ"
+    "answer": "ぐ"
   },
   {
     "question": "What is the hiragana for \"ge\"?",
@@ -39,7 +39,7 @@ const hiraganaDakuten: Question[] = [
       "ぱ",
       "べ"
     ],
-    "correctAnswer": "げ"
+    "answer": "げ"
   },
   {
     "question": "What is the hiragana for \"go\"?",
@@ -49,7 +49,7 @@ const hiraganaDakuten: Question[] = [
       "ご",
       "ぱ"
     ],
-    "correctAnswer": "ご"
+    "answer": "ご"
   },
   {
     "question": "What is the hiragana for \"za\"?",
@@ -59,7 +59,7 @@ const hiraganaDakuten: Question[] = [
       "ぷ",
       "ぢ"
     ],
-    "correctAnswer": "ざ"
+    "answer": "ざ"
   },
   {
     "question": "What is the hiragana for \"ji\"?",
@@ -69,7 +69,7 @@ const hiraganaDakuten: Question[] = [
       "ぢ",
       "ぶ"
     ],
-    "correctAnswer": "じ"
+    "answer": "じ"
   },
   {
     "question": "What is the hiragana for \"zu\"?",
@@ -79,7 +79,7 @@ const hiraganaDakuten: Question[] = [
       "ざ",
       "ど"
     ],
-    "correctAnswer": "ず"
+    "answer": "ず"
   },
   {
     "question": "What is the hiragana for \"ze\"?",
@@ -89,7 +89,7 @@ const hiraganaDakuten: Question[] = [
       "ぜ",
       "ぷ"
     ],
-    "correctAnswer": "ぜ"
+    "answer": "ぜ"
   },
   {
     "question": "What is the hiragana for \"zo\"?",
@@ -99,7 +99,7 @@ const hiraganaDakuten: Question[] = [
       "べ",
       "ぐ"
     ],
-    "correctAnswer": "ぞ"
+    "answer": "ぞ"
   },
   {
     "question": "What is the hiragana for \"da\"?",
@@ -109,7 +109,7 @@ const hiraganaDakuten: Question[] = [
       "だ",
       "び"
     ],
-    "correctAnswer": "だ"
+    "answer": "だ"
   },
   {
     "question": "What is the hiragana for \"ji\"?",
@@ -119,7 +119,7 @@ const hiraganaDakuten: Question[] = [
       "ぷ",
       "ず"
     ],
-    "correctAnswer": "ぢ"
+    "answer": "ぢ"
   },
   {
     "question": "What is the hiragana for \"zu\"?",
@@ -129,7 +129,7 @@ const hiraganaDakuten: Question[] = [
       "ぐ",
       "ぜ"
     ],
-    "correctAnswer": "づ"
+    "answer": "づ"
   },
   {
     "question": "What is the hiragana for \"de\"?",
@@ -139,7 +139,7 @@ const hiraganaDakuten: Question[] = [
       "ず",
       "ぜ"
     ],
-    "correctAnswer": "で"
+    "answer": "で"
   },
   {
     "question": "What is the hiragana for \"do\"?",
@@ -149,7 +149,7 @@ const hiraganaDakuten: Question[] = [
       "び",
       "ぷ"
     ],
-    "correctAnswer": "ど"
+    "answer": "ど"
   },
   {
     "question": "What is the hiragana for \"ba\"?",
@@ -159,7 +159,7 @@ const hiraganaDakuten: Question[] = [
       "ば",
       "び"
     ],
-    "correctAnswer": "ば"
+    "answer": "ば"
   },
   {
     "question": "What is the hiragana for \"bi\"?",
@@ -169,7 +169,7 @@ const hiraganaDakuten: Question[] = [
       "び",
       "べ"
     ],
-    "correctAnswer": "び"
+    "answer": "び"
   },
   {
     "question": "What is the hiragana for \"bu\"?",
@@ -179,7 +179,7 @@ const hiraganaDakuten: Question[] = [
       "ぶ",
       "げ"
     ],
-    "correctAnswer": "ぶ"
+    "answer": "ぶ"
   },
   {
     "question": "What is the hiragana for \"be\"?",
@@ -189,7 +189,7 @@ const hiraganaDakuten: Question[] = [
       "ぽ",
       "げ"
     ],
-    "correctAnswer": "べ"
+    "answer": "べ"
   },
   {
     "question": "What is the hiragana for \"bo\"?",
@@ -199,7 +199,7 @@ const hiraganaDakuten: Question[] = [
       "ど",
       "ぼ"
     ],
-    "correctAnswer": "ぼ"
+    "answer": "ぼ"
   },
   {
     "question": "What is the hiragana for \"pa\"?",
@@ -209,7 +209,7 @@ const hiraganaDakuten: Question[] = [
       "ぜ",
       "で"
     ],
-    "correctAnswer": "ぱ"
+    "answer": "ぱ"
   },
   {
     "question": "What is the hiragana for \"pi\"?",
@@ -219,7 +219,7 @@ const hiraganaDakuten: Question[] = [
       "づ",
       "ぽ"
     ],
-    "correctAnswer": "ぴ"
+    "answer": "ぴ"
   },
   {
     "question": "What is the hiragana for \"pu\"?",
@@ -229,7 +229,7 @@ const hiraganaDakuten: Question[] = [
       "ず",
       "ど"
     ],
-    "correctAnswer": "ぷ"
+    "answer": "ぷ"
   },
   {
     "question": "What is the hiragana for \"pe\"?",
@@ -239,7 +239,7 @@ const hiraganaDakuten: Question[] = [
       "ぺ",
       "ぼ"
     ],
-    "correctAnswer": "ぺ"
+    "answer": "ぺ"
   },
   {
     "question": "What is the hiragana for \"po\"?",
@@ -249,7 +249,7 @@ const hiraganaDakuten: Question[] = [
       "ぽ",
       "ぱ"
     ],
-    "correctAnswer": "ぽ"
+    "answer": "ぽ"
   }
 ]
 

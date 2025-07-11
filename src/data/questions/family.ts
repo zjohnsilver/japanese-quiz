@@ -9,7 +9,7 @@ const family: Question[] = [
       "奥さん",
       "兄弟"
     ],
-    "correctAnswer": "父"
+    "answer": "父"
   },
   {
     "question": "Which kanji represents \"oniisan\"?",
@@ -19,7 +19,7 @@ const family: Question[] = [
       "奥さん",
       "兄"
     ],
-    "correctAnswer": "兄"
+    "answer": "兄"
   },
   {
     "question": "What does \"姉\" mean?",
@@ -29,7 +29,7 @@ const family: Question[] = [
       "husband",
       "family"
     ],
-    "correctAnswer": "older sister"
+    "answer": "older sister"
   },
   {
     "question": "What is the Japanese word for \"younger brother\"?",
@@ -39,7 +39,7 @@ const family: Question[] = [
       "okusan",
       "ane"
     ],
-    "correctAnswer": "otouto"
+    "answer": "otouto"
   },
   {
     "question": "What does 'お姉さん' mean?",
@@ -49,7 +49,7 @@ const family: Question[] = [
       "wife",
       "mother"
     ],
-    "correctAnswer": "older sister"
+    "answer": "older sister"
   },
 
 
@@ -61,7 +61,7 @@ const family: Question[] = [
       "奥さん",
       "お父さん"
     ],
-    "correctAnswer": "ご主人"
+    "answer": "ご主人"
   },
   {
     "question": "What does \"父\" mean?",
@@ -71,7 +71,7 @@ const family: Question[] = [
       "sisters",
       "younger sister"
     ],
-    "correctAnswer": "father"
+    "answer": "father"
   },
   {
     "question": "How do you write \"otousan\" in Hiragana?",
@@ -81,7 +81,7 @@ const family: Question[] = [
       "あね",
       "ともだち"
     ],
-    "correctAnswer": "おとうさん"
+    "answer": "おとうさん"
   },
   {
     "question": "What is the Japanese word for \"older sister\"?",
@@ -91,7 +91,7 @@ const family: Question[] = [
       "chichi",
       "shimai"
     ],
-    "correctAnswer": "ane"
+    "answer": "ane"
   },
   {
     "question": "What is the meaning of \"kodomo\"?",
@@ -101,7 +101,7 @@ const family: Question[] = [
       "wife",
       "older sister"
     ],
-    "correctAnswer": "child"
+    "answer": "child"
   },
   {
     "question": "What does \"弟\" mean?",
@@ -111,7 +111,7 @@ const family: Question[] = [
       "family",
       "wife"
     ],
-    "correctAnswer": "younger brother"
+    "answer": "younger brother"
   },
   {
     "question": "What is the meaning of \"imootosan\"?",
@@ -121,14 +121,14 @@ const family: Question[] = [
       "father",
       "mother"
     ],
-    "correctAnswer": "younger sister"
+    "answer": "younger sister"
   },
 
 
   {
     "question": "Which kanji corresponds to 'kyoudai'?",
     "options": ["兄弟", "姉妹", "父", "母"],
-    "correctAnswer": "兄弟"
+    "answer": "兄弟"
   },
   {
     "question": "Which word (with kanji) corresponds to \"oneesan\"?",
@@ -138,22 +138,22 @@ const family: Question[] = [
       "ご兄弟",
       "友達"
     ],
-    "correctAnswer": "お姉さん"
+    "answer": "お姉さん"
   },
   {
     "question": "Which kanji corresponds to 'ane'?",
     "options": ["姉", "妹", "母", "友"],
-    "correctAnswer": "姉"
+    "answer": "姉"
   },
   {
     "question": "How do you write 'gokazoku' in Hiragana?",
     "options": ["ごかぞく", "いもうとさん", "こども", "おとうと"],
-    "correctAnswer": "ごかぞく"
+    "answer": "ごかぞく"
   },
   {
     "question": "How do you write 'goshujin' in Hiragana?",
     "options": ["ごしゅじん", "しまい", "おとうとさん", "おねえさん"],
-    "correctAnswer": "ごしゅじん"
+    "answer": "ごしゅじん"
   },
   {
     "question": "What is the meaning of \"okusan\"?",
@@ -163,22 +163,22 @@ const family: Question[] = [
       "younger brother",
       "child"
     ],
-    "correctAnswer": "wife"
+    "answer": "wife"
   },
   {
     "question": "Which kanji corresponds to 'imouto'?",
     "options": ["妹", "姉", "母", "友"],
-    "correctAnswer": "妹"
+    "answer": "妹"
   },
   {
     "question": "Which kanji corresponds to 'tomodachi'?",
     "options": ["友達", "姉妹", "母", "父"],
-    "correctAnswer": "友達"
+    "answer": "友達"
   },
   {
     "question": "Which kanji corresponds to 'shimai'?",
     "options": ["姉妹", "兄弟", "母", "父"],
-    "correctAnswer": "姉妹"
+    "answer": "姉妹"
   },
   {
     "question": "What is the Japanese word for \"older sister\"?",
@@ -188,7 +188,7 @@ const family: Question[] = [
       "gokyoudai",
       "goshujin"
     ],
-    "correctAnswer": "oneesan"
+    "answer": "oneesan"
   },
 
 
@@ -200,7 +200,7 @@ const family: Question[] = [
       "husband",
       "younger sister"
     ],
-    "correctAnswer": "younger brother"
+    "answer": "younger brother"
   },
   {
     "question": "What is the meaning of \"ani\"?",
@@ -210,7 +210,7 @@ const family: Question[] = [
       "younger sister",
       "husband"
     ],
-    "correctAnswer": "older brother"
+    "answer": "older brother"
   },
   {
     "question": "What does the word \"弟さん\" mean?",
@@ -220,7 +220,7 @@ const family: Question[] = [
       "older brother",
       "wife"
     ],
-    "correctAnswer": "younger brother"
+    "answer": "younger brother"
   },
   {
     "question": "What is the Japanese word for 'otoutosan'?",
@@ -230,7 +230,7 @@ const family: Question[] = [
       "ご主人",
       "弟さん",      
     ],
-    "correctAnswer": "弟さん"
+    "answer": "弟さん"
   },
   {
     "question": "What does the kanji \"母\" mean?",
@@ -240,7 +240,7 @@ const family: Question[] = [
       "father",
       "wife"
     ],
-    "correctAnswer": "mother"
+    "answer": "mother"
   },
   {
     "question": "Which kanji corresponds to \"kazoku\"?",
@@ -250,7 +250,7 @@ const family: Question[] = [
       "奥さん",
       "お母さん"
     ],
-    "correctAnswer": "家族"
+    "answer": "家族"
   },
   {
     "question": "What does the word \"お兄さん\" mean?",
@@ -260,7 +260,7 @@ const family: Question[] = [
       "siblings",
       "older brother"
     ],
-    "correctAnswer": "older brother"
+    "answer": "older brother"
   },
   {
     "question": "How do you write \"gokyoudai\" in Hiragana?",
@@ -270,7 +270,7 @@ const family: Question[] = [
       "ちち",
       "おとうとさん"
     ],
-    "correctAnswer": "ごきょうだい"
+    "answer": "ごきょうだい"
   },
   {
     "question": "What does \"奥さん\" mean?",
@@ -280,7 +280,7 @@ const family: Question[] = [
       "younger brother",
       "siblings"
     ],
-    "correctAnswer": "wife"
+    "answer": "wife"
   },
   {
     "question": "Which kanji corresponds to \"gokazoku\"?",
@@ -290,7 +290,7 @@ const family: Question[] = [
       "兄弟",
       "弟さん"
     ],
-    "correctAnswer": "ご家族"
+    "answer": "ご家族"
   },
   {
     "question": "Which kanji corresponds to \"shujin\"?",
@@ -300,7 +300,7 @@ const family: Question[] = [
       "子供",
       "妹さん"
     ],
-    "correctAnswer": "主人"
+    "answer": "主人"
   },
   {
     "question": "What is the meaning of \"shimai\"?",
@@ -310,7 +310,7 @@ const family: Question[] = [
       "wife",
       "older brother"
     ],
-    "correctAnswer": "sisters"
+    "answer": "sisters"
   },
   {
     "question": "What is the Japanese word for \"wife\"?",
@@ -320,7 +320,7 @@ const family: Question[] = [
       "otouto",
       "goshujin"
     ],
-    "correctAnswer": "tsuma"
+    "answer": "tsuma"
   },
   {
     "question": "What is the meaning of \"oneesan\"?",
@@ -330,7 +330,7 @@ const family: Question[] = [
       "friend",
       "younger brother"
     ],
-    "correctAnswer": "older sister"
+    "answer": "older sister"
   },
   {
     "question": "Which kanji corresponds to \"okusan\"?",
@@ -340,7 +340,7 @@ const family: Question[] = [
       "弟",
       "ご主人"
     ],
-    "correctAnswer": "奥さん"
+    "answer": "奥さん"
   },
   {
     "question": "What is the meaning of \"tsuma\"?",
@@ -350,7 +350,7 @@ const family: Question[] = [
       "older sister",
       "child"
     ],
-    "correctAnswer": "wife"
+    "answer": "wife"
   },
   {
     "question": "Which kanji corresponds to \"imootosan\"?",
@@ -360,7 +360,7 @@ const family: Question[] = [
       "お母さん",
       "主人"
     ],
-    "correctAnswer": "妹さん"
+    "answer": "妹さん"
   },
   {
     "question": "What does \"妹さん\" mean?",
@@ -370,7 +370,7 @@ const family: Question[] = [
       "older brother",
       "siblings"
     ],
-    "correctAnswer": "younger sister"
+    "answer": "younger sister"
   },
   {
     "question": "What is the Japanese word for \"family\"?",
@@ -380,7 +380,7 @@ const family: Question[] = [
       "shujin",
       "oneesan"
     ],
-    "correctAnswer": "gokazoku"
+    "answer": "gokazoku"
   },
   {
     "question": "Which kanji corresponds to \"otouto\"?",
@@ -390,7 +390,7 @@ const family: Question[] = [
       "奥さん",
       "母"
     ],
-    "correctAnswer": "弟"
+    "answer": "弟"
   },
   {
     "question": "What is the Japanese word for \"father\"?",
@@ -400,7 +400,7 @@ const family: Question[] = [
       "gokyoudai",
       "okusan"
     ],
-    "correctAnswer": "chichi"
+    "answer": "chichi"
   },
   {
     "question": "What is the Japanese word for \"family\"?",
@@ -410,7 +410,7 @@ const family: Question[] = [
       "tsuma",
       "otouto"
     ],
-    "correctAnswer": "kazoku"
+    "answer": "kazoku"
   },
   {
     "question": "What does \"家族\" mean?",
@@ -420,7 +420,7 @@ const family: Question[] = [
       "mother",
       "wife"
     ],
-    "correctAnswer": "family"
+    "answer": "family"
   },
   {
     "question": "What is the meaning of \"ane\"?",
@@ -430,7 +430,7 @@ const family: Question[] = [
       "family",
       "wife"
     ],
-    "correctAnswer": "older sister"
+    "answer": "older sister"
   },
   {
     "question": "Which kanji corresponds to \"haha\"?",
@@ -440,7 +440,7 @@ const family: Question[] = [
       "主人",
       "お姉さん"
     ],
-    "correctAnswer": "母"
+    "answer": "母"
   },
   {
     "question": "What is the meaning of \"goshujin\"?",
@@ -450,7 +450,7 @@ const family: Question[] = [
       "younger brother",
       "mother"
     ],
-    "correctAnswer": "husband"
+    "answer": "husband"
   },
   {
     "question": "What is the Japanese word for \"child\"?",
@@ -460,7 +460,7 @@ const family: Question[] = [
       "haha",
       "otousan"
     ],
-    "correctAnswer": "kodomo"
+    "answer": "kodomo"
   },
   {
     "question": "What is the Japanese word for \"younger brother\"?",
@@ -470,7 +470,7 @@ const family: Question[] = [
       "chichi",
       "ani"
     ],
-    "correctAnswer": "otoutosan"
+    "answer": "otoutosan"
   },
   {
     "question": "Which kanji corresponds to \"kyoudai\"?",
@@ -480,7 +480,7 @@ const family: Question[] = [
       "兄",
       "弟"
     ],
-    "correctAnswer": "兄弟"
+    "answer": "兄弟"
   },
   {
     "question": "What is the meaning of \"okaasan\"?",
@@ -490,7 +490,7 @@ const family: Question[] = [
       "wife",
       "older sister"
     ],
-    "correctAnswer": "mother"
+    "answer": "mother"
   },
   {
     "question": "What is the Japanese word for \"older brother\"?",
@@ -500,7 +500,7 @@ const family: Question[] = [
       "otoutosan",
       "okaasan"
     ],
-    "correctAnswer": "ani"
+    "answer": "ani"
   },
   {
     "question": "What is the Japanese word for \"wife\"?",
@@ -510,7 +510,7 @@ const family: Question[] = [
       "otousan",
       "otouto"
     ],
-    "correctAnswer": "okusan"
+    "answer": "okusan"
   },
   {
     "question": "What does \"ご主人\" mean?",
@@ -520,7 +520,7 @@ const family: Question[] = [
       "siblings",
       "younger brother"
     ],
-    "correctAnswer": "husband"
+    "answer": "husband"
   },
   {
     "question": "What is the meaning of \"haha\"?",
@@ -530,7 +530,7 @@ const family: Question[] = [
       "friend",
       "younger brother"
     ],
-    "correctAnswer": "mother"
+    "answer": "mother"
   },
   {
     "question": "What is the Japanese word for \"mother\"?",
@@ -540,7 +540,7 @@ const family: Question[] = [
       "otouto",
       "haha"
     ],
-    "correctAnswer": "okaasan"
+    "answer": "okaasan"
   },
   {
     "question": "What is the Japanese word for \"younger sister\"?",
@@ -550,7 +550,7 @@ const family: Question[] = [
       "shimai",
       "imouto"
     ],
-    "correctAnswer": "imouto"
+    "answer": "imouto"
   },
   {
     "question": "What does \"お母さん\" mean?",
@@ -560,7 +560,7 @@ const family: Question[] = [
       "older brother",
       "child"
     ],
-    "correctAnswer": "mother"
+    "answer": "mother"
   },
   {
     "question": "What is the Japanese word for \"mother\"?",
@@ -570,7 +570,7 @@ const family: Question[] = [
       "gokyoudai",
       "kyoudai"
     ],
-    "correctAnswer": "haha"
+    "answer": "haha"
   },
   {
     "question": "How do you write \"oniisan\" in Hiragana?",
@@ -580,7 +580,7 @@ const family: Question[] = [
       "こども",
       "しゅじん"
     ],
-    "correctAnswer": "おにいさん"
+    "answer": "おにいさん"
   },
   {
     "question": "What does \"姉妹\" mean?",
@@ -590,7 +590,7 @@ const family: Question[] = [
       "child",
       "younger brother"
     ],
-    "correctAnswer": "sisters"
+    "answer": "sisters"
   },
   {
     "question": "Which kanji corresponds to \"ani\"?",
@@ -600,7 +600,7 @@ const family: Question[] = [
       "お父さん",
       "ご主人"
     ],
-    "correctAnswer": "兄"
+    "answer": "兄"
   },
   {
     "question": "What is the Japanese word for \"husband\"?",
@@ -610,7 +610,7 @@ const family: Question[] = [
       "kazoku",
       "haha"
     ],
-    "correctAnswer": "shujin"
+    "answer": "shujin"
   },
   {
     "question": "How do you write \"oneesan\" in Hiragana?",
@@ -620,7 +620,7 @@ const family: Question[] = [
       "きょうだい",
       "ごしゅじん"
     ],
-    "correctAnswer": "おねえさん"
+    "answer": "おねえさん"
   },
   {
     "question": "What is the meaning of \"tomodachi\"?",
@@ -630,7 +630,7 @@ const family: Question[] = [
       "sisters",
       "younger brother"
     ],
-    "correctAnswer": "friend"
+    "answer": "friend"
   },
   {
     "question": "What does \"兄弟\" mean?",
@@ -640,7 +640,7 @@ const family: Question[] = [
       "husband",
       "friend"
     ],
-    "correctAnswer": "siblings"
+    "answer": "siblings"
   },
   {
     "question": "What is the meaning of \"gokyoudai\"?",
@@ -650,7 +650,7 @@ const family: Question[] = [
       "family",
       "wife"
     ],
-    "correctAnswer": "siblings"
+    "answer": "siblings"
   },
   {
     "question": "What is the Japanese word for \"father\"?",
@@ -660,7 +660,7 @@ const family: Question[] = [
       "ane",
       "okaasan"
     ],
-    "correctAnswer": "otousan"
+    "answer": "otousan"
   },
   {
     "question": "What is the Japanese word for \"sisters\"?",
@@ -670,7 +670,7 @@ const family: Question[] = [
       "ani",
       "goshujin"
     ],
-    "correctAnswer": "shimai"
+    "answer": "shimai"
   },
   {
     "question": "What is the Japanese word for \"siblings\"?",
@@ -680,7 +680,7 @@ const family: Question[] = [
       "kodomo",
       "oneesan"
     ],
-    "correctAnswer": "kyoudai"
+    "answer": "kyoudai"
   },
   {
     "question": "What does \"主人\" mean?",
@@ -690,7 +690,7 @@ const family: Question[] = [
       "older brother",
       "younger brother"
     ],
-    "correctAnswer": "husband"
+    "answer": "husband"
   },
   {
     "question": "How do you write \"okaasan\" in Hiragana?",
@@ -700,7 +700,7 @@ const family: Question[] = [
       "いもうと",
       "はは"
     ],
-    "correctAnswer": "おかあさん"
+    "answer": "おかあさん"
   },
   {
     "question": "What is the Japanese word for \"husband\"?",
@@ -710,7 +710,7 @@ const family: Question[] = [
       "oneesan",
       "imouto"
     ],
-    "correctAnswer": "goshujin"
+    "answer": "goshujin"
   },
   {
     "question": "What is the meaning of \"kyoudai\"?",
@@ -720,7 +720,7 @@ const family: Question[] = [
       "older sister",
       "family"
     ],
-    "correctAnswer": "siblings"
+    "answer": "siblings"
   },
   {
     "question": "What is the meaning of \"gokazoku\"?",
@@ -730,7 +730,7 @@ const family: Question[] = [
       "older brother",
       "mother"
     ],
-    "correctAnswer": "family"
+    "answer": "family"
   },
   {
     "question": "What does \"友達\" mean?",
@@ -740,7 +740,7 @@ const family: Question[] = [
       "older brother",
       "younger sister"
     ],
-    "correctAnswer": "friend"
+    "answer": "friend"
   },
   {
     "question": "What does \"ご兄弟\" mean?",
@@ -749,7 +749,7 @@ const family: Question[] = [
       "child",
       "father"
     ],
-    "correctAnswer": "siblings"
+    "answer": "siblings"
   },
   {
     "question": "Which kanji corresponds to \"chichi\"?",
@@ -759,7 +759,7 @@ const family: Question[] = [
       "お父さん",
       "母"
     ],
-    "correctAnswer": "父"
+    "answer": "父"
   },
   {
     "question": "Which kanji corresponds to \"kodomo\"?",
@@ -769,7 +769,7 @@ const family: Question[] = [
       "父",
       "お姉さん"
     ],
-    "correctAnswer": "子供"
+    "answer": "子供"
   },
   {
     "question": "What does \"お父さん\" mean?",
@@ -779,7 +779,7 @@ const family: Question[] = [
       "mother",
       "younger brother"
     ],
-    "correctAnswer": "father"
+    "answer": "father"
   },
   {
     "question": "What is the Japanese word for \"younger sister\"?",
@@ -789,7 +789,7 @@ const family: Question[] = [
       "chichi",
       "oneesan"
     ],
-    "correctAnswer": "imootosan"
+    "answer": "imootosan"
   },
   {
     "question": "What does \"妻\" mean?",
@@ -799,7 +799,7 @@ const family: Question[] = [
       "older sister",
       "younger brother"
     ],
-    "correctAnswer": "wife"
+    "answer": "wife"
   },
   {
     "question": "What does \"子供\" mean?",
@@ -809,7 +809,7 @@ const family: Question[] = [
       "husband",
       "older sister"
     ],
-    "correctAnswer": "child"
+    "answer": "child"
   },
   {
     "question": "What is the meaning of \"chichi\"?",
@@ -819,7 +819,7 @@ const family: Question[] = [
       "friend",
       "sisters"
     ],
-    "correctAnswer": "father"
+    "answer": "father"
   },
   {
     "question": "What is the meaning of \"otouto\"?",
@@ -829,7 +829,7 @@ const family: Question[] = [
       "younger sister",
       "husband"
     ],
-    "correctAnswer": "younger brother"
+    "answer": "younger brother"
   },
   {
     "question": "What is the meaning of \"imouto\"?",
@@ -839,7 +839,7 @@ const family: Question[] = [
       "older brother",
       "father"
     ],
-    "correctAnswer": "younger sister"
+    "answer": "younger sister"
   },
   {
     "question": "What does \"兄\" mean?",
@@ -848,7 +848,7 @@ const family: Question[] = [
       "siblings",
       "family"
     ],
-    "correctAnswer": "older brother"
+    "answer": "older brother"
   },
   {
     "question": "What is the Japanese word for \"siblings\"?",
@@ -858,7 +858,7 @@ const family: Question[] = [
       "imootosan",
       "otousan"
     ],
-    "correctAnswer": "gokyoudai"
+    "answer": "gokyoudai"
   },
   {
     "question": "What is the meaning of \"oniisan\"?",
@@ -868,7 +868,7 @@ const family: Question[] = [
       "sisters",
       "younger brother"
     ],
-    "correctAnswer": "older brother"
+    "answer": "older brother"
   },
   {
     "question": "What is the Japanese word for \"friend\"?",
@@ -878,7 +878,7 @@ const family: Question[] = [
       "otoutosan",
       "otousan"
     ],
-    "correctAnswer": "tomodachi"
+    "answer": "tomodachi"
   },
   {
     "question": "What is the meaning of \"shujin\"?",
@@ -888,7 +888,7 @@ const family: Question[] = [
       "siblings",
       "wife"
     ],
-    "correctAnswer": "husband"
+    "answer": "husband"
   },
   {
     "question": "Which kanji corresponds to \"okaasan\"?",
@@ -898,7 +898,7 @@ const family: Question[] = [
       "兄弟",
       "ご家族"
     ],
-    "correctAnswer": "お母さん"
+    "answer": "お母さん"
   },
   {
     "question": "What does \"ご家族\" mean?",
@@ -908,7 +908,7 @@ const family: Question[] = [
       "younger brother",
       "mother"
     ],
-    "correctAnswer": "family"
+    "answer": "family"
   },
   {
     "question": "What is the meaning of \"kazoku\"?",
@@ -918,7 +918,7 @@ const family: Question[] = [
       "siblings",
       "older sister"
     ],
-    "correctAnswer": "family"
+    "answer": "family"
   },
   {
     "question": "Which kanji corresponds to \"tsuma\"?",
@@ -928,7 +928,7 @@ const family: Question[] = [
       "ご家族",
       "ご主人"
     ],
-    "correctAnswer": "妻"
+    "answer": "妻"
   },
   {
     "question": "What is the meaning of \"otousan\"?",
@@ -938,7 +938,7 @@ const family: Question[] = [
       "younger sister",
       "older brother"
     ],
-    "correctAnswer": "father"
+    "answer": "father"
   },
   {
     "question": "What is the Japanese word for \"older brother\"?",
@@ -948,7 +948,7 @@ const family: Question[] = [
       "gokyoudai",
       "tomodachi"
     ],
-    "correctAnswer": "oniisan"
+    "answer": "oniisan"
   },
   {
     "question": "What does \"妹\" mean?",
@@ -958,7 +958,7 @@ const family: Question[] = [
       "mother",
       "wife"
     ],
-    "correctAnswer": "younger sister"
+    "answer": "younger sister"
   },
   {
     "question": "Which kanji corresponds to \"ane\"?",
@@ -968,7 +968,7 @@ const family: Question[] = [
       "家族",
       "兄"
     ],
-    "correctAnswer": "姉"
+    "answer": "姉"
   }
 ];
 

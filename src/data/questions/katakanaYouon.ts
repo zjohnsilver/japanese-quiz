@@ -9,7 +9,7 @@ const katakanaYouon: Question[] = [
       "ジャ",
       "ミョ"
     ],
-    "correctAnswer": "キャ"
+    "answer": "キャ"
   },
   {
     "question": "What is the romaji for \"キャ\"?",
@@ -19,7 +19,7 @@ const katakanaYouon: Question[] = [
       "sho",
       "gya"
     ],
-    "correctAnswer": "kya"
+    "answer": "kya"
   },
   {
     "question": "What is the katakana for \"kyu\"?",
@@ -29,7 +29,7 @@ const katakanaYouon: Question[] = [
       "チャ",
       "キュ"
     ],
-    "correctAnswer": "キュ"
+    "answer": "キュ"
   },
   {
     "question": "What is the romaji for \"キュ\"?",
@@ -39,7 +39,7 @@ const katakanaYouon: Question[] = [
       "kyu",
       "myo"
     ],
-    "correctAnswer": "kyu"
+    "answer": "kyu"
   },
   {
     "question": "What is the katakana for \"kyo\"?",
@@ -49,7 +49,7 @@ const katakanaYouon: Question[] = [
       "リョ",
       "ニョ"
     ],
-    "correctAnswer": "キョ"
+    "answer": "キョ"
   },
   {
     "question": "What is the romaji for \"キョ\"?",
@@ -59,7 +59,7 @@ const katakanaYouon: Question[] = [
       "kyo",
       "pya"
     ],
-    "correctAnswer": "kyo"
+    "answer": "kyo"
   },
   {
     "question": "What is the katakana for \"sha\"?",
@@ -69,7 +69,7 @@ const katakanaYouon: Question[] = [
       "シャ",
       "ヒュ"
     ],
-    "correctAnswer": "シャ"
+    "answer": "シャ"
   },
   {
     "question": "What is the romaji for \"シャ\"?",
@@ -79,7 +79,7 @@ const katakanaYouon: Question[] = [
       "sha",
       "ju"
     ],
-    "correctAnswer": "sha"
+    "answer": "sha"
   },
   {
     "question": "What is the katakana for \"shu\"?",
@@ -89,7 +89,7 @@ const katakanaYouon: Question[] = [
       "ギュ",
       "ピュ"
     ],
-    "correctAnswer": "シュ"
+    "answer": "シュ"
   },
   {
     "question": "What is the romaji for \"シュ\"?",
@@ -99,7 +99,7 @@ const katakanaYouon: Question[] = [
       "shu",
       "pyo"
     ],
-    "correctAnswer": "shu"
+    "answer": "shu"
   },
   {
     "question": "What is the katakana for \"sho\"?",
@@ -109,7 +109,7 @@ const katakanaYouon: Question[] = [
       "ヒャ",
       "ギャ"
     ],
-    "correctAnswer": "ショ"
+    "answer": "ショ"
   },
   {
     "question": "What is the romaji for \"ショ\"?",
@@ -119,7 +119,7 @@ const katakanaYouon: Question[] = [
       "sho",
       "hyu"
     ],
-    "correctAnswer": "sho"
+    "answer": "sho"
   },
   {
     "question": "What is the katakana for \"cha\"?",
@@ -129,7 +129,7 @@ const katakanaYouon: Question[] = [
       "ニャ",
       "チャ"
     ],
-    "correctAnswer": "チャ"
+    "answer": "チャ"
   },
   {
     "question": "What is the romaji for \"チャ\"?",
@@ -139,7 +139,7 @@ const katakanaYouon: Question[] = [
       "mya",
       "kya"
     ],
-    "correctAnswer": "cha"
+    "answer": "cha"
   },
   {
     "question": "What is the katakana for \"chu\"?",
@@ -149,7 +149,7 @@ const katakanaYouon: Question[] = [
       "チュ",
       "ニョ"
     ],
-    "correctAnswer": "チュ"
+    "answer": "チュ"
   },
   {
     "question": "What is the romaji for \"チュ\"?",
@@ -159,7 +159,7 @@ const katakanaYouon: Question[] = [
       "byo",
       "ryo"
     ],
-    "correctAnswer": "chu"
+    "answer": "chu"
   },
   {
     "question": "What is the katakana for \"cho\"?",
@@ -169,7 +169,7 @@ const katakanaYouon: Question[] = [
       "チョ",
       "キョ"
     ],
-    "correctAnswer": "チョ"
+    "answer": "チョ"
   },
   {
     "question": "What is the romaji for \"チョ\"?",
@@ -179,7 +179,7 @@ const katakanaYouon: Question[] = [
       "chu",
       "cho"
     ],
-    "correctAnswer": "cho"
+    "answer": "cho"
   },
   {
     "question": "What is the katakana for \"nya\"?",
@@ -189,7 +189,7 @@ const katakanaYouon: Question[] = [
       "ニャ",
       "ビャ"
     ],
-    "correctAnswer": "ニャ"
+    "answer": "ニャ"
   },
   {
     "question": "What is the romaji for \"ニャ\"?",
@@ -199,7 +199,7 @@ const katakanaYouon: Question[] = [
       "sho",
       "nya"
     ],
-    "correctAnswer": "nya"
+    "answer": "nya"
   },
   {
     "question": "What is the katakana for \"nyu\"?",
@@ -209,7 +209,7 @@ const katakanaYouon: Question[] = [
       "ニュ",
       "ビュ"
     ],
-    "correctAnswer": "ニュ"
+    "answer": "ニュ"
   },
   {
     "question": "What is the romaji for \"ニュ\"?",
@@ -219,7 +219,7 @@ const katakanaYouon: Question[] = [
       "myu",
       "nyu"
     ],
-    "correctAnswer": "nyu"
+    "answer": "nyu"
   },
   {
     "question": "What is the katakana for \"nyo\"?",
@@ -229,7 +229,7 @@ const katakanaYouon: Question[] = [
       "ギャ",
       "ジュ"
     ],
-    "correctAnswer": "ニョ"
+    "answer": "ニョ"
   },
   {
     "question": "What is the romaji for \"ニョ\"?",
@@ -239,7 +239,7 @@ const katakanaYouon: Question[] = [
       "kyo",
       "nyo"
     ],
-    "correctAnswer": "nyo"
+    "answer": "nyo"
   },
   {
     "question": "What is the katakana for \"hya\"?",
@@ -249,7 +249,7 @@ const katakanaYouon: Question[] = [
       "ヒャ",
       "ミャ"
     ],
-    "correctAnswer": "ヒャ"
+    "answer": "ヒャ"
   },
   {
     "question": "What is the romaji for \"ヒャ\"?",
@@ -259,7 +259,7 @@ const katakanaYouon: Question[] = [
       "hya",
       "myu"
     ],
-    "correctAnswer": "hya"
+    "answer": "hya"
   },
   {
     "question": "What is the katakana for \"hyu\"?",
@@ -269,7 +269,7 @@ const katakanaYouon: Question[] = [
       "ヒュ",
       "ビャ"
     ],
-    "correctAnswer": "ヒュ"
+    "answer": "ヒュ"
   },
   {
     "question": "What is the romaji for \"ヒュ\"?",
@@ -279,7 +279,7 @@ const katakanaYouon: Question[] = [
       "hyu",
       "rya"
     ],
-    "correctAnswer": "hyu"
+    "answer": "hyu"
   },
   {
     "question": "What is the katakana for \"hyo\"?",
@@ -289,7 +289,7 @@ const katakanaYouon: Question[] = [
       "ニュ",
       "ヒョ"
     ],
-    "correctAnswer": "ヒョ"
+    "answer": "ヒョ"
   },
   {
     "question": "What is the romaji for \"ヒョ\"?",
@@ -299,7 +299,7 @@ const katakanaYouon: Question[] = [
       "kyu",
       "nyu"
     ],
-    "correctAnswer": "hyo"
+    "answer": "hyo"
   },
   {
     "question": "What is the katakana for \"mya\"?",
@@ -309,7 +309,7 @@ const katakanaYouon: Question[] = [
       "ビャ",
       "キュ"
     ],
-    "correctAnswer": "ミャ"
+    "answer": "ミャ"
   },
   {
     "question": "What is the romaji for \"ミャ\"?",
@@ -319,7 +319,7 @@ const katakanaYouon: Question[] = [
       "ju",
       "pyo"
     ],
-    "correctAnswer": "mya"
+    "answer": "mya"
   },
   {
     "question": "What is the katakana for \"myu\"?",
@@ -329,7 +329,7 @@ const katakanaYouon: Question[] = [
       "リャ",
       "ニョ"
     ],
-    "correctAnswer": "ミュ"
+    "answer": "ミュ"
   },
   {
     "question": "What is the romaji for \"ミュ\"?",
@@ -339,7 +339,7 @@ const katakanaYouon: Question[] = [
       "myu",
       "kya"
     ],
-    "correctAnswer": "myu"
+    "answer": "myu"
   },
   {
     "question": "What is the katakana for \"myo\"?",
@@ -349,7 +349,7 @@ const katakanaYouon: Question[] = [
       "ギャ",
       "キュ"
     ],
-    "correctAnswer": "ミョ"
+    "answer": "ミョ"
   },
   {
     "question": "What is the romaji for \"ミョ\"?",
@@ -359,7 +359,7 @@ const katakanaYouon: Question[] = [
       "bya",
       "ju"
     ],
-    "correctAnswer": "myo"
+    "answer": "myo"
   },
   {
     "question": "What is the katakana for \"rya\"?",
@@ -369,7 +369,7 @@ const katakanaYouon: Question[] = [
       "ジョ",
       "ニャ"
     ],
-    "correctAnswer": "リャ"
+    "answer": "リャ"
   },
   {
     "question": "What is the romaji for \"リャ\"?",
@@ -379,7 +379,7 @@ const katakanaYouon: Question[] = [
       "nyu",
       "byu"
     ],
-    "correctAnswer": "rya"
+    "answer": "rya"
   },
   {
     "question": "What is the katakana for \"ryu\"?",
@@ -389,7 +389,7 @@ const katakanaYouon: Question[] = [
       "ミョ",
       "ギャ"
     ],
-    "correctAnswer": "リュ"
+    "answer": "リュ"
   },
   {
     "question": "What is the romaji for \"リュ\"?",
@@ -399,7 +399,7 @@ const katakanaYouon: Question[] = [
       "gyo",
       "shu"
     ],
-    "correctAnswer": "ryu"
+    "answer": "ryu"
   },
   {
     "question": "What is the katakana for \"ryo\"?",
@@ -409,7 +409,7 @@ const katakanaYouon: Question[] = [
       "ピャ",
       "リョ"
     ],
-    "correctAnswer": "リョ"
+    "answer": "リョ"
   },
   {
     "question": "What is the romaji for \"リョ\"?",
@@ -419,7 +419,7 @@ const katakanaYouon: Question[] = [
       "gyo",
       "nya"
     ],
-    "correctAnswer": "ryo"
+    "answer": "ryo"
   },
   {
     "question": "What is the katakana for \"gya\"?",
@@ -429,7 +429,7 @@ const katakanaYouon: Question[] = [
       "ギャ",
       "ジャ"
     ],
-    "correctAnswer": "ギャ"
+    "answer": "ギャ"
   },
   {
     "question": "What is the romaji for \"ギャ\"?",
@@ -439,7 +439,7 @@ const katakanaYouon: Question[] = [
       "gya",
       "chu"
     ],
-    "correctAnswer": "gya"
+    "answer": "gya"
   },
   {
     "question": "What is the katakana for \"gyu\"?",
@@ -449,7 +449,7 @@ const katakanaYouon: Question[] = [
       "ピュ",
       "ギュ"
     ],
-    "correctAnswer": "ギュ"
+    "answer": "ギュ"
   },
   {
     "question": "What is the romaji for \"ギュ\"?",
@@ -459,7 +459,7 @@ const katakanaYouon: Question[] = [
       "kya",
       "nya"
     ],
-    "correctAnswer": "gyu"
+    "answer": "gyu"
   },
   {
     "question": "What is the katakana for \"gyo\"?",
@@ -469,7 +469,7 @@ const katakanaYouon: Question[] = [
       "ニュ",
       "ニョ"
     ],
-    "correctAnswer": "ギョ"
+    "answer": "ギョ"
   },
   {
     "question": "What is the romaji for \"ギョ\"?",
@@ -479,7 +479,7 @@ const katakanaYouon: Question[] = [
       "gya",
       "gyo"
     ],
-    "correctAnswer": "gyo"
+    "answer": "gyo"
   },
   {
     "question": "What is the katakana for \"ja\"?",
@@ -489,7 +489,7 @@ const katakanaYouon: Question[] = [
       "ジャ",
       "ヒョ"
     ],
-    "correctAnswer": "ジャ"
+    "answer": "ジャ"
   },
   {
     "question": "What is the romaji for \"ジャ\"?",
@@ -499,7 +499,7 @@ const katakanaYouon: Question[] = [
       "ja",
       "hyo"
     ],
-    "correctAnswer": "ja"
+    "answer": "ja"
   },
   {
     "question": "What is the katakana for \"ju\"?",
@@ -509,7 +509,7 @@ const katakanaYouon: Question[] = [
       "ニャ",
       "ミャ"
     ],
-    "correctAnswer": "ジュ"
+    "answer": "ジュ"
   },
   {
     "question": "What is the romaji for \"ジュ\"?",
@@ -519,7 +519,7 @@ const katakanaYouon: Question[] = [
       "ju",
       "byu"
     ],
-    "correctAnswer": "ju"
+    "answer": "ju"
   },
   {
     "question": "What is the katakana for \"jo\"?",
@@ -529,7 +529,7 @@ const katakanaYouon: Question[] = [
       "ミョ",
       "ジョ"
     ],
-    "correctAnswer": "ジョ"
+    "answer": "ジョ"
   },
   {
     "question": "What is the romaji for \"ジョ\"?",
@@ -539,7 +539,7 @@ const katakanaYouon: Question[] = [
       "gyo",
       "jo"
     ],
-    "correctAnswer": "jo"
+    "answer": "jo"
   },
   {
     "question": "What is the katakana for \"bya\"?",
@@ -549,7 +549,7 @@ const katakanaYouon: Question[] = [
       "ギャ",
       "ピョ"
     ],
-    "correctAnswer": "ビャ"
+    "answer": "ビャ"
   },
   {
     "question": "What is the romaji for \"ビャ\"?",
@@ -559,7 +559,7 @@ const katakanaYouon: Question[] = [
       "rya",
       "bya"
     ],
-    "correctAnswer": "bya"
+    "answer": "bya"
   },
   {
     "question": "What is the katakana for \"byu\"?",
@@ -569,7 +569,7 @@ const katakanaYouon: Question[] = [
       "リョ",
       "ビュ"
     ],
-    "correctAnswer": "ビュ"
+    "answer": "ビュ"
   },
   {
     "question": "What is the romaji for \"ビュ\"?",
@@ -579,7 +579,7 @@ const katakanaYouon: Question[] = [
       "mya",
       "byu"
     ],
-    "correctAnswer": "byu"
+    "answer": "byu"
   },
   {
     "question": "What is the katakana for \"byo\"?",
@@ -589,7 +589,7 @@ const katakanaYouon: Question[] = [
       "ビョ",
       "キュ"
     ],
-    "correctAnswer": "ビョ"
+    "answer": "ビョ"
   },
   {
     "question": "What is the romaji for \"ビョ\"?",
@@ -599,7 +599,7 @@ const katakanaYouon: Question[] = [
       "cho",
       "byo"
     ],
-    "correctAnswer": "byo"
+    "answer": "byo"
   },
   {
     "question": "What is the katakana for \"pya\"?",
@@ -609,7 +609,7 @@ const katakanaYouon: Question[] = [
       "ピャ",
       "リョ"
     ],
-    "correctAnswer": "ピャ"
+    "answer": "ピャ"
   },
   {
     "question": "What is the romaji for \"ピャ\"?",
@@ -619,7 +619,7 @@ const katakanaYouon: Question[] = [
       "hyo",
       "cha"
     ],
-    "correctAnswer": "pya"
+    "answer": "pya"
   },
   {
     "question": "What is the katakana for \"pyu\"?",
@@ -629,7 +629,7 @@ const katakanaYouon: Question[] = [
       "キャ",
       "ピュ"
     ],
-    "correctAnswer": "ピュ"
+    "answer": "ピュ"
   },
   {
     "question": "What is the romaji for \"ピュ\"?",
@@ -639,7 +639,7 @@ const katakanaYouon: Question[] = [
       "pyu",
       "cha"
     ],
-    "correctAnswer": "pyu"
+    "answer": "pyu"
   },
   {
     "question": "What is the katakana for \"pyo\"?",
@@ -649,7 +649,7 @@ const katakanaYouon: Question[] = [
       "チョ",
       "ピョ"
     ],
-    "correctAnswer": "ピョ"
+    "answer": "ピョ"
   },
   {
     "question": "What is the romaji for \"ピョ\"?",
@@ -659,7 +659,7 @@ const katakanaYouon: Question[] = [
       "hya",
       "myu"
     ],
-    "correctAnswer": "pyo"
+    "answer": "pyo"
   }
 ]
 

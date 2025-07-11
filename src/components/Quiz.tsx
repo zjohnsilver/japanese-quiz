@@ -7,13 +7,17 @@ import { QuizCategoryEnum } from '@/src/enums/questions'
 import QuizCard from '@/src/components/QuizCard';
 
 const categoryColors: Record<string, string> = {
-  hiragana: 'purple',
-  katakana: 'magenta',
-  vocabulary: 'orange',
-  colors: 'cyan',
-  particleQuestions: 'green',
-  foodVocabulary: 'red',
-  family: 'pink'
+  'hiragana': 'plum',
+  'hiraganaDakuten': 'mediumorchid',
+  'hiraganaYouon': 'indigo',
+  'katakana': 'hotpink',
+  'katakanaDakuten': 'deeppink',
+  'katakanaYouon': 'orchid',
+  'katakanaForeignSounds': 'salmon',
+  'foodVocabulary': 'tomato',
+  'family': 'lightcoral',
+  'sentence': 'steelblue',
+  'colors': 'teal',
 };
 
 export default function Quiz({ selectedCategories }: { selectedCategories: QuizCategoryEnum[]; }) {
@@ -29,14 +33,14 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
 
   const question = questions[index];
   if (!question) return null;
-  const isCorrect = selected === question.correctAnswer;
+  const isCorrect = selected === question.answer;
   const isLast = index === total - 1;
 
   const handleAnswer = (answer: string) => {
     if (wasAnswered) return;
     setWasAnswered(true);
     setSelected(answer);
-    if (answer === question.correctAnswer) setScore((prev) => prev + 1);
+    if (answer === question.answer) setScore((prev) => prev + 1);
   };
 
   const handleNext = () => {

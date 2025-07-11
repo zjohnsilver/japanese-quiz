@@ -9,7 +9,7 @@ const hiraganaYouon: Question[] = [
       "きゃ",
       "ぎゅ"
     ],
-    "correctAnswer": "きゃ"
+    "answer": "きゃ"
   },
   {
     "question": "What is the hiragana for \"kyu\"?",
@@ -19,7 +19,7 @@ const hiraganaYouon: Question[] = [
       "ぎょ",
       "きゅ"
     ],
-    "correctAnswer": "きゅ"
+    "answer": "きゅ"
   },
   {
     "question": "What is the hiragana for \"kyo\"?",
@@ -29,7 +29,7 @@ const hiraganaYouon: Question[] = [
       "ちょ",
       "きょ"
     ],
-    "correctAnswer": "きょ"
+    "answer": "きょ"
   },
   {
     "question": "What is the hiragana for \"gya\"?",
@@ -39,7 +39,7 @@ const hiraganaYouon: Question[] = [
       "ぴゃ",
       "ぎゃ"
     ],
-    "correctAnswer": "ぎゃ"
+    "answer": "ぎゃ"
   },
   {
     "question": "What is the hiragana for \"gyu\"?",
@@ -49,7 +49,7 @@ const hiraganaYouon: Question[] = [
       "ひゅ",
       "しゃ"
     ],
-    "correctAnswer": "ぎゅ"
+    "answer": "ぎゅ"
   },
   {
     "question": "What is the hiragana for \"gyo\"?",
@@ -59,7 +59,7 @@ const hiraganaYouon: Question[] = [
       "きゅ",
       "びゅ"
     ],
-    "correctAnswer": "ぎょ"
+    "answer": "ぎょ"
   },
   {
     "question": "What is the hiragana for \"sha\"?",
@@ -69,7 +69,7 @@ const hiraganaYouon: Question[] = [
       "りょ",
       "しゃ"
     ],
-    "correctAnswer": "しゃ"
+    "answer": "しゃ"
   },
   {
     "question": "What is the hiragana for \"shu\"?",
@@ -79,7 +79,7 @@ const hiraganaYouon: Question[] = [
       "きゃ",
       "きゅ"
     ],
-    "correctAnswer": "しゅ"
+    "answer": "しゅ"
   },
   {
     "question": "What is the hiragana for \"sho\"?",
@@ -89,7 +89,7 @@ const hiraganaYouon: Question[] = [
       "しょ",
       "ちゃ"
     ],
-    "correctAnswer": "しょ"
+    "answer": "しょ"
   },
   {
     "question": "What is the hiragana for \"ja\"?",
@@ -99,7 +99,7 @@ const hiraganaYouon: Question[] = [
       "しゃ",
       "じゃ"
     ],
-    "correctAnswer": "じゃ"
+    "answer": "じゃ"
   },
   {
     "question": "What is the hiragana for \"ju\"?",
@@ -109,7 +109,7 @@ const hiraganaYouon: Question[] = [
       "ひょ",
       "ひゃ"
     ],
-    "correctAnswer": "じゅ"
+    "answer": "じゅ"
   },
   {
     "question": "What is the hiragana for \"jo\"?",
@@ -119,7 +119,7 @@ const hiraganaYouon: Question[] = [
       "ぎゅ",
       "じょ"
     ],
-    "correctAnswer": "じょ"
+    "answer": "じょ"
   },
   {
     "question": "What is the hiragana for \"cha\"?",
@@ -129,7 +129,7 @@ const hiraganaYouon: Question[] = [
       "にゃ",
       "ぴゃ"
     ],
-    "correctAnswer": "ちゃ"
+    "answer": "ちゃ"
   },
   {
     "question": "What is the hiragana for \"chu\"?",
@@ -139,7 +139,7 @@ const hiraganaYouon: Question[] = [
       "じゅ",
       "ぎゃ"
     ],
-    "correctAnswer": "ちゅ"
+    "answer": "ちゅ"
   },
   {
     "question": "What is the hiragana for \"cho\"?",
@@ -149,7 +149,7 @@ const hiraganaYouon: Question[] = [
       "ちょ",
       "にょ"
     ],
-    "correctAnswer": "ちょ"
+    "answer": "ちょ"
   },
   {
     "question": "What is the hiragana for \"nya\"?",
@@ -159,7 +159,7 @@ const hiraganaYouon: Question[] = [
       "みょ",
       "ちゅ"
     ],
-    "correctAnswer": "にゃ"
+    "answer": "にゃ"
   },
   {
     "question": "What is the hiragana for \"nyu\"?",
@@ -169,7 +169,7 @@ const hiraganaYouon: Question[] = [
       "にゅ",
       "しゅ"
     ],
-    "correctAnswer": "にゅ"
+    "answer": "にゅ"
   },
   {
     "question": "What is the hiragana for \"nyo\"?",
@@ -179,7 +179,7 @@ const hiraganaYouon: Question[] = [
       "ひゅ",
       "しゅ"
     ],
-    "correctAnswer": "にょ"
+    "answer": "にょ"
   },
   {
     "question": "What is the hiragana for \"hya\"?",
@@ -189,7 +189,7 @@ const hiraganaYouon: Question[] = [
       "みゃ",
       "ひゃ"
     ],
-    "correctAnswer": "ひゃ"
+    "answer": "ひゃ"
   },
   {
     "question": "What is the hiragana for \"hyu\"?",
@@ -199,7 +199,7 @@ const hiraganaYouon: Question[] = [
       "ぴゅ",
       "ひょ"
     ],
-    "correctAnswer": "ひゅ"
+    "answer": "ひゅ"
   },
   {
     "question": "What is the hiragana for \"hyo\"?",
@@ -209,7 +209,7 @@ const hiraganaYouon: Question[] = [
       "みゅ",
       "みゃ"
     ],
-    "correctAnswer": "ひょ"
+    "answer": "ひょ"
   },
   {
     "question": "What is the hiragana for \"bya\"?",
@@ -219,7 +219,7 @@ const hiraganaYouon: Question[] = [
       "びゃ",
       "ちゅ"
     ],
-    "correctAnswer": "びゃ"
+    "answer": "びゃ"
   },
   {
     "question": "What is the hiragana for \"byu\"?",
@@ -229,7 +229,7 @@ const hiraganaYouon: Question[] = [
       "にゅ",
       "びゅ"
     ],
-    "correctAnswer": "びゅ"
+    "answer": "びゅ"
   },
   {
     "question": "What is the hiragana for \"byo\"?",
@@ -239,7 +239,7 @@ const hiraganaYouon: Question[] = [
       "にゅ",
       "びょ"
     ],
-    "correctAnswer": "びょ"
+    "answer": "びょ"
   },
   {
     "question": "What is the hiragana for \"pya\"?",
@@ -249,7 +249,7 @@ const hiraganaYouon: Question[] = [
       "ちゃ",
       "ぎゃ"
     ],
-    "correctAnswer": "ぴゃ"
+    "answer": "ぴゃ"
   },
   {
     "question": "What is the hiragana for \"pyu\"?",
@@ -259,7 +259,7 @@ const hiraganaYouon: Question[] = [
       "ぴゅ",
       "しゃ"
     ],
-    "correctAnswer": "ぴゅ"
+    "answer": "ぴゅ"
   },
   {
     "question": "What is the hiragana for \"pyo\"?",
@@ -269,7 +269,7 @@ const hiraganaYouon: Question[] = [
       "ぴゃ",
       "きょ"
     ],
-    "correctAnswer": "ぴょ"
+    "answer": "ぴょ"
   },
   {
     "question": "What is the hiragana for \"mya\"?",
@@ -279,7 +279,7 @@ const hiraganaYouon: Question[] = [
       "ぎゅ",
       "しゃ"
     ],
-    "correctAnswer": "みゃ"
+    "answer": "みゃ"
   },
   {
     "question": "What is the hiragana for \"myu\"?",
@@ -289,7 +289,7 @@ const hiraganaYouon: Question[] = [
       "みゅ",
       "びゃ"
     ],
-    "correctAnswer": "みゅ"
+    "answer": "みゅ"
   },
   {
     "question": "What is the hiragana for \"myo\"?",
@@ -299,7 +299,7 @@ const hiraganaYouon: Question[] = [
       "みょ",
       "ぴょ"
     ],
-    "correctAnswer": "みょ"
+    "answer": "みょ"
   },
   {
     "question": "What is the hiragana for \"rya\"?",
@@ -309,7 +309,7 @@ const hiraganaYouon: Question[] = [
       "りゃ",
       "きゃ"
     ],
-    "correctAnswer": "りゃ"
+    "answer": "りゃ"
   },
   {
     "question": "What is the hiragana for \"ryu\"?",
@@ -319,7 +319,7 @@ const hiraganaYouon: Question[] = [
       "りゅ",
       "みゅ"
     ],
-    "correctAnswer": "りゅ"
+    "answer": "りゅ"
   },
   {
     "question": "What is the hiragana for \"ryo\"?",
@@ -329,7 +329,7 @@ const hiraganaYouon: Question[] = [
       "しゅ",
       "ぎゃ"
     ],
-    "correctAnswer": "りょ"
+    "answer": "りょ"
   }
 ]
 

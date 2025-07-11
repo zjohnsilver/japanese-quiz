@@ -5,17 +5,17 @@ import styles from './styles.module.css';
 interface OptionButtonProps {
   option: string;
   isSelected: boolean;
-  correctAnswer: string;
+  answer: string;
   wasAnswered: boolean;
   onSelect: (opt: string) => void;
 }
 
-export default function OptionButton({ option, isSelected, correctAnswer, wasAnswered, onSelect }: OptionButtonProps) {
+export default function OptionButton({ option, isSelected, answer, wasAnswered, onSelect }: OptionButtonProps) {
   let type: 'primary' | 'dashed' | 'default' = 'default';
   let className = styles.optionButton;
 
 
-  const isCorrect = option === correctAnswer;
+  const isCorrect = option === answer;
 
   let disabled = false;
   if (wasAnswered){

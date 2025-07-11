@@ -9,7 +9,7 @@ export const food: Question[] = [
       "葡萄酒",
       "お酒"
     ],
-    "correctAnswer": "ご飯"
+    "answer": "ご飯"
   },
   {
     "question": "Which is the Katakana for \"juusu\"?",
@@ -19,7 +19,7 @@ export const food: Question[] = [
       "ハム",
       "コーヒー"
     ],
-    "correctAnswer": "ジュース"
+    "answer": "ジュース"
   },
   {
     "question": "Which is the Katakana for \"miruku\"?",
@@ -29,7 +29,7 @@ export const food: Question[] = [
       "ゴハン",
       "チーズ"
     ],
-    "correctAnswer": "ミルク"
+    "answer": "ミルク"
   },
   {
     "question": "How do you write \"miruku\" in Hiragana?",
@@ -39,7 +39,7 @@ export const food: Question[] = [
       "さかな",
       "はむ"
     ],
-    "correctAnswer": "みるく"
+    "answer": "みるく"
   },
   {
     "question": "Which is the Katakana for \"wain\"?",
@@ -49,7 +49,7 @@ export const food: Question[] = [
       "ニク",
       "ミズ"
     ],
-    "correctAnswer": "ワイン"
+    "answer": "ワイン"
   },
   {
     "question": "How do you write \"koohii\" in Hiragana?",
@@ -59,7 +59,7 @@ export const food: Question[] = [
       "ぱすた",
       "さらだ"
     ],
-    "correctAnswer": "こーひー"
+    "answer": "こーひー"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Water\"?",
@@ -69,7 +69,7 @@ export const food: Question[] = [
       "osake",
       "miruku"
     ],
-    "correctAnswer": "mizu"
+    "answer": "mizu"
   },
   {
     "question": "What is the meaning of \"koohii\"?",
@@ -79,7 +79,7 @@ export const food: Question[] = [
       "Meat",
       "Salad"
     ],
-    "correctAnswer": "Coffee"
+    "answer": "Coffee"
   },
   {
     "question": "Which is the Katakana for \"mizu\"?",
@@ -89,7 +89,7 @@ export const food: Question[] = [
       "ゴハン",
       "サラダ"
     ],
-    "correctAnswer": "ミズ"
+    "answer": "ミズ"
   },
   {
     "question": "Which is the Katakana for \"sarada\"?",
@@ -99,7 +99,7 @@ export const food: Question[] = [
       "ニク",
       "ハム"
     ],
-    "correctAnswer": "サラダ"
+    "answer": "サラダ"
   },
   {
     "question": "What is the Kanji for \"mizu\"?",
@@ -109,7 +109,7 @@ export const food: Question[] = [
       "紅茶",
       "珈琲"
     ],
-    "correctAnswer": "水"
+    "answer": "水"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Milk\"?",
@@ -119,7 +119,7 @@ export const food: Question[] = [
       "koohii",
       "koucha"
     ],
-    "correctAnswer": "miruku"
+    "answer": "miruku"
   },
   {
     "question": "What is the meaning of \"koucha\"?",
@@ -129,7 +129,7 @@ export const food: Question[] = [
       "Alcohol",
       "Salad"
     ],
-    "correctAnswer": "Black Tea"
+    "answer": "Black Tea"
   },
   {
     "question": "Which is the Katakana for \"niku\"?",
@@ -139,7 +139,7 @@ export const food: Question[] = [
       "ビール",
       "パン"
     ],
-    "correctAnswer": "ニク"
+    "answer": "ニク"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Black Tea\"?",
@@ -149,7 +149,7 @@ export const food: Question[] = [
       "niku",
       "gohan"
     ],
-    "correctAnswer": "koucha"
+    "answer": "koucha"
   },
   {
     "question": "How do you write \"juusu\" in Hiragana?",
@@ -159,7 +159,7 @@ export const food: Question[] = [
       "こーひー",
       "みず"
     ],
-    "correctAnswer": "じゅーす"
+    "answer": "じゅーす"
   },
   {
     "question": "What is the Kanji for \"koohii\"?",
@@ -169,7 +169,7 @@ export const food: Question[] = [
       "葡萄酒",
       "肉"
     ],
-    "correctAnswer": "珈琲"
+    "answer": "珈琲"
   },
   {
     "question": "Which is the Katakana for \"chiizu\"?",
@@ -179,7 +179,7 @@ export const food: Question[] = [
       "サラダ",
       "パスタ"
     ],
-    "correctAnswer": "チーズ"
+    "answer": "チーズ"
   },
   {
     "question": "Which is the Katakana for \"koucha\"?",
@@ -189,7 +189,7 @@ export const food: Question[] = [
       "サラダ",
       "チーズ"
     ],
-    "correctAnswer": "コウチャ"
+    "answer": "コウチャ"
   },
   {
     "question": "What is the Kanji for \"wain\"?",
@@ -199,7 +199,7 @@ export const food: Question[] = [
       "肉",
       "麦酒"
     ],
-    "correctAnswer": "葡萄酒"
+    "answer": "葡萄酒"
   },
   {
     "question": "How do you write \"pan\" in Hiragana?",
@@ -209,7 +209,7 @@ export const food: Question[] = [
       "さかな",
       "みず"
     ],
-    "correctAnswer": "ぱん"
+    "answer": "ぱん"
   },
   {
     "question": "What is the meaning of \"hamu\"?",
@@ -219,7 +219,7 @@ export const food: Question[] = [
       "Pasta",
       "Cheese"
     ],
-    "correctAnswer": "Ham"
+    "answer": "Ham"
   },
   {
     "question": "What is the meaning of \"juusu\"?",
@@ -229,7 +229,7 @@ export const food: Question[] = [
       "Salad",
       "Pasta"
     ],
-    "correctAnswer": "Juice"
+    "answer": "Juice"
   },
   {
     "question": "What is the meaning of \"chiizu\"?",
@@ -239,7 +239,7 @@ export const food: Question[] = [
       "Beer",
       "Coffee"
     ],
-    "correctAnswer": "Cheese"
+    "answer": "Cheese"
   },
   {
     "question": "Which is the Katakana for \"koohii\"?",
@@ -249,7 +249,7 @@ export const food: Question[] = [
       "ビール",
       "ゴハン"
     ],
-    "correctAnswer": "コーヒー"
+    "answer": "コーヒー"
   },
   {
     "question": "What is the meaning of \"sarada\"?",
@@ -259,7 +259,7 @@ export const food: Question[] = [
       "Ham",
       "Water"
     ],
-    "correctAnswer": "Salad"
+    "answer": "Salad"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Wine\"?",
@@ -269,7 +269,7 @@ export const food: Question[] = [
       "biiru",
       "miruku"
     ],
-    "correctAnswer": "wain"
+    "answer": "wain"
   },
   {
     "question": "Which is the Katakana for \"pasuta\"?",
@@ -279,7 +279,7 @@ export const food: Question[] = [
       "ゴハン",
       "ハム"
     ],
-    "correctAnswer": "パスタ"
+    "answer": "パスタ"
   },
   {
     "question": "Which is the Katakana for \"gohan\"?",
@@ -289,7 +289,7 @@ export const food: Question[] = [
       "ハム",
       "コウチャ"
     ],
-    "correctAnswer": "ゴハン"
+    "answer": "ゴハン"
   },
   {
     "question": "What is the Kanji for \"miruku\"?",
@@ -299,7 +299,7 @@ export const food: Question[] = [
       "水",
       "お酒"
     ],
-    "correctAnswer": "牛乳"
+    "answer": "牛乳"
   },
   {
     "question": "What is the meaning of \"biiru\"?",
@@ -309,7 +309,7 @@ export const food: Question[] = [
       "Cheese",
       "Coffee"
     ],
-    "correctAnswer": "Beer"
+    "answer": "Beer"
   },
   {
     "question": "How do you write \"wain\" in Hiragana?",
@@ -319,7 +319,7 @@ export const food: Question[] = [
       "ぱすた",
       "おさけ"
     ],
-    "correctAnswer": "わいん"
+    "answer": "わいん"
   },
   {
     "question": "What is the meaning of \"gohan\"?",
@@ -329,7 +329,7 @@ export const food: Question[] = [
       "Salad",
       "Ham"
     ],
-    "correctAnswer": "Rice"
+    "answer": "Rice"
   },
   {
     "question": "What is the meaning of \"pasuta\"?",
@@ -339,7 +339,7 @@ export const food: Question[] = [
       "Beer",
       "Cheese"
     ],
-    "correctAnswer": "Pasta"
+    "answer": "Pasta"
   },
   {
     "question": "How do you write \"hamu\" in Hiragana?",
@@ -349,7 +349,7 @@ export const food: Question[] = [
       "わいん",
       "ぱすた"
     ],
-    "correctAnswer": "はむ"
+    "answer": "はむ"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Alcohol\"?",
@@ -359,7 +359,7 @@ export const food: Question[] = [
       "sarada",
       "niku"
     ],
-    "correctAnswer": "osake"
+    "answer": "osake"
   },
   {
     "question": "How do you write \"chiizu\" in Hiragana?",
@@ -369,7 +369,7 @@ export const food: Question[] = [
       "びーる",
       "ぱん"
     ],
-    "correctAnswer": "ちーず"
+    "answer": "ちーず"
   },
   {
     "question": "Which is the Katakana for \"sakana\"?",
@@ -379,7 +379,7 @@ export const food: Question[] = [
       "パン",
       "ワイン"
     ],
-    "correctAnswer": "サカナ"
+    "answer": "サカナ"
   },
   {
     "question": "Which is the Katakana for \"hamu\"?",
@@ -389,7 +389,7 @@ export const food: Question[] = [
       "オサケ",
       "ゴハン"
     ],
-    "correctAnswer": "ハム"
+    "answer": "ハム"
   },
   {
     "question": "Which is the Katakana for \"biiru\"?",
@@ -399,7 +399,7 @@ export const food: Question[] = [
       "オサケ",
       "サラダ"
     ],
-    "correctAnswer": "ビール"
+    "answer": "ビール"
   },
   {
     "question": "What is the Kanji for \"osake\"?",
@@ -409,7 +409,7 @@ export const food: Question[] = [
       "麦酒",
       "水"
     ],
-    "correctAnswer": "お酒"
+    "answer": "お酒"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Pasta\"?",
@@ -419,7 +419,7 @@ export const food: Question[] = [
       "gohan",
       "osake"
     ],
-    "correctAnswer": "pasuta"
+    "answer": "pasuta"
   },
   {
     "question": "How do you write \"mizu\" in Hiragana?",
@@ -429,7 +429,7 @@ export const food: Question[] = [
       "こうちゃ",
       "ぱすた"
     ],
-    "correctAnswer": "みず"
+    "answer": "みず"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Rice\"?",
@@ -439,7 +439,7 @@ export const food: Question[] = [
       "niku",
       "wain"
     ],
-    "correctAnswer": "gohan"
+    "answer": "gohan"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Bread\"?",
@@ -449,7 +449,7 @@ export const food: Question[] = [
       "koucha",
       "chiizu"
     ],
-    "correctAnswer": "pan"
+    "answer": "pan"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Ham\"?",
@@ -459,7 +459,7 @@ export const food: Question[] = [
       "juusu",
       "osake"
     ],
-    "correctAnswer": "hamu"
+    "answer": "hamu"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Fish\"?",
@@ -469,7 +469,7 @@ export const food: Question[] = [
       "osake",
       "koucha"
     ],
-    "correctAnswer": "sakana"
+    "answer": "sakana"
   },
   {
     "question": "How do you write \"niku\" in Hiragana?",
@@ -479,7 +479,7 @@ export const food: Question[] = [
       "じゅーす",
       "みるく"
     ],
-    "correctAnswer": "にく"
+    "answer": "にく"
   },
   {
     "question": "What is the meaning of \"wain\"?",
@@ -489,7 +489,7 @@ export const food: Question[] = [
       "Coffee",
       "Alcohol"
     ],
-    "correctAnswer": "Wine"
+    "answer": "Wine"
   },
   {
     "question": "What is the meaning of \"pan\"?",
@@ -499,7 +499,7 @@ export const food: Question[] = [
       "Cheese",
       "Water"
     ],
-    "correctAnswer": "Bread"
+    "answer": "Bread"
   },
   {
     "question": "What is the Kanji for \"niku\"?",
@@ -509,7 +509,7 @@ export const food: Question[] = [
       "紅茶",
       "ご飯"
     ],
-    "correctAnswer": "肉"
+    "answer": "肉"
   },
   {
     "question": "How do you write \"pasuta\" in Hiragana?",
@@ -519,7 +519,7 @@ export const food: Question[] = [
       "こーひー",
       "みず"
     ],
-    "correctAnswer": "ぱすた"
+    "answer": "ぱすた"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Salad\"?",
@@ -529,7 +529,7 @@ export const food: Question[] = [
       "wain",
       "gohan"
     ],
-    "correctAnswer": "sarada"
+    "answer": "sarada"
   },
   {
     "question": "What is the meaning of \"miruku\"?",
@@ -539,7 +539,7 @@ export const food: Question[] = [
       "Bread",
       "Salad"
     ],
-    "correctAnswer": "Milk"
+    "answer": "Milk"
   },
   {
     "question": "What is the meaning of \"osake\"?",
@@ -549,7 +549,7 @@ export const food: Question[] = [
       "Juice",
       "Black Tea"
     ],
-    "correctAnswer": "Alcohol"
+    "answer": "Alcohol"
   },
   {
     "question": "What is the meaning of \"mizu\"?",
@@ -559,7 +559,7 @@ export const food: Question[] = [
       "Wine",
       "Juice"
     ],
-    "correctAnswer": "Water"
+    "answer": "Water"
   },
   {
     "question": "How do you write \"osake\" in Hiragana?",
@@ -569,7 +569,7 @@ export const food: Question[] = [
       "さかな",
       "ぱすた"
     ],
-    "correctAnswer": "おさけ"
+    "answer": "おさけ"
   },
   {
     "question": "Which is the Katakana for \"pan\"?",
@@ -579,7 +579,7 @@ export const food: Question[] = [
       "ゴハン",
       "チーズ"
     ],
-    "correctAnswer": "パン"
+    "answer": "パン"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Juice\"?",
@@ -589,7 +589,7 @@ export const food: Question[] = [
       "wain",
       "niku"
     ],
-    "correctAnswer": "juusu"
+    "answer": "juusu"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Cheese\"?",
@@ -599,7 +599,7 @@ export const food: Question[] = [
       "sarada",
       "hamu"
     ],
-    "correctAnswer": "chiizu"
+    "answer": "chiizu"
   },
   {
     "question": "What is the Kanji for \"biiru\"?",
@@ -609,7 +609,7 @@ export const food: Question[] = [
       "牛乳",
       "葡萄酒"
     ],
-    "correctAnswer": "麦酒"
+    "answer": "麦酒"
   },
   {
     "question": "How do you write \"koucha\" in Hiragana?",
@@ -619,7 +619,7 @@ export const food: Question[] = [
       "びーる",
       "はむ"
     ],
-    "correctAnswer": "こうちゃ"
+    "answer": "こうちゃ"
   },
   {
     "question": "What is the Kanji for \"koucha\"?",
@@ -629,7 +629,7 @@ export const food: Question[] = [
       "水",
       "麦酒"
     ],
-    "correctAnswer": "紅茶"
+    "answer": "紅茶"
   },
   {
     "question": "How do you write \"sakana\" in Hiragana?",
@@ -639,7 +639,7 @@ export const food: Question[] = [
       "びーる",
       "みるく"
     ],
-    "correctAnswer": "さかな"
+    "answer": "さかな"
   },
   {
     "question": "Which is the Katakana for \"osake\"?",
@@ -649,7 +649,7 @@ export const food: Question[] = [
       "ミズ",
       "ゴハン"
     ],
-    "correctAnswer": "オサケ"
+    "answer": "オサケ"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Beer\"?",
@@ -659,7 +659,7 @@ export const food: Question[] = [
       "gohan",
       "hamu"
     ],
-    "correctAnswer": "biiru"
+    "answer": "biiru"
   },
   {
     "question": "What is the Kanji for \"sakana\"?",
@@ -669,7 +669,7 @@ export const food: Question[] = [
       "葡萄酒",
       "紅茶"
     ],
-    "correctAnswer": "魚"
+    "answer": "魚"
   },
   {
     "question": "What is the meaning of \"niku\"?",
@@ -679,7 +679,7 @@ export const food: Question[] = [
       "Wine",
       "Salad"
     ],
-    "correctAnswer": "Meat"
+    "answer": "Meat"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Meat\"?",
@@ -689,7 +689,7 @@ export const food: Question[] = [
       "wain",
       "koohii"
     ],
-    "correctAnswer": "niku"
+    "answer": "niku"
   },
   {
     "question": "How do you write \"sarada\" in Hiragana?",
@@ -699,7 +699,7 @@ export const food: Question[] = [
       "ごはん",
       "ぱん"
     ],
-    "correctAnswer": "さらだ"
+    "answer": "さらだ"
   },
   {
     "question": "How do you write \"gohan\" in Hiragana?",
@@ -709,7 +709,7 @@ export const food: Question[] = [
       "ぱん",
       "おさけ"
     ],
-    "correctAnswer": "ごはん"
+    "answer": "ごはん"
   },
   {
     "question": "What is the meaning of \"sakana\"?",
@@ -719,7 +719,7 @@ export const food: Question[] = [
       "Rice",
       "Wine"
     ],
-    "correctAnswer": "Fish"
+    "answer": "Fish"
   },
   {
     "question": "What is the Japanese (romanji) word for \"Coffee\"?",
@@ -729,7 +729,7 @@ export const food: Question[] = [
       "chiizu",
       "juusu"
     ],
-    "correctAnswer": "koohii"
+    "answer": "koohii"
   },
   {
     "question": "How do you write \"biiru\" in Hiragana?",
@@ -739,7 +739,7 @@ export const food: Question[] = [
       "さらだ",
       "さかな"
     ],
-    "correctAnswer": "びーる"
+    "answer": "びーる"
   }
 ];
 
