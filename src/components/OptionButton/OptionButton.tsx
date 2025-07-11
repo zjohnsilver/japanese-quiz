@@ -2,7 +2,7 @@ import { Button } from 'antd';
 import React from 'react';
 import styles from './styles.module.css';
 
-interface AnswerButtonProps {
+interface OptionButtonProps {
   option: string;
   isSelected: boolean;
   correctAnswer: string;
@@ -10,7 +10,7 @@ interface AnswerButtonProps {
   onSelect: (opt: string) => void;
 }
 
-export default function AnswerButton({ option, isSelected, correctAnswer, wasAnswered, onSelect }: AnswerButtonProps) {
+export default function OptionButton({ option, isSelected, correctAnswer, wasAnswered, onSelect }: OptionButtonProps) {
   let type: 'primary' | 'dashed' | 'default' = 'default';
   let className = styles.optionButton;
 
@@ -31,21 +31,10 @@ export default function AnswerButton({ option, isSelected, correctAnswer, wasAns
     <Button
       className={className}
       key={option}
-      block
       size="large"
       disabled={disabled}
       type={type}
       onClick={() => onSelect(option)}
-      style={{
-        marginBottom: 12,
-        whiteSpace: 'normal',
-        wordBreak: 'break-word',
-        textAlign: 'center',
-        lineHeight: '1.6',
-        fontSize: 16,
-        paddingTop: 26,
-        paddingBottom: 26,
-      }}
     >
       {option}
     </Button>

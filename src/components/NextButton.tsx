@@ -9,7 +9,12 @@ interface NextButtonProps {
 export default function NextButton({ isLast, onNext }: NextButtonProps) {
   if (isLast) return null;
   return (
-    <Button type="default" onClick={onNext} style={{ marginTop: 16 }}>
+    <Button
+      type="primary"
+      onClick={onNext}
+      style={{ marginTop: 24 }}
+      block
+    >
       Next
     </Button>
   );
