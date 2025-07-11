@@ -5,9 +5,15 @@ interface RestartButtonProps {
   onClick: () => void;
 }
 
-export default function RestartButton({ onClick }: RestartButtonProps) {
+export default function RestartButton({ onClick, ...rest }: RestartButtonProps) {
   return (
-    <Button type="primary" onClick={onClick} style={{ marginTop: 12 }}>
+    <Button
+      type="primary"
+      onClick={onClick}
+      style={{ marginTop: 24 }}
+      block
+      {...rest}
+    >
       Restart Quiz
     </Button>
   );

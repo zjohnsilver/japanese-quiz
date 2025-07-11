@@ -5,6 +5,7 @@ import OptionButton from '@/src/components/OptionButton';
 import NextButton from '@/src/components/NextButton';
 import RestartButton from '@/src/components/RestartButton';
 import QuizCardHeader from '@/src/components/QuizCardHeader';
+import FinalFeedback from '@/src/components/FinalFeedback';
 
 type QuizCardProps = {
   score: number;
@@ -59,9 +60,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
             {!isLast && <NextButton isLast={isLast} onNext={handleNext} />}
             {isLast && (
               <>
-                <Typography.Text strong>
-                  End of Quiz! Final Score: {score} / {total}
-                </Typography.Text>
+                <FinalFeedback score={score} total={total} />
                 <RestartButton onClick={handleRestart} />
               </>
             )}
