@@ -706,7 +706,7 @@ const colors: Question[] = [
     "colorOptions": false
   },
   {
-    "question": "What is the color of a rose?",
+    "question": "What is the color of heart?",
     "options": [
       "aka",
       "ao",
@@ -813,17 +813,6 @@ const colors: Question[] = [
       "haiiro"
     ],
     "answer": "chairo",
-    "colorOptions": false
-  },
-  {
-    "question": "What is the color of a blood?",
-    "options": [
-      "aka",
-      "chairo",
-      "kiiro",
-      "haiiro"
-    ],
-    "answer": "aka",
     "colorOptions": false
   },
   {
@@ -934,17 +923,6 @@ const colors: Question[] = [
       "あお"
     ],
     "answer": "ぴんく",
-    "colorOptions": false
-  },
-  {
-    "question": "What is the color of a rose?",
-    "options": [
-      "pinku",
-      "orenji",
-      "murasaki",
-      "aka"
-    ],
-    "answer": "pinku",
     "colorOptions": false
   },
   {
