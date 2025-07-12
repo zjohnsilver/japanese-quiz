@@ -4,6 +4,7 @@ import { MenuOutlined, HomeOutlined, ReadOutlined, BulbOutlined } from '@ant-des
 import { useRouter } from 'next/router';
 import styles from './styles.module.css'
 import { AppConfig } from '@/src/config/app';
+import ThemeToggle from '@/src/components/ThemeToggle';
 
 export default function MobileSidebar() {
   const [open, setOpen] = useState(false);
@@ -38,11 +39,17 @@ export default function MobileSidebar() {
         }}
       >
         <div style={{ fontWeight: 'bold', fontSize: 18 }}>{AppConfig.defaultTitle}</div>
-        <Button
-          type="text"
-          icon={<MenuOutlined style={{ fontSize: 24, color: 'white' }} />}
-          onClick={() => setOpen(true)}
-        />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <ThemeToggle size="small" />
+          <Button
+            type="text"
+            icon={<MenuOutlined style={{ fontSize: 24, color: 'white' }} />}
+            onClick={(e) => {
+              e.stopPropagation();
+              setOpen(true);
+            }}
+          />
+        </div>
       </div>
 
       <Drawer

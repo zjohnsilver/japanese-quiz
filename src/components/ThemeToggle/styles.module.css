@@ -1,0 +1,17 @@
+.themeToggle {
+  color: var(--color-sidebarText);
+  transition: all 0.3s ease;
+}
+
+.themeToggle:hover {
+  color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.themeToggle:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.themeToggle .anticon {
+  font-size: 18px;
+} 

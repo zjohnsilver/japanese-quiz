@@ -1,9 +1,29 @@
+:root {
+  --color-background: #ffffff;
+  --color-backgroundSecondary: #f5f5f5;
+  --color-backgroundTertiary: #fafafa;
+  --color-textPrimary: rgba(0, 0, 0, 0.85);
+  --color-textSecondary: rgba(0, 0, 0, 0.65);
+  --color-textTertiary: rgba(0, 0, 0, 0.45);
+  --color-border: #d9d9d9;
+  --color-borderSecondary: #f0f0f0;
+  --color-cardBackground: #ffffff;
+  --color-cardBorder: #f0f0f0;
+  --color-hover: #f5f5f5;
+  --color-active: #e6f7ff;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --border-radius-lg: 8px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
                "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", 
                "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: #f5f5f5;
+  background-color: var(--color-backgroundSecondary);
+  color: var(--color-textPrimary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #__next {
@@ -14,6 +34,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-backgroundSecondary);
 }
 
 .ant-layout-content {
@@ -21,26 +42,41 @@ body {
 }
 
 .ant-card {
-  border-radius: 8px;
+  border-radius: var(--border-radius-lg);
+  background-color: var(--color-cardBackground);
+  border-color: var(--color-cardBorder);
 }
 
 .ant-card-head {
-  background-color: #fff;
-  border-bottom: 1px solid #f0f0f0;
+  background-color: var(--color-cardBackground);
+  border-bottom: 1px solid var(--color-borderSecondary);
 }
 
 .ant-typography {
-  color: rgba(0, 0, 0, 0.85);
+  color: var(--color-textPrimary);
 }
-
 
 .content-layout {
   margin-left: 75px;
-  padding: 24px;
+  padding: var(--spacing-lg);
 }
 
 @media (min-width: 992px) {
   .content-layout {
     margin-left: 200px;
   }
+}
+
+/* Theme transition animations */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark theme specific adjustments */
+.theme-dark {
+  color-scheme: dark;
+}
+
+.theme-light {
+  color-scheme: light;
 }

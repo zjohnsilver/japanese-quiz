@@ -1,17 +1,17 @@
 .mobileDrawer :global(.ant-drawer-content) {
-  background-color: #001529;
-  color: white;
+  background-color: var(--color-sidebarBackground);
+  color: var(--color-sidebarText);
   height: 100%;
 }
 
 .mobileDrawer :global(.ant-drawer-body) {
   padding: 0;
   height: 100%;
-  background-color: #001529;
+  background-color: var(--color-sidebarBackground);
 }
 
 .mobileDrawer :global(.ant-drawer-header),
 .mobileDrawer :global(.ant-drawer-title) {
-  background-color: #001529;
-  color: white;
+  background-color: var(--color-sidebarBackground);
+  color: var(--color-sidebarText);
 }

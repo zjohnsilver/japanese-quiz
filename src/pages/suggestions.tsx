@@ -1,5 +1,6 @@
 import { Card, Typography, List, Tag } from 'antd';
 import { BulbOutlined, GlobalOutlined, YoutubeOutlined } from '@ant-design/icons';
+import { useTheme } from '@/src/contexts/ThemeContext';
 
 const { Title, Paragraph } = Typography;
 
@@ -7,7 +8,7 @@ const resources = [
   {
     category: '🌐 Websites',
     icon: <GlobalOutlined style={{ color: '#1890ff' }} />,
-    color: '#e6f7ff',
+    color: 'var(--color-infoBackground)',
     items: [
       {
         name: 'Japanese with Anime',
@@ -26,7 +27,7 @@ const resources = [
   {
     category: '🎥 YouTube Channels',
     icon: <YoutubeOutlined style={{ color: '#f5222d' }} />,
-    color: '#fff1f0',
+    color: 'var(--color-errorBackground)',
     items: [
       {
         name: 'Japanese Ammo with Misa',
@@ -39,10 +40,12 @@ const resources = [
 ];
 
 export default function SuggestionsPage() {
+  const { theme } = useTheme();
+  
   return (
     <div style={{ padding: '24px' }}>
       <Title level={2}>
-        <BulbOutlined style={{ color: '#faad14', marginRight: 8 }} />
+        <BulbOutlined style={{ color: theme.colors.warning, marginRight: 8 }} />
         Learning Resources
       </Title>
       <Paragraph style={{ marginBottom: 32 }}>
@@ -67,7 +70,7 @@ export default function SuggestionsPage() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ fontWeight: 500, color: '#1d39c4' }}
+                      style={{ fontWeight: 500, color: theme.colors.primary }}
                     >
                       {name}
                     </a>

@@ -3,29 +3,36 @@
   max-width: 360px;               
   margin: 0 auto 12px;           
   padding: 26px 10px;           
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: white;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-cardBackground);
+  color: var(--color-textPrimary);
   font-weight: normal;
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   text-align: center;
   line-height: 1.6;
   white-space: normal;
   word-break: break-word;
   transition: all 0.3s ease;
 }
+
+.optionButton:hover {
+  background-color: var(--color-hover);
+  border-color: var(--color-primary);
+}
+
 /* ✅ Correct option */
 .optionButton.correct {
-  background-color: #e6ffe6;
-  border: 2px solid #2ecc71;
-  color: #2c7a4f;
+  background-color: var(--color-successBackground);
+  border: 2px solid var(--color-successBorder);
+  color: var(--color-successText);
   font-weight: bold;
 }
 
 /* ❌ Incorrect selected option */
 .optionButton.incorrect {
-  background-color: #ffe6e6;
-  border: 2px solid #e74c3c;
-  color: #a23333;
+  background-color: var(--color-errorBackground);
+  border: 2px solid var(--color-errorBorder);
+  color: var(--color-errorText);
   font-weight: bold;
 }

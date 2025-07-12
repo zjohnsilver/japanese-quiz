@@ -4,13 +4,13 @@
   flex-wrap: wrap; /* ← permite que empilhe em telas pequenas */
   justify-content: center;
   align-items: stretch;
-  gap: 48px;
+  gap: var(--spacing-xxl);
   width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  background-color: #fafafa;
-  padding: 24px 32px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  background-color: var(--color-backgroundTertiary);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  box-shadow: var(--shadow-md);
 }
 
 .section {
@@ -58,8 +58,8 @@
 }
 
 .radioDescription {
-  font-size: 13px;
-  color: #888;
+  font-size: var(--font-size-sm);
+  color: var(--color-textTertiary);
   margin-top: 2px;
 }
 

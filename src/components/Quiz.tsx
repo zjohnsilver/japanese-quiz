@@ -6,23 +6,11 @@ import { quizCategoryLabels } from '@/src/data/questions'
 import { QuizCategoryEnum } from '@/src/enums/questions'
 import QuizCard from '@/src/components/QuizCard';
 
-const categoryColors: Record<string, string> = {
-  'hiragana': 'plum',
-  'hiraganaDakuten': 'mediumorchid',
-  'hiraganaYouon': 'indigo',
-  'katakana': 'hotpink',
-  'katakanaDakuten': 'deeppink',
-  'katakanaYouon': 'orchid',
-  'katakanaForeignSounds': 'salmon',
-  'foodVocabulary': 'tomato',
-  'family': 'lightcoral',
-  'sentence': 'steelblue',
-  'colors': 'teal',
-};
+import { useTheme } from '@/src/contexts/ThemeContext';
 
 export default function Quiz({ selectedCategories }: { selectedCategories: QuizCategoryEnum[]; }) {
   const { questions, setSelectedCategories } = useQuiz();
-
+  const { theme } = useTheme();
   const router = useRouter();
 
   const total = questions?.length;
@@ -58,7 +46,7 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
     <div style={{ maxWidth: 600, margin: 'auto', paddingTop: 24 }}>
       <Card
         size="small"
-        style={{ marginBottom: 16, backgroundColor: '#fafafa' }}
+        style={{ marginBottom: 16, backgroundColor: theme.colors.backgroundTertiary }}
         bordered={false}
       >
         <Space align="center" wrap>
@@ -68,7 +56,7 @@ export default function Quiz({ selectedCategories }: { selectedCategories: QuizC
           {selectedCategories.map((category) => (
             <Tag 
               key={category} 
-              color={categoryColors[category] || 'default'} 
+              color={theme.colors.categoryColors[category] || 'default'} 
               style={{
                 fontSize: 16,
                 borderRadius: 6,
