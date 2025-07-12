@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Space, Typography } from 'antd';
+import { Card, Space } from 'antd';
 import QuestionTitle from '@/src/components/QuestionTitle';
 import OptionButton from '@/src/components/OptionButton';
 import NextButton from '@/src/components/NextButton';

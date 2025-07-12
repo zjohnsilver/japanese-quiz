@@ -8,7 +8,7 @@ import { ModeEnum } from '@/src/enums/questions';
 
 export default function HomePage() {
   const [selectedCategories, setSelectedCategories] = useState<QuizCategoryEnum[]>([]);
-  const [questionsCount, setQuestionsCount] = useState<number>(0)
+  const [questionsCount, setQuestionsCount] = useState<number>(5)
   const [countMode, setCountMode] = useState<ModeEnum>(ModeEnum.TOTAL);
 
   return (
