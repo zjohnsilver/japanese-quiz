@@ -5,6 +5,7 @@ import {
   BulbOutlined,
   HomeOutlined
 } from '@ant-design/icons';
+import styles from './styles.module.css'
 
 export default function Sidebar() {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function Sidebar() {
       theme="dark"
       mode="inline"
       selectedKeys={[router.pathname]}
-      style={{ height: '100%', borderRight: 0 }}
+      className={styles.sideBar}
       items={menuItems}
       onClick={({ key }) => router.push(key)}
     />

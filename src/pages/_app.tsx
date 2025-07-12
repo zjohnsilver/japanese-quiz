@@ -1,18 +1,23 @@
-import '../styles/globals.css';
 import 'antd/dist/reset.css';
+import '@/src/styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Layout } from 'antd';
-import Sidebar from '@/src/components/Sidebar';
-import { QuizProvider }  from '@/src/components/QuizContext'
-import { useState } from 'react';
-import { QuizCategoryEnum, ModeEnum } from '../enums/questions';
+import { Layout, Grid } from 'antd';
 import { GithubOutlined } from '@ant-design/icons';
+import { useState } from 'react';
 
+import Sidebar from '@/src/components/Sidebar';
+import MobileSidebar from '@/src/components/MobileSidebar/MobileSidebar';
+import { QuizProvider } from '@/src/components/QuizContext';
+import { QuizCategoryEnum, ModeEnum } from '../enums/questions';
+import { AppConfig } from '@/src/config/app';
 
-const { Sider, Content } = Layout;
+const { Sider, Content, Footer } = Layout;
+const { useBreakpoint } = Grid;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [selectedCategories, setSelectedCategories] = useState<QuizCategoryEnum[]>([]);
+  const screens = useBreakpoint();
+  const isMobile = !screens.lg;
 
   return (
     <QuizProvider
@@ -21,34 +26,58 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       questionsCount={0}
       countMode={ModeEnum.TOTAL}
     >
-      <Layout style={{}}>
-        <Sider
-          width={200}
-          breakpoint="lg"
+      <Layout>
+        {!isMobile ? (
+          <Sider
+            width={200}
+            style={{
+              height: '100vh',
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              zIndex: 100,
+            }}
+          >
+            <div
+              style={{
+                height: 32,
+                margin: 16,
+                color: 'white',
+                fontWeight: 'bold',
+                fontSize: 18,
+              }}
+            >
+              {AppConfig.defaultTitle}
+            </div>
+            <Sidebar />
+          </Sider>
+        ) : (
+          <MobileSidebar />
+        )}
+        <Layout
           style={{
-            height: '100vh',
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            zIndex: 100,
+            marginLeft: !isMobile ? 0 : -75,
+            paddingTop: isMobile ? 64 : 0,
+            minHeight: '100vh',
           }}
         >
-          <div style={{ height: 32, margin: 16, color: 'white', fontWeight: 'bold' }}>
-            Nihongo App
-          </div>
-          <Sidebar/>
-        </Sider>
-        <Layout>
-          <Content className='content-layout'>
+          <Content className="content-layout">
             <Component {...pageProps} />
           </Content>
 
-          <Layout.Footer className="content-layout" style={{ textAlign: 'center', fontSize: 13, color: '#999' }}>
-            © John Silver {new Date().getFullYear()} — All rights reserved·{' '}
+          <Footer
+            className="content-layout"
+            style={{
+              textAlign: 'center',
+              fontSize: 13,
+              color: '#999',
+            }}
+          >
+            © John Silver {new Date().getFullYear()} — All rights reserved ·{' '}
             <a href="https://github.com/zjohnsilver" target="_blank" rel="noopener noreferrer">
               <GithubOutlined /> GitHub
             </a>
-          </Layout.Footer>          
+          </Footer>
         </Layout>
       </Layout>
     </QuizProvider>
