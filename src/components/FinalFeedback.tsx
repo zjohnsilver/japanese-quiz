@@ -1,4 +1,3 @@
-import React from 'react';
 import { Typography } from 'antd';
 
 type FinalFeedbackProps = {
@@ -15,7 +14,7 @@ const getFinalMessage = (score: number, total: number) => {
   return { message: "Don't give up! 💪 Practice makes perfect.", type: 'danger' as const };
 };
 
-const FinalFeedback: React.FC<FinalFeedbackProps> = ({ score, total }) => {
+const FinalFeedback = ({ score, total }: FinalFeedbackProps) => {
   const { message, type } = getFinalMessage(score, total);
 
   return (

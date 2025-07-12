@@ -14,7 +14,7 @@ import { getAntdTheme } from '../config/theme';
 const { Content, Footer } = Layout;
 const { useBreakpoint } = Grid;
 
-const AppContent: React.FC<AppProps> = ({ Component, pageProps }) => {
+const AppContent = ({ Component, pageProps }: AppProps) => {
   const [selectedCategories, setSelectedCategories] = useState<QuizCategoryEnum[]>([]);
   const [collapsed, setCollapsed] = useState(false);
   const screens = useBreakpoint();

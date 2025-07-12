@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTheme } from '@/src/contexts/ThemeContext';
 
 interface QuizCardHeaderProps {
@@ -7,7 +6,7 @@ interface QuizCardHeaderProps {
   total: number;
 }
 
-const QuizCardHeader: React.FC<QuizCardHeaderProps> = ({ score, index, total }) => {
+const QuizCardHeader = ({ score, index, total }: QuizCardHeaderProps) => {
   const { theme } = useTheme();
   
   return (

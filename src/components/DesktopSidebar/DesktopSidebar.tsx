@@ -1,6 +1,6 @@
 import { Layout, Menu } from 'antd';
 import { useRouter } from 'next/router';
-import { ReadOutlined, ExperimentOutlined, HomeOutlined } from '@ant-design/icons';
+import { ReadOutlined, ExperimentOutlined, HomeOutlined, TableOutlined } from '@ant-design/icons';
 import { AppConfig } from '@/src/config/app';
 import ThemeToggle from '@/src/components/ThemeToggle';
 import styles from './styles.module.css';
@@ -22,9 +22,14 @@ export default function DesktopSidebar({ collapsed, setCollapsed }: DesktopSideb
       label: 'Home'
     },
     {
+      key: "/characters", 
+      icon: <TableOutlined />,
+      label: 'Characters'
+    },
+    {
       key: "/lessons", 
       icon: <ReadOutlined />,
-      label: 'Lesson'
+      label: 'Lessons'
     },
     {
       key: "/suggestions", 

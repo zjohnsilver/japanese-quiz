@@ -1,4 +1,3 @@
-import React from 'react';
 import { Card, Space } from 'antd';
 import QuestionTitle from '@/src/components/QuestionTitle';
 import OptionButton from '@/src/components/OptionButton';
@@ -24,7 +23,7 @@ type QuizCardProps = {
   handleRestart: () => void;
 };
 
-const QuizCard: React.FC<QuizCardProps> = ({
+const QuizCard = ({
   score,
   index,
   total,
@@ -35,7 +34,7 @@ const QuizCard: React.FC<QuizCardProps> = ({
   handleAnswer,
   handleNext,
   handleRestart,
-}) => (
+}: QuizCardProps) => (
   <Card 
     title={
       <QuizCardHeader score={score} index={index} total={total} />

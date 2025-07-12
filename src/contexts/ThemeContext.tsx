@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { ThemeMode, Theme, themes } from '../config/theme';
 
 interface ThemeContextType {
@@ -16,27 +16,23 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [themeMode, setThemeModeState] = useState<ThemeMode>('light');
 
-  // Load theme from localStorage on mount
   useEffect(() => {
     const savedTheme = localStorage.getItem(THEME_STORAGE_KEY) as ThemeMode;
     if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
       setThemeModeState(savedTheme);
     } else {
-      // Check system preference
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       setThemeModeState(prefersDark ? 'dark' : 'light');
     }
   }, []);
 
-  // Update CSS custom properties when theme changes
   useEffect(() => {
     const root = document.documentElement;
     const currentTheme = themes[themeMode];
     
-    // Set CSS custom properties
     Object.entries(currentTheme.colors).forEach(([key, value]) => {
       if (typeof value === 'string') {
         root.style.setProperty(`--color-${key}`, value);
@@ -64,7 +60,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
       root.style.setProperty(`--shadow-${key}`, value);
     });
 
-    // Set theme mode class on body
     document.body.className = `theme-${themeMode}`;
   }, [themeMode]);
 

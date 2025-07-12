@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from 'antd';
 import { BulbOutlined, BulbFilled } from '@ant-design/icons';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -10,11 +9,11 @@ interface ThemeToggleProps {
   showText?: boolean;
 }
 
-const ThemeToggle: React.FC<ThemeToggleProps> = ({ 
+const ThemeToggle = ({ 
   size = 'middle', 
   shape = 'circle',
   showText = false 
-}) => {
+}: ThemeToggleProps) => {
   const { themeMode, toggleTheme } = useTheme();
   
   const isDark = themeMode === 'dark';
