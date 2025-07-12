@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Drawer, Button, Menu } from 'antd';
-import { MenuOutlined, HomeOutlined, ReadOutlined, BulbOutlined } from '@ant-design/icons';
+import { MenuOutlined, HomeOutlined, ReadOutlined, ExperimentOutlined } from '@ant-design/icons';
 import { useRouter } from 'next/router';
 import styles from './styles.module.css'
 import { AppConfig } from '@/src/config/app';
@@ -13,7 +13,7 @@ export default function MobileSidebar() {
   const items = [
     { key: '/', label: 'Home', icon: <HomeOutlined /> },
     { key: '/lessons', label: 'Lesson', icon: <ReadOutlined /> },
-    { key: '/suggestions', label: 'Suggestions', icon: <BulbOutlined /> }
+    { key: '/suggestions', label: 'Suggestions', icon: <ExperimentOutlined /> }
   ];
 
   const colorSidebarDark = '#001529'

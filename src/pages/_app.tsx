@@ -19,6 +19,7 @@ const AppContent: React.FC<AppProps> = ({ Component, pageProps }) => {
   const [collapsed, setCollapsed] = useState(false);
   const screens = useBreakpoint();
   const isMobile = !screens.lg;
+  const isDesktop = screens.lg;
   const { themeMode } = useTheme();
 
   return (
@@ -35,28 +36,27 @@ const AppContent: React.FC<AppProps> = ({ Component, pageProps }) => {
         countMode={ModeEnum.TOTAL}
       >
         <Layout>
-          {!isMobile ? (
+          {isDesktop ? (
             <DesktopSidebar collapsed={collapsed} setCollapsed={setCollapsed} />
           ) : (
             <MobileSidebar />
           )}
           <Layout
             style={{
-              marginLeft: !isMobile ? (collapsed ? -75 : 0) : -75,
               paddingTop: isMobile ? 64 : 0,
               minHeight: '100vh',
             }}
           >
-            <Content className="content-layout">
+            <Content className={`content-layout ${isDesktop && collapsed ? 'collapsed' : ''}`}>
               <Component {...pageProps} />
             </Content>
 
             <Footer
-              className="content-layout"
+              className={`content-layout ${isDesktop && collapsed ? 'collapsed' : ''}`}
               style={{
                 textAlign: 'center',
                 fontSize: 13,
-                color: 'var(--color-textTertiary)',
+                color: 'var(--color-textTertiary)'
               }}
             >
               © John Silver {new Date().getFullYear()} — All rights reserved ·{' '}
