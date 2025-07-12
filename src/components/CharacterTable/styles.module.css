@@ -94,11 +94,112 @@
   border: 1px solid var(--color-cardBorder);
   padding: var(--spacing-lg);
   min-height: 400px;
+  overflow-x: auto;
 }
 
-.characterGrid {
+/* Gojūonzu Table Styles */
+.gojuonzuTable {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: var(--spacing-xs);
+  margin: 0 auto;
+}
+
+.tableHeader {
+  display: table-row;
+}
+
+.tableRow {
+  display: table-row;
+}
+
+.headerCell {
+  display: table-cell;
+  background: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-sm);
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  border-radius: var(--border-radius-md);
+  min-width: 60px;
+}
+
+.rowHeader {
+  display: table-cell;
+  background: var(--color-success);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-sm);
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  border-radius: var(--border-radius-md);
+  min-width: 60px;
+  vertical-align: middle;
+}
+
+.characterCell {
+  display: table-cell;
+  background: var(--color-backgroundTertiary);
+  border: 2px solid var(--color-borderSecondary);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  padding: var(--spacing-sm);
+  min-width: 60px;
+  min-height: 60px;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.characterCell:hover {
+  background: var(--color-active);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.emptyCell {
+  background: var(--color-backgroundSecondary);
+  border: 2px dashed var(--color-border);
+  cursor: default;
+}
+
+.emptyCell:hover {
+  background: var(--color-backgroundSecondary);
+  border: 2px dashed var(--color-border);
+  transform: none;
+}
+
+.character {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-textPrimary);
+  margin-bottom: var(--spacing-xs);
+  line-height: 1;
+}
+
+.romaji {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-textSecondary);
+  text-transform: lowercase;
+}
+
+/* Youon Table (3 columns) */
+.youonTable {
+  display: table;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: var(--spacing-xs);
+}
+
+/* Foreign Sounds Grid */
+.foreignGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   gap: var(--spacing-md);
   justify-items: center;
 }
@@ -113,8 +214,8 @@
   border-radius: var(--border-radius-lg);
   transition: all 0.2s ease;
   cursor: pointer;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 80px;
+  min-height: 80px;
   justify-content: center;
 }
 
@@ -123,22 +224,6 @@
   box-shadow: var(--shadow-md);
   border-color: var(--color-primary);
   background: var(--color-active);
-}
-
-.character {
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: var(--color-textPrimary);
-  margin-bottom: var(--spacing-sm);
-  line-height: 1;
-}
-
-.romaji {
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  color: var(--color-textSecondary);
-  text-align: center;
-  text-transform: lowercase;
 }
 
 .emptyState {
@@ -191,23 +276,31 @@
     padding: var(--spacing-md);
   }
 
-  .characterGrid {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  .headerCell,
+  .rowHeader,
+  .characterCell {
+    min-width: 45px;
+    min-height: 45px;
+    padding: var(--spacing-xs);
+  }
+
+  .character {
+    font-size: 1.4rem;
+  }
+
+  .romaji {
+    font-size: 10px;
+  }
+
+  .foreignGrid {
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     gap: var(--spacing-sm);
   }
 
   .characterCard {
-    min-width: 80px;
-    min-height: 80px;
+    min-width: 60px;
+    min-height: 60px;
     padding: var(--spacing-sm);
-  }
-
-  .character {
-    font-size: 2rem;
-  }
-
-  .romaji {
-    font-size: var(--font-size-xs);
   }
 }
 
@@ -220,22 +313,30 @@
     font-size: var(--font-size-lg);
   }
 
-  .characterGrid {
-    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+  .headerCell,
+  .rowHeader,
+  .characterCell {
+    min-width: 35px;
+    min-height: 35px;
+    padding: 2px;
+  }
+
+  .character {
+    font-size: 1.2rem;
+  }
+
+  .romaji {
+    font-size: 8px;
+  }
+
+  .foreignGrid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
     gap: var(--spacing-xs);
   }
 
   .characterCard {
-    min-width: 70px;
-    min-height: 70px;
+    min-width: 50px;
+    min-height: 50px;
     padding: var(--spacing-xs);
-  }
-
-  .character {
-    font-size: 1.75rem;
-  }
-
-  .romaji {
-    font-size: 10px;
   }
 } 

@@ -1,15 +1,18 @@
 import React, { useState, useMemo } from 'react';
-import { hiraganaAlphabet, CharacterData } from '@/src/data/alphabets/hiragana';
+import { hiraganaAlphabet, CharacterData, SoundGroup } from '@/src/data/alphabets/hiragana';
 import { katakanaAlphabet } from '@/src/data/alphabets/katakana';
 import styles from './styles.module.css';
 import { AlphabetType, CharacterType } from '@/src/types/alphabet';
 
 type UnifiedAlphabetData = {
-  basic: CharacterData[];
-  dakuten: CharacterData[];
-  youon: CharacterData[];
-  foreign?: CharacterData[];
+  basic: SoundGroup[];
+  dakuten: SoundGroup[];
+  youon: SoundGroup[];
+  foreign?: SoundGroup[];
 };
+
+// Vowel order for gojūonzu layout
+const vowelOrder = ['a', 'i', 'u', 'e', 'o'];
 
 const CharacterTable = () => {
   const [selectAlphabetType, setSelectAlphabetType] = useState<AlphabetType>('hiragana');
@@ -19,20 +22,18 @@ const CharacterTable = () => {
     return selectAlphabetType === 'hiragana' ? hiraganaAlphabet : katakanaAlphabet;
   }, [selectAlphabetType]);
 
-  const currentCharacters = useMemo(() => {
-    switch (selectedType) {
-      case 'basic':
-        return alphabetData.basic;
-      case 'dakuten':
-        return alphabetData.dakuten;
-      case 'youon':
-        return alphabetData.youon;
-      case 'foreign':
-        return alphabetData.foreign || [];
-      default:
-        return [];
-    }
-  }, [alphabetData, selectedType]);
+  // Create lookup map for quick character finding
+  const characterMap = useMemo(() => {
+    const map = new Map<string, CharacterData>();
+    Object.values(alphabetData).flat().forEach(group => {
+      if (group && group.characters) {
+        group.characters.forEach(char => {
+          map.set(char.romaji, char);
+        });
+      }
+    });
+    return map;
+  }, [alphabetData]);
 
   const availableTypes = useMemo(() => {
     const types: CharacterType[] = [];
@@ -61,10 +62,210 @@ const CharacterTable = () => {
     }
   }, [availableTypes, selectedType]);
 
+  const renderBasicTable = () => {
+    const soundGroups = alphabetData.basic;
+    
+    return (
+      <div className={styles.gojuonzuTable}>
+        <div className={styles.tableHeader}>
+          <div className={styles.headerCell}></div>
+          {vowelOrder.map(vowel => (
+            <div key={vowel} className={styles.headerCell}>{vowel.toUpperCase()}</div>
+          ))}
+          <div className={styles.headerCell}>N</div>
+        </div>
+        
+        {soundGroups.map((group, rowIndex) => (
+          <div key={rowIndex} className={styles.tableRow}>
+            <div className={styles.rowHeader}>
+              {group.name ? group.name.toUpperCase() : 'VOWELS'}
+            </div>
+            {vowelOrder.map((vowel, colIndex) => {
+              let char = null;
+              
+              if (group.name === '') {
+                // Vowels row - direct match
+                char = group.characters.find(c => c.romaji === vowel);
+              } else if (group.name === 'y') {
+                // Y sounds - only ya, yu, yo (skip i and e)
+                if (vowel === 'a' || vowel === 'u' || vowel === 'o') {
+                  char = group.characters.find(c => c.romaji === `${group.name}${vowel}`);
+                }
+              } else if (group.name === 'w') {
+                // W sounds - only wa and wo (skip i, u, e)
+                if (vowel === 'a' || vowel === 'o') {
+                  char = group.characters.find(c => c.romaji === `${group.name}${vowel}`);
+                }
+              } else {
+                // Regular consonant groups - find by romaji
+                char = group.characters.find(c => {
+                  // Handle special cases
+                  if (group.name === 's' && vowel === 'i') return c.romaji === 'shi';
+                  if (group.name === 't' && vowel === 'i') return c.romaji === 'chi';
+                  if (group.name === 't' && vowel === 'u') return c.romaji === 'tsu';
+                  if (group.name === 'h' && vowel === 'u') return c.romaji === 'fu';
+                  
+                  // Regular pattern: consonant + vowel
+                  return c.romaji === `${group.name}${vowel}`;
+                });
+              }
+              
+              return (
+                <div key={colIndex} className={`${styles.characterCell} ${!char ? styles.emptyCell : ''}`}>
+                  {char && (
+                    <>
+                      <div className={styles.character}>{char.character}</div>
+                      <div className={styles.romaji}>{char.romaji}</div>
+                    </>
+                  )}
+                </div>
+              );
+            })}
+            {/* Special N column - show for vowels row (which contains n) */}
+            {group.name === '' && (
+              <div className={styles.characterCell}>
+                {(() => {
+                  const nChar = group.characters.find(c => c.romaji === 'n');
+                  return nChar ? (
+                    <>
+                      <div className={styles.character}>{nChar.character}</div>
+                      <div className={styles.romaji}>{nChar.romaji}</div>
+                    </>
+                  ) : null;
+                })()}
+              </div>
+            )}
+            {group.name !== '' && <div className={styles.emptyCell}></div>}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderDakutenTable = () => {
+    const soundGroups = alphabetData.dakuten;
+    
+    return (
+      <div className={styles.gojuonzuTable}>
+        <div className={styles.tableHeader}>
+          <div className={styles.headerCell}></div>
+          {vowelOrder.map(vowel => (
+            <div key={vowel} className={styles.headerCell}>{vowel.toUpperCase()}</div>
+          ))}
+        </div>
+        
+        {soundGroups.map((group, rowIndex) => (
+          <div key={rowIndex} className={styles.tableRow}>
+            <div className={styles.rowHeader}>
+              {group.name.toUpperCase()}
+            </div>
+            {vowelOrder.map((vowel, colIndex) => {
+              // Find character that matches this vowel sound
+              const char = group.characters.find(c => {
+                // Handle special cases for dakuten
+                if (group.name === 'z' && vowel === 'i') return c.romaji === 'ji';
+                if (group.name === 'z' && vowel === 'u') return c.romaji === 'zu';
+                if (group.name === 'd' && vowel === 'i') return c.romaji === 'ji'; // ぢ -> ji
+                if (group.name === 'd' && vowel === 'u') return c.romaji === 'zu'; // づ -> zu
+                
+                // Regular pattern: consonant + vowel
+                return c.romaji === `${group.name}${vowel}`;
+              });
+              
+              return (
+                <div key={colIndex} className={styles.characterCell}>
+                  {char && (
+                    <>
+                      <div className={styles.character}>{char.character}</div>
+                      <div className={styles.romaji}>{char.romaji}</div>
+                    </>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderYouonTable = () => {
+    const soundGroups = alphabetData.youon;
+    const youonVowels = ['ya', 'yu', 'yo'];
+    
+    return (
+      <div className={styles.youonTable}>
+        <div className={styles.tableHeader}>
+          <div className={styles.headerCell}></div>
+          <div className={styles.headerCell}>YA</div>
+          <div className={styles.headerCell}>YU</div>
+          <div className={styles.headerCell}>YO</div>
+        </div>
+        
+        {soundGroups.map((group, rowIndex) => (
+          <div key={rowIndex} className={styles.tableRow}>
+            <div className={styles.rowHeader}>
+              {group.name.toUpperCase()}
+            </div>
+            {youonVowels.map((youonVowel, colIndex) => {
+              // Find character that matches this youon sound
+              const char = group.characters.find(c => 
+                c.romaji.endsWith(youonVowel)
+              );
+              
+              return (
+                <div key={colIndex} className={styles.characterCell}>
+                  {char && (
+                    <>
+                      <div className={styles.character}>{char.character}</div>
+                      <div className={styles.romaji}>{char.romaji}</div>
+                    </>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderForeignTable = () => {
+    const foreignGroups = alphabetData.foreign || [];
+    
+    return (
+      <div className={styles.foreignGrid}>
+        {foreignGroups.map((group, groupIndex) => 
+          group.characters.map((char, charIndex) => (
+            <div key={`${groupIndex}-${charIndex}`} className={styles.characterCard}>
+              <div className={styles.character}>{char.character}</div>
+              <div className={styles.romaji}>{char.romaji}</div>
+            </div>
+          ))
+        )}
+      </div>
+    );
+  };
+
+  const renderCurrentTable = () => {
+    switch (selectedType) {
+      case 'basic':
+        return renderBasicTable();
+      case 'dakuten':
+        return renderDakutenTable();
+      case 'youon':
+        return renderYouonTable();
+      case 'foreign':
+        return renderForeignTable();
+      default:
+        return <div className={styles.emptyState}>No characters available for this selection.</div>;
+    }
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2 className={styles.title}>Japanese Character Table</h2>
+        <h2 className={styles.title}>Japanese Character Table (Gojūonzu)</h2>
         
         <div className={styles.controls}>
           <div className={styles.scriptToggle}>
@@ -97,20 +298,7 @@ const CharacterTable = () => {
       </div>
 
       <div className={styles.tableContainer}>
-        <div className={styles.characterGrid}>
-          {currentCharacters.map((char: CharacterData, index: number) => (
-            <div key={`${char.character}-${char.romaji}-${index}`} className={styles.characterCard}>
-              <div className={styles.character}>{char.character}</div>
-              <div className={styles.romaji}>{char.romaji}</div>
-            </div>
-          ))}
-        </div>
-        
-        {currentCharacters.length === 0 && (
-          <div className={styles.emptyState}>
-            <p>No characters available for this selection.</p>
-          </div>
-        )}
+        {renderCurrentTable()}
       </div>
     </div>
   );
